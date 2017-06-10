@@ -12,6 +12,7 @@ use Yii;
  * @property string $description
  * @property string $pic
  * @property integer $price
+ * @property integer $isdeleted
  */
 class Shop extends \yii\db\ActiveRecord
 {
@@ -30,7 +31,7 @@ class Shop extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'description', 'pic', 'price'], 'required'],
-            [['price'], 'integer'],
+            [['price', 'isdeleted'], 'integer'],
             [['name'], 'string', 'max' => 50],
             [['description', 'pic'], 'string', 'max' => 255],
         ];
@@ -47,6 +48,7 @@ class Shop extends \yii\db\ActiveRecord
             'description' => 'Description',
             'pic' => 'Pic',
             'price' => 'Price',
+            'isdeleted' => 'Isdeleted',
         ];
     }
 }

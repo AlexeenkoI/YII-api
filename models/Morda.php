@@ -11,6 +11,7 @@ use Yii;
  * @property string $fio
  * @property string $description
  * @property string $pic
+ * @property integer $isdeleted
  *
  * @property UserMorda[] $userMordas
  */
@@ -31,6 +32,7 @@ class Morda extends \yii\db\ActiveRecord
     {
         return [
             [['fio', 'description', 'pic'], 'required'],
+            [['isdeleted'], 'integer'],
             [['fio'], 'string', 'max' => 100],
             [['description', 'pic'], 'string', 'max' => 255],
         ];
@@ -46,6 +48,7 @@ class Morda extends \yii\db\ActiveRecord
             'fio' => 'Fio',
             'description' => 'Description',
             'pic' => 'Pic',
+            'isdeleted' => 'Isdeleted',
         ];
     }
 

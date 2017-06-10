@@ -11,6 +11,7 @@ use Yii;
  * @property string $name
  * @property string $description
  * @property integer $capacity
+ * @property integer $isdeleted
  *
  * @property User[] $users
  */
@@ -31,7 +32,7 @@ class Route extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'description', 'capacity'], 'required'],
-            [['capacity'], 'integer'],
+            [['capacity', 'isdeleted'], 'integer'],
             [['name'], 'string', 'max' => 50],
             [['description'], 'string', 'max' => 255],
         ];
@@ -47,6 +48,7 @@ class Route extends \yii\db\ActiveRecord
             'name' => 'Name',
             'description' => 'Description',
             'capacity' => 'Capacity',
+            'isdeleted' => 'Isdeleted',
         ];
     }
 
