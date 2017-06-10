@@ -14,6 +14,7 @@ use Yii;
  * @property string $totemimage
  * @property string $color
  * @property string $colorhex
+ * @property integer $isdeleted
  *
  * @property Grouppriority[] $grouppriorities
  * @property User[] $users
@@ -35,6 +36,7 @@ class Group extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'description', 'totemname', 'totemimage', 'color', 'colorhex'], 'required'],
+            [['isdeleted'], 'integer'],
             [['name', 'totemname', 'color', 'colorhex'], 'string', 'max' => 50],
             [['description'], 'string', 'max' => 255],
             [['totemimage'], 'string', 'max' => 100],
@@ -54,6 +56,7 @@ class Group extends \yii\db\ActiveRecord
             'totemimage' => 'Totemimage',
             'color' => 'Color',
             'colorhex' => 'Colorhex',
+            'isdeleted' => 'Isdeleted',
         ];
     }
 

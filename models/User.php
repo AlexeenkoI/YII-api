@@ -16,6 +16,7 @@ use Yii;
  * @property integer $batchid
  * @property integer $routeid
  * @property integer $iscap
+ * @property integer $isdeleted
  *
  * @property Moneylog[] $moneylogs
  * @property Group $group
@@ -39,8 +40,8 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['firstname', 'lastname', 'patronymic', 'rfcid', 'groupid', 'batchid', 'routeid'], 'required'],
-            [['groupid', 'batchid', 'routeid', 'iscap'], 'integer'],
+            [['firstname', 'lastname', 'patronymic', 'rfcid'], 'required'],
+            [['groupid', 'batchid', 'routeid', 'iscap', 'isdeleted'], 'integer'],
             [['firstname', 'lastname', 'patronymic', 'rfcid'], 'string', 'max' => 50],
             [['groupid'], 'exist', 'skipOnError' => true, 'targetClass' => Group::className(), 'targetAttribute' => ['groupid' => 'id']],
             [['batchid'], 'exist', 'skipOnError' => true, 'targetClass' => Batch::className(), 'targetAttribute' => ['batchid' => 'id']],
@@ -63,6 +64,7 @@ class User extends \yii\db\ActiveRecord
             'batchid' => 'Batchid',
             'routeid' => 'Routeid',
             'iscap' => 'Iscap',
+            'isdeleted' => 'Isdeleted',
         ];
     }
 

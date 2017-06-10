@@ -12,6 +12,7 @@ use Yii;
  * @property integer $money
  * @property integer $type
  * @property string $description
+ * @property integer $isdeleted
  *
  * @property User $user
  */
@@ -32,7 +33,7 @@ class Moneylog extends \yii\db\ActiveRecord
     {
         return [
             [['userid', 'money', 'type', 'description'], 'required'],
-            [['userid', 'money', 'type'], 'integer'],
+            [['userid', 'money', 'type', 'isdeleted'], 'integer'],
             [['description'], 'string', 'max' => 255],
             [['userid'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['userid' => 'id']],
         ];
@@ -49,6 +50,7 @@ class Moneylog extends \yii\db\ActiveRecord
             'money' => 'Money',
             'type' => 'Type',
             'description' => 'Description',
+            'isdeleted' => 'Isdeleted',
         ];
     }
 
