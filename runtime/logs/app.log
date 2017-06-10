@@ -1,0 +1,2687 @@
+2017-06-10 12:48:13 [91.193.236.213][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php:1292
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php(1274): yii\web\Request->loadCookies()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php(1355): yii\web\Request->getCookies()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php(1338): yii\web\Request->loadCsrfToken()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(302): yii\web\Request->getCsrfToken()
+#4 /var/www/html/basic/views/layouts/main.php(21): yii\helpers\BaseHtml::csrfMetaTags()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#6 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#7 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#8 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#9 /var/www/html/basic/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#14 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#15 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2017-06-10 12:48:13 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 12:48:13 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 12:48:12 [91.193.236.213][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57984'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497098892.91
+    'REQUEST_TIME' => 1497098892
+]
+2017-06-10 12:48:13 [91.193.236.213][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' 
+
+in /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php:1292
+
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php(1274): yii\web\Request->loadCookies()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/web/User.php(555): yii\web\Request->getCookies()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/web/User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/web/User.php(674): yii\web\User->loginByCookie()
+#4 /var/www/html/basic/vendor/yiisoft/yii2/web/User.php(188): yii\web\User->renewAuthStatus()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/base/Component.php(132): yii\web\User->getIdentity()
+#6 /var/www/html/basic/vendor/yiisoft/yii2-debug/panels/UserPanel.php(54): yii\base\Component->__get('identity')
+#7 /var/www/html/basic/vendor/yiisoft/yii2-debug/LogTarget.php(54): yii\debug\panels\UserPanel->save()
+#8 /var/www/html/basic/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#9 /var/www/html/basic/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#10 /var/www/html/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(113): yii\log\Logger->flush(true)
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#13 {main}
+2017-06-10 12:48:12 [91.193.236.213][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57984'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497098892.91
+    'REQUEST_TIME' => 1497098892
+]
+2017-06-10 12:50:03 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 12:50:03 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 12:50:03 [91.193.236.213][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58033'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497099003.017
+    'REQUEST_TIME' => 1497099003
+]
+2017-06-10 12:50:55 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 12:50:55 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 12:50:55 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58044'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497099055.869
+    'REQUEST_TIME' => 1497099055
+]
+2017-06-10 12:50:59 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 12:50:59 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 12:50:59 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58048'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497099059.556
+    'REQUEST_TIME' => 1497099059
+]
+2017-06-10 13:00:31 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:00:31 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:00:31 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58151'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497099631.493
+    'REQUEST_TIME' => 1497099631
+]
+2017-06-10 13:00:39 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:00:39 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:00:39 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58178'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497099639.169
+    'REQUEST_TIME' => 1497099639
+]
+2017-06-10 13:06:54 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:06:54 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:06:54 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58254'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100014.532
+    'REQUEST_TIME' => 1497100014
+]
+2017-06-10 13:09:58 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:09:58 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:09:58 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58344'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100198.592
+    'REQUEST_TIME' => 1497100198
+]
+2017-06-10 13:10:09 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:10:09 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:10:09 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58350'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100209.159
+    'REQUEST_TIME' => 1497100209
+]
+2017-06-10 13:10:16 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:10:16 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:10:16 [91.193.236.213][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/index.php?r=gii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100216.937
+    'REQUEST_TIME' => 1497100216
+]
+2017-06-10 13:11:24 [183.129.160.229][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 183.129.160.229
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:11:24 [183.129.160.229][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 183.129.160.229
+2017-06-10 13:11:24 [183.129.160.229][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.129.160.229'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59228'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100284.129
+    'REQUEST_TIME' => 1497100284
+]
+2017-06-10 13:11:52 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:11:52 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:11:52 [91.193.236.213][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58360'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/index.php?r=gii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100312.844
+    'REQUEST_TIME' => 1497100312
+]
+2017-06-10 13:11:56 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:11:56 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:11:56 [91.193.236.213][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58362'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/index.php?r=gii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100316.122
+    'REQUEST_TIME' => 1497100316
+]
+2017-06-10 13:11:56 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:11:56 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:11:56 [91.193.236.213][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58362'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/index.php?r=gii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100316.943
+    'REQUEST_TIME' => 1497100316
+]
+2017-06-10 13:11:57 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 13:11:57 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:11:57 [91.193.236.213][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58362'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/index.php?r=gii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100317.712
+    'REQUEST_TIME' => 1497100317
+]
+2017-06-10 13:12:17 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:12:17 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 13:12:17 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58373'
+    'REDIRECT_URL' => '/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497100337.314
+    'REQUEST_TIME' => 1497100337
+]
+2017-06-10 15:09:22 [89.210.60.249][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "phpMyAdmin/scripts/setup.php".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('phpMyAdmin/scri...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-06-10 15:09:22 [89.210.60.249][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 89.210.60.249
+    in /var/www/html/basic/views/layouts/main.php:76
+2017-06-10 15:09:22 [89.210.60.249][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 89.210.60.249
+2017-06-10 15:09:22 [89.210.60.249][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '89.210.60.249'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '38552'
+    'REDIRECT_URL' => '/phpMyAdmin/scripts/setup.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/phpMyAdmin/scripts/setup.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497107362.415
+    'REQUEST_TIME' => 1497107362
+]
+2017-06-10 15:09:22 [89.210.60.249][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "pma/scripts/setup.php".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('pma/scripts/set...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-06-10 15:09:22 [89.210.60.249][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 89.210.60.249
+    in /var/www/html/basic/views/layouts/main.php:76
+2017-06-10 15:09:22 [89.210.60.249][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 89.210.60.249
+2017-06-10 15:09:22 [89.210.60.249][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '89.210.60.249'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '38576'
+    'REDIRECT_URL' => '/pma/scripts/setup.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pma/scripts/setup.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497107362.657
+    'REQUEST_TIME' => 1497107362
+]
+2017-06-10 15:09:22 [89.210.60.249][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "myadmin/scripts/setup.php".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('myadmin/scripts...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-06-10 15:09:22 [89.210.60.249][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 89.210.60.249
+    in /var/www/html/basic/views/layouts/main.php:76
+2017-06-10 15:09:22 [89.210.60.249][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 89.210.60.249
+2017-06-10 15:09:22 [89.210.60.249][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '89.210.60.249'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '38594'
+    'REDIRECT_URL' => '/myadmin/scripts/setup.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/myadmin/scripts/setup.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497107362.889
+    'REQUEST_TIME' => 1497107362
+]
+2017-06-10 15:17:35 [91.193.236.213][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#8 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-06-10 15:17:35 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:17:35 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:17:35 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59200'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497107855.269
+    'REQUEST_TIME' => 1497107855
+]
+2017-06-10 15:19:34 [91.193.236.213][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000] [1049] Unknown database 'yii2basic'' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'velor', 'password', NULL)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#8 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1049] Unknown database 'yii2basic'' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-06-10 15:19:34 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:19:34 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:19:34 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59213'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497107974.123
+    'REQUEST_TIME' => 1497107974
+]
+2017-06-10 15:19:41 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:19:41 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:19:41 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59215'
+    'REDIRECT_URL' => '/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497107981.242
+    'REQUEST_TIME' => 1497107981
+]
+2017-06-10 15:19:43 [91.193.236.213][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000] [1049] Unknown database 'yii2basic'' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'velor', 'password', NULL)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#8 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1049] Unknown database 'yii2basic'' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-06-10 15:19:43 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:19:43 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:19:43 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59217'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497107983.405
+    'REQUEST_TIME' => 1497107983
+]
+2017-06-10 15:20:40 [91.193.236.213][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on '194.67.194.82' (111)' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=194....', 'velor', 'password', NULL)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#8 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on '194.67.194.82' (111)' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-06-10 15:20:40 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:20:40 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:20:40 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59230'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108040.028
+    'REQUEST_TIME' => 1497108040
+]
+2017-06-10 15:21:24 [91.193.236.213][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on '194.67.194.82' (111)' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=194....', 'velor', 'password', NULL)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#8 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on '194.67.194.82' (111)' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare('<span class="ke...')
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(352): yii\db\Command->queryColumn()
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject('[<span class="s...')
+#16 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(330): require('/var/www/html/b...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-06-10 15:21:24 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:21:24 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:21:24 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59235'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108084.672
+    'REQUEST_TIME' => 1497108084
+]
+2017-06-10 15:21:40 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:21:40 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:21:40 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59238'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108100.103
+    'REQUEST_TIME' => 1497108100
+]
+2017-06-10 15:22:15 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:22:15 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:22:15 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => 'RKS29Jy42kCDkYABr7QseNJRIvkMT8evNPyq1GM_-PhCkBkufv5i4YdcIowlE-6jfbVm1UtABWfIXmQm2QeKyA=='
+    'Generator' => [
+        'tableName' => '*'
+        'modelClass' => ''
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => 'all'
+        'generateLabelsFromComments' => '0'
+        'generateQuery' => '0'
+        'queryNs' => 'app\\models'
+        'queryClass' => ''
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'useSchemaName' => '1'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/model'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '679'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59247'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108135.353
+    'REQUEST_TIME' => 1497108135
+]
+2017-06-10 15:22:27 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:22:27 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+    'file' => '4fa67fe7fee2627bcc112194680c8adf'
+]
+
+$_POST = [
+    '_csrf' => 'v78xTCL-AnwC9WUuBAWtGUW_O7_ETobzzsbSqHkGcVy5i56WwLi63QY4x6OOom_C6lt_k4NBRDsyZBxawz4DbA=='
+    'Generator' => [
+        'tableName' => '*'
+        'modelClass' => ''
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => 'all'
+        'generateLabelsFromComments' => '0'
+        'generateQuery' => '0'
+        'queryNs' => 'app\\models'
+        'queryClass' => ''
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'useSchemaName' => '1'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '4fa67fe7fee2627bcc112194680c8adf' => '1'
+        '9188be9eacce30b48db64a019f09f8a4' => '1'
+        '5647b59b9e594ff6fd696c5e8d4aead6' => '1'
+        '4b3cdb571cf55db88370153c1de73b09' => '1'
+        '05c6ac0c4e0ec55093a4396456bd5fee' => '1'
+        '68e637561c5e2422eeca13235f9b28af' => '1'
+        'e18920f6cd8452613de6445eb9ed8c83' => '1'
+        '412d7470faa5afbf4d5fa26b0d800fee' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/model'
+    'HTTP_X_CSRF_TOKEN' => 'v78xTCL-AnwC9WUuBAWtGUW_O7_ETobzzsbSqHkGcVy5i56WwLi63QY4x6OOom_C6lt_k4NBRDsyZBxawz4DbA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '1054'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59254'
+    'REDIRECT_QUERY_STRING' => 'id=model&file=4fa67fe7fee2627bcc112194680c8adf'
+    'REDIRECT_URL' => '/gii/default/preview'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=model&file=4fa67fe7fee2627bcc112194680c8adf'
+    'REQUEST_URI' => '/gii/default/preview?id=model&file=4fa67fe7fee2627bcc112194680c8adf'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108147.427
+    'REQUEST_TIME' => 1497108147
+]
+2017-06-10 15:22:35 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:22:35 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+    'file' => '68e637561c5e2422eeca13235f9b28af'
+]
+
+$_POST = [
+    '_csrf' => 'v78xTCL-AnwC9WUuBAWtGUW_O7_ETobzzsbSqHkGcVy5i56WwLi63QY4x6OOom_C6lt_k4NBRDsyZBxawz4DbA=='
+    'Generator' => [
+        'tableName' => '*'
+        'modelClass' => ''
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => 'all'
+        'generateLabelsFromComments' => '0'
+        'generateQuery' => '0'
+        'queryNs' => 'app\\models'
+        'queryClass' => ''
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'useSchemaName' => '1'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '4fa67fe7fee2627bcc112194680c8adf' => '1'
+        '9188be9eacce30b48db64a019f09f8a4' => '1'
+        '5647b59b9e594ff6fd696c5e8d4aead6' => '1'
+        '4b3cdb571cf55db88370153c1de73b09' => '1'
+        '05c6ac0c4e0ec55093a4396456bd5fee' => '1'
+        '68e637561c5e2422eeca13235f9b28af' => '1'
+        'e18920f6cd8452613de6445eb9ed8c83' => '1'
+        '412d7470faa5afbf4d5fa26b0d800fee' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/model'
+    'HTTP_X_CSRF_TOKEN' => 'v78xTCL-AnwC9WUuBAWtGUW_O7_ETobzzsbSqHkGcVy5i56WwLi63QY4x6OOom_C6lt_k4NBRDsyZBxawz4DbA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '1054'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59258'
+    'REDIRECT_QUERY_STRING' => 'id=model&file=68e637561c5e2422eeca13235f9b28af'
+    'REDIRECT_URL' => '/gii/default/preview'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=model&file=68e637561c5e2422eeca13235f9b28af'
+    'REQUEST_URI' => '/gii/default/preview?id=model&file=68e637561c5e2422eeca13235f9b28af'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108155.257
+    'REQUEST_TIME' => 1497108155
+]
+2017-06-10 15:22:46 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:22:46 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+    'file' => '9188be9eacce30b48db64a019f09f8a4'
+]
+
+$_POST = [
+    '_csrf' => 'v78xTCL-AnwC9WUuBAWtGUW_O7_ETobzzsbSqHkGcVy5i56WwLi63QY4x6OOom_C6lt_k4NBRDsyZBxawz4DbA=='
+    'Generator' => [
+        'tableName' => '*'
+        'modelClass' => ''
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => 'all'
+        'generateLabelsFromComments' => '0'
+        'generateQuery' => '0'
+        'queryNs' => 'app\\models'
+        'queryClass' => ''
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'useSchemaName' => '1'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '4fa67fe7fee2627bcc112194680c8adf' => '1'
+        '9188be9eacce30b48db64a019f09f8a4' => '1'
+        '5647b59b9e594ff6fd696c5e8d4aead6' => '1'
+        '4b3cdb571cf55db88370153c1de73b09' => '1'
+        '05c6ac0c4e0ec55093a4396456bd5fee' => '1'
+        '68e637561c5e2422eeca13235f9b28af' => '1'
+        'e18920f6cd8452613de6445eb9ed8c83' => '1'
+        'cb6c25f7f1a2bf4b44e42a6d94a34f09' => '1'
+        '412d7470faa5afbf4d5fa26b0d800fee' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/model'
+    'HTTP_X_CSRF_TOKEN' => 'v78xTCL-AnwC9WUuBAWtGUW_O7_ETobzzsbSqHkGcVy5i56WwLi63QY4x6OOom_C6lt_k4NBRDsyZBxawz4DbA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '1102'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59260'
+    'REDIRECT_QUERY_STRING' => 'id=model&file=9188be9eacce30b48db64a019f09f8a4'
+    'REDIRECT_URL' => '/gii/default/preview'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=model&file=9188be9eacce30b48db64a019f09f8a4'
+    'REQUEST_URI' => '/gii/default/preview?id=model&file=9188be9eacce30b48db64a019f09f8a4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108166.091
+    'REQUEST_TIME' => 1497108166
+]
+2017-06-10 15:23:18 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:18 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:18 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => 'v78xTCL-AnwC9WUuBAWtGUW_O7_ETobzzsbSqHkGcVy5i56WwLi63QY4x6OOom_C6lt_k4NBRDsyZBxawz4DbA=='
+    'Generator' => [
+        'tableName' => '*'
+        'modelClass' => ''
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => 'all'
+        'generateLabelsFromComments' => '0'
+        'generateQuery' => '0'
+        'queryNs' => 'app\\models'
+        'queryClass' => ''
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'useSchemaName' => '1'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '4fa67fe7fee2627bcc112194680c8adf' => '1'
+        '9188be9eacce30b48db64a019f09f8a4' => '1'
+        '5647b59b9e594ff6fd696c5e8d4aead6' => '1'
+        '4b3cdb571cf55db88370153c1de73b09' => '1'
+        '05c6ac0c4e0ec55093a4396456bd5fee' => '1'
+        '68e637561c5e2422eeca13235f9b28af' => '1'
+        'e18920f6cd8452613de6445eb9ed8c83' => '1'
+        'cb6c25f7f1a2bf4b44e42a6d94a34f09' => '1'
+        '412d7470faa5afbf4d5fa26b0d800fee' => '1'
+    ]
+    'generate' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/model'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '1112'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59263'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108198.661
+    'REQUEST_TIME' => 1497108198
+]
+2017-06-10 15:23:33 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:33 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:33 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'crud'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/model'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59265'
+    'REDIRECT_URL' => '/gii/crud'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/crud'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108213.341
+    'REQUEST_TIME' => 1497108213
+]
+2017-06-10 15:23:55 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:55 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:55 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'controller'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/crud'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59273'
+    'REDIRECT_URL' => '/gii/controller'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/controller'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108235.071
+    'REQUEST_TIME' => 1497108235
+]
+2017-06-10 15:23:56 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:56 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:56 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'form'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/controller'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59275'
+    'REDIRECT_URL' => '/gii/form'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/form'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108236.645
+    'REQUEST_TIME' => 1497108236
+]
+2017-06-10 15:23:58 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:58 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:23:58 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'module'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/form'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59275'
+    'REDIRECT_URL' => '/gii/module'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/module'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108238.747
+    'REQUEST_TIME' => 1497108238
+]
+2017-06-10 15:24:01 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:01 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:01 [91.193.236.213][-][-][info][application] $_GET = [
+    'id' => 'extension'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/gii/module'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59275'
+    'REDIRECT_URL' => '/gii/extension'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/extension'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108241.664
+    'REQUEST_TIME' => 1497108241
+]
+2017-06-10 15:24:43 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 15:24:43 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:43 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59281'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108283.05
+    'REQUEST_TIME' => 1497108283
+]
+2017-06-10 15:24:45 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:124
+2017-06-10 15:24:45 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:45 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59281'
+    'REDIRECT_URL' => '/site/about'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/about'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108285.684
+    'REQUEST_TIME' => 1497108285
+]
+2017-06-10 15:24:46 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 15:24:46 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:46 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/site/about'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59281'
+    'REDIRECT_URL' => '/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108286.932
+    'REQUEST_TIME' => 1497108286
+]
+2017-06-10 15:24:48 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:124
+2017-06-10 15:24:48 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:48 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/site/index'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59281'
+    'REDIRECT_URL' => '/site/about'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/about'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108288.195
+    'REQUEST_TIME' => 1497108288
+]
+2017-06-10 15:24:49 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:114
+2017-06-10 15:24:49 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:49 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'utranem'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/site/about'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59281'
+    'REDIRECT_URL' => '/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108289.05
+    'REQUEST_TIME' => 1497108289
+]
+2017-06-10 15:24:49 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:49 [91.193.236.213][-][-][info][application] $_GET = [
+    'v' => '593c0f4146e63'
+]
+
+$_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+    'PHPSESSID' => 'esuen5hebs8m9l06v7vd8rtsg2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'utranem'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/site/contact'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D; PHPSESSID=esuen5hebs8m9l06v7vd8rtsg2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59281'
+    'REDIRECT_QUERY_STRING' => 'v=593c0f4146e63'
+    'REDIRECT_URL' => '/site/captcha'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'v=593c0f4146e63'
+    'REQUEST_URI' => '/site/captcha?v=593c0f4146e63'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108289.453
+    'REQUEST_TIME' => 1497108289
+]
+2017-06-10 15:24:58 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 15:24:58 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:24:58 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+    'PHPSESSID' => 'esuen5hebs8m9l06v7vd8rtsg2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'utranem'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/site/contact'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D; PHPSESSID=esuen5hebs8m9l06v7vd8rtsg2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59289'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108298.717
+    'REQUEST_TIME' => 1497108298
+]
+2017-06-10 15:25:01 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:84
+2017-06-10 15:25:01 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:25:01 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+    'PHPSESSID' => 'esuen5hebs8m9l06v7vd8rtsg2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'utranem'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D; PHPSESSID=esuen5hebs8m9l06v7vd8rtsg2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59289'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108301.112
+    'REQUEST_TIME' => 1497108301
+]
+2017-06-10 15:25:08 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 15:25:08 [91.193.236.213][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 91.193.236.213
+2017-06-10 15:25:08 [91.193.236.213][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4¯ÚâF¸¡Í¢Š§ÂÛ¯äD,GÂÈü¢Îòº8r0\";}'
+    'PHPSESSID' => 'esuen5hebs8m9l06v7vd8rtsg2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'utranem'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '194.67.194.82'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://194.67.194.82/site/login'
+    'HTTP_COOKIE' => '_csrf=4c43555b3daf393726e07612ebfd306a8e9e68ef2f288f685c9c09b9238f4c60a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%064%AF%DA%E2F%B8%A1%04%CD%A2%8D%8A%A7%C2%DB%AF%E4D%2CG%0F%C2%C8%FC%A2%CE%F2%BA8r0%22%3B%7D; PHPSESSID=esuen5hebs8m9l06v7vd8rtsg2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at 194.67.194.82 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => '194.67.194.82'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '91.193.236.213'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '59290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108308.55
+    'REQUEST_TIME' => 1497108308
+]
+2017-06-10 15:28:58 [189.164.177.140][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 189.164.177.140
+    in /var/www/html/basic/views/layouts/main.php:76
+    in /var/www/html/basic/controllers/SiteController.php:64
+2017-06-10 15:28:58 [189.164.177.140][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 189.164.177.140
+2017-06-10 15:28:58 [189.164.177.140][-][-][info][application] $_SERVER = [
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at ih553322.vds.myihor.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'ih553322.vds.myihor.ru'
+    'SERVER_ADDR' => '194.67.194.82'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '189.164.177.140'
+    'DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/basic/web/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '50126'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497108538.729
+    'REQUEST_TIME' => 1497108538
+]
