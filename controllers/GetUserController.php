@@ -3,17 +3,19 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Morda;
-use app\models\MordaSearch;
+use app\models\User;
+use app\models\ResponseUser;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\helpers\Json;
 /**
- * MordaController implements the CRUD actions for Morda model.
+ * GetUserController implements the CRUD actions for User model.
  */
-class MordaController extends Controller
+var_dump("123123"); exit();
+class GetUserController extends Controller
 {
+	
     /**
      * @inheritdoc
      */
@@ -30,14 +32,21 @@ class MordaController extends Controller
     }
 
     /**
-     * Lists all Morda models.
+     * Lists all User models.
      * @return mixed
      */
+	 
     public function actionIndex()
     {
-        $searchModel = new MordaSearch();
+        $searchModel = new ResponseUser();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+		
+		$response = Yii::$app->response;
+		$response->format = \yii\web\Response::FORMAT_JSON;
+		$response->data = $dataProvider;
+		
+		//return $response;
+		
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -45,7 +54,7 @@ class MordaController extends Controller
     }
 
     /**
-     * Displays a single Morda model.
+     * Displays a single User model.
      * @param integer $id
      * @return mixed
      */
@@ -57,14 +66,15 @@ class MordaController extends Controller
     }
 
     /**
-     * Creates a new Morda model.
+     * Creates a new User model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($params=[])
     {
-        $model = new Morda();
-
+        $model = new User();
+		$params = \yii\helpers\BaseArrayHelper::merge(Yii::$app->getRequest()->getBodyParams(), $params);
+		
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -75,7 +85,7 @@ class MordaController extends Controller
     }
 
     /**
-     * Updates an existing Morda model.
+     * Updates an existing User model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -94,7 +104,7 @@ class MordaController extends Controller
     }
 
     /**
-     * Deletes an existing Morda model.
+     * Deletes an existing User model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -107,15 +117,15 @@ class MordaController extends Controller
     }
 
     /**
-     * Finds the Morda model based on its primary key value.
+     * Finds the User model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Morda the loaded model
+     * @return User the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Morda::findOne($id)) !== null) {
+        if (($model = User::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
