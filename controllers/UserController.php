@@ -8,6 +8,7 @@ use app\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\Response;
 
 /**
  * UserController implements the CRUD actions for User model.
@@ -132,7 +133,29 @@ class UserController extends Controller
 	}
 	
 	
-	public function actionAddupdate($value) {
-		
+	public function actionAddUser($value) {
+		$post = file_get_contents("php://input");
+		$data = CJSON::decode($post, true);
+		$response = Yii::$app->response;
+		$usr = new User();
+		$res = $usr->addUserFromJson($data);
+		if($res){
+			Yii::$app->response->statusCode = 200;
+		}else{
+			Yii::$app->response->statusCode = 300;
+		}
+	}
+	
+	public function actionUpdateUser($value){
+		$post = file_get_contents("php://input");
+		$data = CJSON::decode($post, true);
+		$response = Yii::$app->response;
+		$usr = new User();
+		$res = $usr->updateUserFromJson($data);
+		if($res){
+			Yii::$app->response->statusCode = 200;
+		}else{
+			Yii::$app->response->statusCode = 300;
+		}
 	}
 }
