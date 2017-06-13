@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\User;
+use yii\web\Response;
 
 /**
  * UserSearch represents the model behind the search form about `app\models\User`.
@@ -74,4 +75,22 @@ class UserSearch extends User
 
         return $dataProvider;
     }
+	
+	public function userToJson()
+	{
+		$rows = (new \yii\db\Query())->select('*')->from('user')->all();
+		$content=[
+			"User" => []
+		];
+		foreach($rows as $value)
+		{
+			array_push($content['User'],$value);
+		}
+		$response = Yii::$app->response;
+		$response->format = \yii\web\Response::FORMAT_JSON;
+		$response->statusCode = 200;
+		$response->data = $content;
+		
+        return $response;
+	}
 }

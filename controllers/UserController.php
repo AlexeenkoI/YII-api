@@ -121,4 +121,18 @@ class UserController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+	
+	
+	
+	public function actionGetall() {
+		$searchModel = new UserSearch();
+		$result = $searchModel->UserToJson();
+		
+		//return $result;
+	}
+	
+	
+	public function actionAddupdate($value) {
+		
+	}
 }
