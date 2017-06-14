@@ -44,6 +44,80 @@ class UserController extends Controller
         ]);
     }
 
+
+    /**
+     * Выбрасывает на экран всех пользователей
+     * @return mixed
+     */
+    public function actionIndexJson()
+    {
+        $searchModel = User::find();
+        $this->asJson($searchModel->all());
+    }
+
+    /**
+     * Выбрасывает на экран всех пользователей
+     * по id прибытия
+     * @return mixed
+     */
+    public function actionIndexByBatchJson($id)
+    {
+        $searchModel = User::find();
+        $searchModel->andWhere(["batchid" => $id]);
+        $this->asJson($searchModel->all());
+    }
+    
+
+    /**
+     * Выбрасывает на экран всех пользователей
+     * по id прибытия
+     * @return mixed
+     */
+    public function actionIndexByBatchNameJson($name)
+    {
+        $searchModel = \app\models\Batch::find(['name' => $name])->one();
+        $this->asJson($searchModel->users->all());
+    }
+
+
+    /**
+     * Выбрасывает на экран всех пользователей
+     * по id прибытия
+     * @return mixed
+     */
+    public function UpdateJson($id, $data)
+    {
+        $searchModel = User::find(['id' => $id])->one();
+        $searchModel->load($data);
+        if ($searchModel->save()) {
+            $this->asJson(1);
+        } else {
+            $this->asJson(0);
+        }
+        
+    }
+
+    /**
+     * Выбрасывает на экран всех пользователей
+     * по id прибытия
+     * @return mixed
+     */
+    public function CreateJson($data)
+    {
+        $searchModel = new User();
+        $searchModel->load($data);
+        if ($searchModel->save()) {
+            $this->asJson(1);
+        } else {
+            $this->asJson(0);
+        }
+        
+    }
+
+
+
+
+
     /**
      * Displays a single User model.
      * @param integer $id
