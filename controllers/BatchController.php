@@ -45,6 +45,15 @@ class BatchController extends Controller
     }
 
     /**
+    * Вывод всех моделей заезда
+    * @return array
+    */
+    public function actionIndexAjax() {
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        return actionIndex();
+    }
+
+    /**
      * Displays a single Batch model.
      * @param integer $id
      * @return mixed
