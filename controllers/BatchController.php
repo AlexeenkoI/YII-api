@@ -49,7 +49,10 @@ class BatchController extends Controller
     * @return array
     */
     public function actionIndexAjax() {
-        return $this->asJson($this->actionIndex());
+        $searchModel = new BatchSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->asJson($dataProvider);
     }
 
     /**
