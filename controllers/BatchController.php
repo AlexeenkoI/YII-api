@@ -49,8 +49,7 @@ class BatchController extends Controller
     * @return array
     */
     public function actionIndexAjax() {
-        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
-        return actionIndex();
+        return $this->asJson($this->actionIndex());
     }
 
     /**
@@ -63,6 +62,11 @@ class BatchController extends Controller
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
+    }
+
+
+    public function actionViewAjax($id) {
+        return $this->asJson($this->actionView($id));
     }
 
     /**
