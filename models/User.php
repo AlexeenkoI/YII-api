@@ -107,4 +107,29 @@ class User extends \yii\db\ActiveRecord
     {
         return $this->hasMany(UserMorda::className(), ['userid' => 'id']);
     }
+	
+	
+	public function updateUserFromJson($data)
+	{
+		$query = Yii::$app->db->createCommand('UPDATE user SET rfcid=:rfcid WHERE id=:id')
+		->bindValue(':rfcid',data['rfcid'])
+		->bindValue(':id',data['id']);
+		if($query){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public function addUserFromJson($data)
+	{
+        echo "here";
+		$query = Yii::$app->db->createCommand('INSERT INTO `user`(`firstname`, `lastname`, `patronymic`, `rfcid`, `groupid`, `batchid`, `routeid`) VALUES (:firstname,:lastname,:patronymic,:rfcid,:groupid,:batchid,:routeid')
+		->bindValue(':firstname',data['firstname'])
+		->bindValue(':lastname',data['lastname'])
+		->bindValue(':patronymic',data['patronymic'])
+		->bindValue(':rfcid',data['rfcid'])
+		->bindValue(':batchid',data['batchid'])
+		->bindValue(':routeid',data['routeid']);
+	}
 }

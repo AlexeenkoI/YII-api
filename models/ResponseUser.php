@@ -8,9 +8,9 @@ use yii\data\ActiveDataProvider;
 use app\models\User;
 
 /**
- * UserSearch represents the model behind the search form about `app\models\User`.
+ * ResponseUser represents the model behind the search form about `app\models\User`.
  */
-class UserSearch extends User
+class ResponseUser extends User
 {
     /**
      * @inheritdoc
@@ -74,22 +74,4 @@ class UserSearch extends User
 
         return $dataProvider;
     }
-	
-		public function userToJson()
-	{
-		$rows = (new \yii\db\Query())->select('*')->from('user')->all();
-		$content=[
-			"User" => []
-		];
-		foreach($rows as $value)
-		{
-			array_push($content['User'],$value);
-		}
-		$response = Yii::$app->response;
-		$response->format = \yii\web\Response::FORMAT_JSON;
-		$response->statusCode = 200;
-		$response->data = $content;
-		
-        return $response;
-	}
 }

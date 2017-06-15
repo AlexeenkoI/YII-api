@@ -4,17 +4,18 @@ namespace app\controllers;
 
 use Yii;
 use app\models\User;
-use app\models\UserSearch;
+use app\models\ResponseUser;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\helpers\BaseJson;
-
+use yii\helpers\Json;
 /**
- * UserController implements the CRUD actions for User model.
+ * GetUserController implements the CRUD actions for User model.
  */
-class UserController extends Controller
+var_dump("123123"); exit();
+class GetUserController extends Controller
 {
+	
     /**
      * @inheritdoc
      */
@@ -25,7 +26,6 @@ class UserController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
-                    'Adduser'=>['POST'],
                 ],
             ],
         ];
@@ -35,11 +35,18 @@ class UserController extends Controller
      * Lists all User models.
      * @return mixed
      */
+	 
     public function actionIndex()
     {
-        $searchModel = new UserSearch();
+        $searchModel = new ResponseUser();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+		
+		$response = Yii::$app->response;
+		$response->format = \yii\web\Response::FORMAT_JSON;
+		$response->data = $dataProvider;
+		
+		//return $response;
+		
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -63,10 +70,11 @@ class UserController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($params=[])
     {
         $model = new User();
-
+		$params = \yii\helpers\BaseArrayHelper::merge(Yii::$app->getRequest()->getBodyParams(), $params);
+		
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -123,45 +131,4 @@ class UserController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
-	
-    public function actionGetall() {
-    $searchModel = new UserSearch();
-    //$result = $searchModel->UserToJson();
-    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-    $result = $dataProvider->getModels();
-   
-    return $this->asJson($result);
-	}
-	
-	
-	public function actionAdduser() {
-        $data = Yii::$app->getRequest()->getBodyParams();
-            $user = new User();
-            if($user->load($data)){
-                echo"here ok";
-                $user->save();
-			    Yii::$app->response->statusCode = 200;
-		    }else{
-                echo"here bad";
-			    Yii::$app->response->statusCode = 300;
-		    }
-        //$b = \app\models\Batch::find(["id" => 1])->users->all();
-
-	}
-	
-	public function actionUpdateuser(){
-        $data = Yii::$app->getRequest()->getBodyParams();
-        
-        $user = User::find()->where(['id'=>$data["User"]["id"]])->one();
-        var_dump($data["User"]["id"]);
-        var_dump($user);
-		if($user){
-            $user->load($data);
-            $user->save();
-            echo "OK";
-			Yii::$app->response->statusCode = 200;
-		}else{
-			Yii::$app->response->statusCode = 300;
-		}
-	}
 }

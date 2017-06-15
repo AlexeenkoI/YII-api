@@ -48,11 +48,11 @@ class BatchController extends Controller
     * Вывод всех моделей заезда
     * @return array
     */
-    public function actionIndexAjax() {
+    public function actionIndexajax() {
         $searchModel = new BatchSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->asJson($dataProvider);
+        $result = $dataProvider->getModels();
+        return $this->asJson($result);
     }
 
     /**
@@ -68,7 +68,7 @@ class BatchController extends Controller
     }
 
 
-    public function actionViewAjax($id) {
+    public function actionViewajax($id) {
         return $this->asJson($this->actionView($id));
     }
 

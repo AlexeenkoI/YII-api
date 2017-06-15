@@ -691,6 +691,7 @@ class Model extends Component implements IteratorAggregate, ArrayAccess, Arrayab
      */
     public function setAttributes($values, $safeOnly = true)
     {
+        //var_dump($values);exit();
         if (is_array($values)) {
             $attributes = array_flip($safeOnly ? $this->safeAttributes() : $this->attributes());
             foreach ($values as $name => $value) {
@@ -818,12 +819,18 @@ class Model extends Component implements IteratorAggregate, ArrayAccess, Arrayab
      */
     public function load($data, $formName = null)
     {
+       
         $scope = $formName === null ? $this->formName() : $formName;
+
         if ($scope === '' && !empty($data)) {
+            
             $this->setAttributes($data);
 
             return true;
         } elseif (isset($data[$scope])) {
+            //var_dump($data);
+            //var_dump($scope);
+           //var_dump($data[$scope]); exit();
             $this->setAttributes($data[$scope]);
 
             return true;

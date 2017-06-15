@@ -64,7 +64,12 @@ class BatchSearch extends Batch
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'description', $this->description]);
-
+        
+        $query->all();
+        
+       
         return $dataProvider;
     }
+
+
 }
