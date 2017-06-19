@@ -13145,3 +13145,2176 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1497540650.18
     'REQUEST_TIME' => 1497540650
 ]
+2017-06-15 20:24:14 [192.168.1.42][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.42
+    in C:\xampp\htdocs\YII-api\views\layouts\main.php:76
+    in C:\xampp\htdocs\YII-api\controllers\SiteController.php:64
+2017-06-15 20:24:14 [192.168.1.42][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.42
+2017-06-15 20:24:14 [192.168.1.42][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '192.168.1.42'
+    'HTTP_USER_AGENT' => 'avast! Antivirus'
+    'HTTP_ACCEPT' => '*/*'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at 192.168.1.42 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => '192.168.1.42'
+    'SERVER_ADDR' => '192.168.1.42'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.42'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '56781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497551054.351
+    'REQUEST_TIME' => 1497551054
+]
+2017-06-15 20:24:15 [fe80::1533:2e82:131b:c9be][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is fe80::1533:2e82:131b:c9be
+    in C:\xampp\htdocs\YII-api\views\layouts\main.php:76
+    in C:\xampp\htdocs\YII-api\controllers\SiteController.php:64
+2017-06-15 20:24:15 [fe80::1533:2e82:131b:c9be][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is fe80::1533:2e82:131b:c9be
+2017-06-15 20:24:15 [fe80::1533:2e82:131b:c9be][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '[fe80:0000:0000:0000:1533:2e82:131b:c9be]'
+    'HTTP_USER_AGENT' => 'avast! Antivirus'
+    'HTTP_ACCEPT' => '*/*'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at fe80:0000:0000:0000:1533:2e82:131b:c9be Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => '[fe80:0000:0000:0000:1533:2e82:131b:c9be]'
+    'SERVER_ADDR' => 'fe80::1533:2e82:131b:c9be'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => 'fe80::1533:2e82:131b:c9be'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '56787'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497551055.704
+    'REQUEST_TIME' => 1497551055
+]
+2017-06-15 20:24:15 [192.168.1.42][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "HNAP1/".' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('HNAP1/', Array)
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-06-15 20:24:15 [192.168.1.42][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.42
+    in C:\xampp\htdocs\YII-api\views\layouts\main.php:76
+2017-06-15 20:24:15 [192.168.1.42][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.42
+2017-06-15 20:24:15 [192.168.1.42][-][-][info][application] $_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '192.168.1.42'
+    'HTTP_USER_AGENT' => 'avast! Antivirus'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'Close'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at 192.168.1.42 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => '192.168.1.42'
+    'SERVER_ADDR' => '192.168.1.42'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.42'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '56789'
+    'REDIRECT_URL' => '/HNAP1/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/HNAP1/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497551055.823
+    'REQUEST_TIME' => 1497551055
+]
+2017-06-19 09:31:57 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: routeid' in C:\xampp\htdocs\YII-api\controllers\UserController.php:170
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(170): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 [internal function]: app\controllers\UserController->actionCrouteusers()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('crouteusers', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/crouteuser...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 09:31:57 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.2.924314812.1497178966'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.2.924314812.1497178966'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '56710'
+    'REDIRECT_URL' => '/user/crouteusers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/crouteusers'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497857517.089
+    'REQUEST_TIME' => 1497857517
+]
+2017-06-19 11:43:41 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::User' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(171): yii\base\Component->__get('User')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 11:43:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '420c9ae3-54c2-45e9-99d9-a9feec8fc20f'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '18'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '64828'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497865421.442
+    'REQUEST_TIME' => 1497865421
+]
+2017-06-19 11:47:47 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::User' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(171): yii\base\Component->__get('User')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 11:47:47 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '16861da5-4ddb-4b23-aba1-a79c0ec43cf8'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '18'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '65304'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497865667.918
+    'REQUEST_TIME' => 1497865667
+]
+2017-06-19 11:59:54 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::User' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(172): yii\base\Component->__get('User')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 11:59:54 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '3d558e69-1062-4a5e-b34e-1b8227c41323'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '18'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '50323'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497866394.196
+    'REQUEST_TIME' => 1497866394
+]
+2017-06-19 12:02:35 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::User' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(172): yii\base\Component->__get('User')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:02:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'c91a94d0-bf24-4b23-8a70-0334d2693d83'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '18'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '50633'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497866555.194
+    'REQUEST_TIME' => 1497866555
+]
+2017-06-19 12:03:57 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: userid' in C:\xampp\htdocs\YII-api\controllers\UserController.php:175
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:03:57 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '3436bef6-324f-471b-b74c-74047275c333'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '18'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '50746'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497866637.398
+    'REQUEST_TIME' => 1497866637
+]
+2017-06-19 12:12:50 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::users' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(174): yii\base\Component->__get('users')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:12:50 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '4a4056f3-8ca1-4f9b-9d6d-b5f1d44ab289'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '51282'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497867170.107
+    'REQUEST_TIME' => 1497867170
+]
+2017-06-19 12:13:08 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::user' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(174): yii\base\Component->__get('user')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:13:08 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '308075a8-c8b5-4ef0-ba11-2b1fef71802d'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '51305'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497867188.239
+    'REQUEST_TIME' => 1497867188
+]
+2017-06-19 12:13:22 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::User' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(174): yii\base\Component->__get('User')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:13:22 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'b7dd009a-e7c7-4f79-bd1a-815daef8b672'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '51319'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497867202.843
+    'REQUEST_TIME' => 1497867202
+]
+2017-06-19 12:28:52 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::users' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(174): yii\base\Component->__get('users')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:28:52 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'f13bda01-760b-46e5-b8d3-c15d513664bf'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '52978'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868132.562
+    'REQUEST_TIME' => 1497868132
+]
+2017-06-19 12:30:33 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::users' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(174): yii\base\Component->__get('users')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:30:33 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '6b9b5900-1c51-44bf-abe4-eea5724a3727'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '53219'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868233.74
+    'REQUEST_TIME' => 1497868233
+]
+2017-06-19 12:31:06 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::users' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(174): yii\base\Component->__get('users')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:31:06 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '281f142c-43ab-4bdb-8167-58367242c672'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '53285'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868266.229
+    'REQUEST_TIME' => 1497868266
+]
+2017-06-19 12:32:23 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::users' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\base\Component->__get('users')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:32:23 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '3be6d0ec-b38c-41d7-996a-9ed048afe9d0'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '53432'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868343.801
+    'REQUEST_TIME' => 1497868343
+]
+2017-06-19 12:32:42 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::user' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\base\Component->__get('user')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:32:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'dcd238d9-b0f3-40ce-99d5-8a2a56adaff1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '53466'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868362.635
+    'REQUEST_TIME' => 1497868362
+]
+2017-06-19 12:33:43 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::user' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\base\Component->__get('user')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:33:43 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '52485623-757b-4ecc-974b-4aefcf2a8839'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '53558'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868423.409
+    'REQUEST_TIME' => 1497868423
+]
+2017-06-19 12:35:22 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant data - assumed 'data'' in C:\xampp\htdocs\YII-api\controllers\UserController.php:175
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:35:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'c374f2e8-94cc-4028-87c1-759a18876388'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '53693'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868521.945
+    'REQUEST_TIME' => 1497868521
+]
+2017-06-19 12:35:43 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::user' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(176): yii\base\Component->__get('user')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:35:43 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '9eab6031-ab12-4223-8c3b-bfbd28b29876'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '53719'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868543.288
+    'REQUEST_TIME' => 1497868543
+]
+2017-06-19 12:36:01 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\ActiveQuery::users' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(176): yii\base\Component->__get('users')
+#1 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 12:36:01 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'adc113db-4cdd-48d4-889b-00ed8a3b2663'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '53748'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868561.515
+    'REQUEST_TIME' => 1497868561
+]
+2017-06-19 12:39:43 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\UserMorda::get\aap\models\User()' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): yii\base\Component->__call('get\\aap\\models\\...', Array)
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): app\models\UserMorda->get\aap\models\User()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(526): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\UserMorda), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#14 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#15 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\UserMorda has no relation named "\aap\models\User".' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1195
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(526): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\UserMorda), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#9 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-06-19 12:39:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '1b4287a6-06ba-4aee-be53-654445b98dac'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '54024'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497868780.028
+    'REQUEST_TIME' => 1497868780
+]
+2017-06-19 12:44:47 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\ActiveQuery::getUser()' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\base\Component->__call('getUser', Array)
+#1 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\db\ActiveQuery->getUser()
+#2 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getusersforspea...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getusersfo...', Array)
+#7 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-06-19 12:44:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '0052751e-bb1f-4b59-83e9-af64dd58b6d7'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '54554'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497869083.991
+    'REQUEST_TIME' => 1497869083
+]
+2017-06-19 12:45:34 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in C:\xampp\htdocs\YII-api\controllers\UserController.php:175
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-19 12:45:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'bedb1e10-fc9c-498c-b4b6-9c97bc9a4037'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '54649'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497869132.087
+    'REQUEST_TIME' => 1497869132
+]
+2017-06-19 12:46:08 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\UserMorda::get\aap\models\User()' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): yii\base\Component->__call('get\\aap\\models\\...', Array)
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): app\models\UserMorda->get\aap\models\User()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(513): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\UserMorda), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#14 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#15 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\UserMorda has no relation named "\aap\models\User".' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1195
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(513): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\UserMorda), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#9 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-06-19 12:46:06 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '8360574d-05c3-4c5e-b845-e06c99b614ca'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '54726'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497869166.798
+    'REQUEST_TIME' => 1497869166
+]
+2017-06-19 12:51:55 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\UserMorda::getuserid()' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): yii\base\Component->__call('getuserid', Array)
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): app\models\UserMorda->getuserid()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(526): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\UserMorda), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#14 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#15 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\UserMorda has no relation named "userid".' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1195
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(526): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\UserMorda), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\YII-api\controllers\UserController.php(175): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#9 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-06-19 12:51:52 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'dd6461a6-48c1-4ace-8aa2-c9a17603eea2'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '55347'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497869512.227
+    'REQUEST_TIME' => 1497869512
+]
+2017-06-19 13:05:58 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\User::getuser_morda()' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): yii\base\Component->__call('getuser_morda', Array)
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): app\models\User->getuser_morda()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(526): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\User), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\YII-api\controllers\UserController.php(176): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#14 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#15 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\User has no relation named "user_morda".' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1195
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(526): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\User), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\YII-api\controllers\UserController.php(176): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#9 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-06-19 13:05:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '55eb4dc7-6027-405f-a462-06882b6dc573'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '56353'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497870356.519
+    'REQUEST_TIME' => 1497870356
+]
+2017-06-19 13:09:18 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\User::getuserMorda()' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): yii\base\Component->__call('getuserMorda', Array)
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1192): app\models\User->getuserMorda()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(526): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\User), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\YII-api\controllers\UserController.php(176): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#14 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#15 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\User has no relation named "userMorda".' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1195
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(526): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(441): yii\db\ActiveQuery->joinWithRelations(Object(app\models\User), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(148): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\QueryBuilder.php(108): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(318): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\YII-api\controllers\UserController.php(176): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\UserController->actionGetusersforspeaker()
+#9 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#11 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#12 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#13 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-06-19 13:09:15 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '68d229cc-f5e5-426a-a954-9bd6e7f537f9'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '56759'
+    'REDIRECT_URL' => '/user/getusersforspeaker'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getusersforspeaker'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497870555.686
+    'REQUEST_TIME' => 1497870555
+]
+2017-06-19 14:06:28 [127.0.0.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Command.php:915
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Command.php(915): PDOStatement->execute()
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#4 C:\xampp\htdocs\YII-api\controllers\UserController.php(192): yii\db\ActiveQuery->all()
+#5 [internal function]: app\controllers\UserController->actionGetuserroutes()
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#8 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#9 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#10 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+The SQL being executed was: SELECT `user`.* FROM `user` LEFT JOIN `route` ON `user`.`routeid` = `route`.`id` WHERE `id`=1' in C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT `user`.*...')
+#1 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all('<span class="ke...')
+#4 C:\xampp\htdocs\YII-api\controllers\UserController.php(192): yii\db\ActiveQuery->all()
+#5 [internal function]: app\controllers\UserController->actionGetuserroutes()
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#8 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#9 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#10 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'id' in where clause is ambiguous
+)
+
+2017-06-19 14:06:28 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '0271bd81-67f6-43e9-97ee-5e3adbebf506'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '16'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '61507'
+    'REDIRECT_URL' => '/user/getuserroutes'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getuserroutes'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497873988.315
+    'REQUEST_TIME' => 1497873988
+]
+2017-06-19 14:11:20 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: routeid' in C:\xampp\htdocs\YII-api\controllers\UserController.php:192
+Stack trace:
+#0 C:\xampp\htdocs\YII-api\controllers\UserController.php(192): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 192, Array)
+#1 [internal function]: app\controllers\UserController->actionGetuserroutes()
+#2 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getuserroutes', Array)
+#5 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/getuserrou...', Array)
+#6 C:\xampp\htdocs\YII-api\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\YII-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-06-19 14:11:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ñ=»ÁÝÖÏKA¹KMhÉÛ&Í§¨‚™Láù°\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'b1ba7641-3e8d-4d02-832b-ab7f3154f2a1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/6.1.6'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'yii.local'
+    'HTTP_COOKIE' => '_csrf=3c55800ec898c73b217cd129a150a194e6a785a8de8f4809d3f589702ba437eca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F1%3D%BB%C1%DD%D6%CFKA%B9%17K%0FMh%C9%DB%26%CD%17%A7%03%9D%A8%82%01%99L%E1%0F%F9%B0%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '37'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;;C:\\Program Files (x86)\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at yii.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'yii.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/YII-api/web/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YII-api/web/index.php'
+    'REMOTE_PORT' => '61731'
+    'REDIRECT_URL' => '/user/getuserroutes'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/getuserroutes'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497874280.768
+    'REQUEST_TIME' => 1497874280
+]

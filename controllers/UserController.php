@@ -5,6 +5,8 @@ namespace app\controllers;
 use Yii;
 use app\models\User;
 use app\models\UserSearch;
+use app\models\UserMorda;
+use app\models\UserMordaSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -125,11 +127,10 @@ class UserController extends Controller
     }
 	
     public function actionGetall() {
+
     $searchModel = new UserSearch();
-    //$result = $searchModel->UserToJson();
     $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
     $result = $dataProvider->getModels();
-   
     return $this->asJson($result);
 	}
 	
@@ -138,11 +139,9 @@ class UserController extends Controller
         $data = Yii::$app->getRequest()->getBodyParams();
             $user = new User();
             if($user->load($data)){
-                echo"here ok";
                 $user->save();
 			    Yii::$app->response->statusCode = 200;
 		    }else{
-                echo"here bad";
 			    Yii::$app->response->statusCode = 300;
 		    }
         //$b = \app\models\Batch::find(["id" => 1])->users->all();
@@ -153,15 +152,49 @@ class UserController extends Controller
         $data = Yii::$app->getRequest()->getBodyParams();
         
         $user = User::find()->where(['id'=>$data["User"]["id"]])->one();
-        var_dump($data["User"]["id"]);
-        var_dump($user);
 		if($user){
             $user->load($data);
             $user->save();
-            echo "OK";
 			Yii::$app->response->statusCode = 200;
 		}else{
 			Yii::$app->response->statusCode = 300;
 		}
 	}
+
+    public function actionCrouteusers(){
+        $data = Yii::$app->getRequest()->getBodyParams();
+        $users = User::find()->where(['batchid'=>$data["routeid"]])->all();
+        return $this->asJson($users);
+    }
+
+    public function actionGetusersforspeaker(){
+        $data = Yii::$app->getRequest()->getBodyParams();
+        $curr = User::find()->joinWith('userMordas')->where(["mordaid"=>$data["speakerid"]])->all();
+        return $this->asJson($curr);
+       
+    }
+
+    public function actionGetusermoneylog(){
+        $data = Yii::$app->getRequest()->getBodyParams();
+        $logs = \app\models\Moneylog::find()->where(['userid'=>$data['userid']])->all();
+        return $this->asJson($logs);
+    }
+
+    public function actionGetuserroutes(){
+         $data = Yii::$app->getRequest()->getBodyParams();
+         $curr = User::find()->joinWith('route')->where(["name"=>$data["name"]])->all();
+         return $this->asJson($curr);
+    }
 }
+/* {
+	"User":
+    	{
+    		"id":4,
+    		"firstname": "UPDATEME",
+        	"lastname": "updatelasttest3",
+        	"patronymic": "updatepatrotest3",
+        	"rfcid": "7e-6c-2b666",
+        	"iscap": 0,
+        	"isdeleted": 0
+    	}
+}*/ 
