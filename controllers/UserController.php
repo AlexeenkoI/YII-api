@@ -185,6 +185,36 @@ class UserController extends Controller
          $curr = User::find()->joinWith('route')->where(["name"=>$data["name"]])->all();
          return $this->asJson($curr);
     }
+
+    public function actionGetcurrentusermaxscore(){
+        $data = Yii::$app->getRequest()->getBodyParams();
+        $logs = \app\models\Moneylog::find()->where(['userid'=>$data['userid']])->all();
+        $totalscore = 0;
+        //var_dump($logs);
+        foreach($logs as $curr){
+            //var_dump($logs);
+            if($curr->getAttribute("type")===0){
+                $totalscore+=$curr->getAttribute("money");
+            }else if($curr->getAttribute("type")===1){
+                $totalscore-=$curr->getAttribute("money");
+                }
+        }
+        return $this->asJson($totalscore);
+    }
+
+    public function actionGetgroupmaxscore(){
+        $data = Yii::$app->getRequest()->getBodyParams();
+        $result = \app\models\Moneylog::find()->joinWith('user')->joinWith('group')->where(["name"=>$data["name"]]);
+        $totalscore = 0;
+        foreach($result as $curr){
+            if($curr->getAttribute("type")===0){
+                $totalscore+=$curr->getAttribute("money");
+            }else if($curr->getAttribute("type")===1){
+                $totalscore-=$curr->getAttribute("money");
+                }
+        }
+        return $this->asJson($totalscore);
+    }
 }
 /* {
 	"User":
