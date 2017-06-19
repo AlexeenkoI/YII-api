@@ -190,9 +190,7 @@ class UserController extends Controller
         $data = Yii::$app->getRequest()->getBodyParams();
         $logs = \app\models\Moneylog::find()->where(['userid'=>$data['userid']])->all();
         $totalscore = 0;
-        //var_dump($logs);
         foreach($logs as $curr){
-            //var_dump($logs);
             if($curr->getAttribute("type")===0){
                 $totalscore+=$curr->getAttribute("money");
             }else if($curr->getAttribute("type")===1){
@@ -204,7 +202,7 @@ class UserController extends Controller
 
     public function actionGetgroupmaxscore(){
         $data = Yii::$app->getRequest()->getBodyParams();
-        $result = \app\models\Moneylog::find()->joinWith('user')->joinWith('group')->where(["name"=>$data["name"]]);
+        $result = \app\models\Moneylog::find()->joinWith('user')->joinWith('group')->where(["name"=>$data["name"]])->all();
         $totalscore = 0;
         foreach($result as $curr){
             if($curr->getAttribute("type")===0){
