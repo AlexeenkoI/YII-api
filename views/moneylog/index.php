@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\MoneylogSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Moneylogs';
+$this->title = 'Денежные логи';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="moneylog-index">
@@ -16,13 +16,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Moneylog', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать Лог', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a("Назад", ['site/index'], ['class'=>'btn btn-danger'])?>
     </p>
     <?= GridView::widget([
+        'summary'=>'Записей {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
             'id',
             'userid',

@@ -7,8 +7,8 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\UserMordaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'User Mordas';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Подписки на Спикеров';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="user-morda-index">
 
@@ -16,13 +16,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create User Morda', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Подписать пользователя на спикера', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
+        'summary'=>'Подпиcанных {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
             'id',
             'userid',

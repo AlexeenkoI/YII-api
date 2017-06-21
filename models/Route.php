@@ -45,10 +45,10 @@ class Route extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'capacity' => 'Capacity',
-            'isdeleted' => 'Isdeleted',
+            'name' => 'Название',
+            'description' => 'Описание',
+            'capacity' => 'Количество мест',
+            'isdeleted' => 'Удален',
         ];
     }
 

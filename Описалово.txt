@@ -1,0 +1,42 @@
+http://194.67.194.82/user/getall - получение всех юзеров, независимо от заезда
+http://194.67.194.82/user/updateuser - апдейт данных по юзеру
+json вида
+{
+ "User":
+     {
+      "id":4,
+      "firstname": "UPDATEME",
+         "lastname": "updatelasttest3",
+         "patronymic": "updatepatrotest3",
+         "rfcid": "7e-6c-2b666",
+         "iscap": 0,
+         "isdeleted": 0
+     }
+}
+http://194.67.194.82/user/crouteusers - получить юзеров по идшнику маршрута
+{
+ "routeid":1
+}
+
+http://194.67.194.82/user/getusermoneylog - получить лог начислений-списаний юзера по его ид
+{
+ "userid":2
+}
+
+http://194.67.194.82/user/getusersforspeaker - получить юзеров записанный на спикера по ид спикера
+{
+ "speakerid":1
+}
+
+http://194.67.194.82/user/getuserroutes - получить юзеров, записанных на определенный маршрут по имени маршрута
+{
+ "name":"Тестовое имя"
+}
+http://194.67.194.82/user/getcurrentusermaxscore - получить максимальное кол-во очков юзера по его ид
+{
+ "userid":2
+}
+http://194.67.194.82/user/getgroupmaxscore - получить макс очки конкретной группы по имени группы
+{
+"name":"name"
+}

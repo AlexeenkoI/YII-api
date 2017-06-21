@@ -56,15 +56,15 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'firstname' => 'Firstname',
-            'lastname' => 'Lastname',
-            'patronymic' => 'Patronymic',
-            'rfcid' => 'Rfcid',
-            'groupid' => 'Groupid',
-            'batchid' => 'Batchid',
-            'routeid' => 'Routeid',
-            'iscap' => 'Iscap',
-            'isdeleted' => 'Isdeleted',
+            'firstname' => 'Имя',
+            'lastname' => 'Фамилия',
+            'patronymic' => 'Отчество',
+            'rfcid' => 'id браслета',
+            'groupid' => 'Команда',
+            'batchid' => 'Заезд',
+            'routeid' => 'Маршрут',
+            'iscap' => 'Капитан',
+            'isdeleted' => 'Удален',
         ];
     }
 

@@ -44,11 +44,11 @@ class Shop extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'pic' => 'Pic',
-            'price' => 'Price',
-            'isdeleted' => 'Isdeleted',
+            'name' => 'Имя',
+            'description' => 'Описание',
+            'pic' => 'Картинка',
+            'price' => 'Цена',
+            'isdeleted' => 'Удален',
         ];
     }
 }

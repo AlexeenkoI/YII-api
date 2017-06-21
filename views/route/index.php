@@ -7,8 +7,8 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\RouteSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Routes';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Маршруты';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="route-index">
 
@@ -16,13 +16,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Route', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать маршрут', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
+        'summary'=>'Маршрутов {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
             'id',
             'name',

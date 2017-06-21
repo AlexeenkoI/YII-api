@@ -7,8 +7,8 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Group */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Groups', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = ['label' => 'Groups', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="group-view">
 

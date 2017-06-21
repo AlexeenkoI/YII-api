@@ -47,8 +47,8 @@ class Grouppriority extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'groupid' => 'Groupid',
-            'batchid' => 'Batchid',
+            'groupid' => 'id Группы',
+            'batchid' => 'id Приезда',
             'p1' => 'P1',
             'p2' => 'P2',
             'p3' => 'P3',

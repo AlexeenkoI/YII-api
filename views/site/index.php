@@ -4,7 +4,13 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
+<style>
+body{
+background-image: url(http://img.zoneland.ru/images5/593067ww_5.jpg.jpg);
+}
+</style>
+<body>
+<!--<div class="site-index">
 
     <div class="jumbotron">
         <h1>Congratulations!</h1>
@@ -50,4 +56,18 @@ $this->title = 'My Yii Application';
         </div>
 
     </div>
+</div>-->
+<title>Джуманджи</title>
+<div class="jumbotron">
+<h1>Панель Администратора</h1>
+    <p><?= yii\helpers\Html::a('Пользователи', ['user/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('Записи на спикеров', ['user-morda/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('Спикеры', ['morda/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('Денежные логи', ['moneylog/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('Маршруты', ['route/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('Заезды', ['batch/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('Магазин', ['shop/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('Группы', ['group/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('Приоритет групп', ['grouppriority/index'], ['class' => 'btn btn-primary'])?></p>
 </div>
+</body>

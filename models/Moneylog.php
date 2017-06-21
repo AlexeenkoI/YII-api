@@ -46,11 +46,11 @@ class Moneylog extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'userid' => 'Userid',
-            'money' => 'Money',
-            'type' => 'Type',
-            'description' => 'Description',
-            'isdeleted' => 'Isdeleted',
+            'userid' => 'Id Пользователя',
+            'money' => 'Деньги',
+            'type' => 'Тип лога',
+            'description' => 'Описание',
+            'isdeleted' => 'Удален',
         ];
     }
 

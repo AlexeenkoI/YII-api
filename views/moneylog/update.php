@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $model app\models\Moneylog */
 
 $this->title = 'Update Moneylog: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Moneylogs', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+//$this->params['breadcrumbs'][] = ['label' => 'Moneylogs', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+//$this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="moneylog-update">
 

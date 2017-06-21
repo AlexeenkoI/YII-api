@@ -17,6 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Create Grouppriority', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
