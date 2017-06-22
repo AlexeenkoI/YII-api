@@ -12,9 +12,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'userid')->textInput() ?>
+    <?= $form->field($model, 'userid')->dropDownList() ?>
 
-    <?= $form->field($model, 'mordaid')->textInput() ?>
+    <?= $form->field($model, 'mordaid')->dropDownList() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

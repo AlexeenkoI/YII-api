@@ -20,15 +20,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'rfcid')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'groupid')->textInput() ?>
+    <?= $form->field($model, 'groupid')->dropDownList() ?>
 
-    <?= $form->field($model, 'batchid')->textInput() ?>
+    <?= $form->field($model, 'batchid')->dropDownList() ?>
 
-    <?= $form->field($model, 'routeid')->textInput() ?>
+    <?= $form->field($model, 'routeid')->dropDownList() ?>
 
-    <?= $form->field($model, 'iscap')->textInput() ?>
+    <?= $form->field($model, 'iscap')->checkbox() ?>
 
-    <?= $form->field($model, 'isdeleted')->textInput() ?>
+    <?= $form->field($model, 'isdeleted')->checkbox() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

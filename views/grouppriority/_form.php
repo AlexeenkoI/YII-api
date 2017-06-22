@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'groupid')->textInput() ?>
 
-    <?= $form->field($model, 'batchid')->textInput() ?>
+    <?= $form->field($model, 'batchid')->dropDownList($model,[]) ?>
 
     <?= $form->field($model, 'p1')->textInput() ?>
 
