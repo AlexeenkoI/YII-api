@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Batch */
 
-$this->title = 'Create Batch';
-$this->params['breadcrumbs'][] = ['label' => 'Batches', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Создать заезд';
+//$this->params['breadcrumbs'][] = ['label' => 'Batches', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="batch-create">
 

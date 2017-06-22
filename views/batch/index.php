@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\BatchSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Batches';
+$this->title = 'Заезды';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="batch-index">
@@ -16,13 +16,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Batch', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать заезд', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
+        'summary'=>'Заездов {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
             'id',
             'name',
