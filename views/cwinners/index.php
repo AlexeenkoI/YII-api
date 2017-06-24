@@ -10,16 +10,13 @@ function loadData(){
 		url:"http://localhost/yiilocal/cwinners/ajaxwinners",
 		dataType:"html",
         success:function(data){
-                
+
             }
         });
 }
 
 $(document).ready(function(){
     loadData();
-    setTimeout(function() {
-        loadData();
-    }, 2000);
 })
 </script>
 <h1 class="text-center">Награждение победителей</h1>

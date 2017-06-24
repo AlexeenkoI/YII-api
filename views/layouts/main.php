@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Джуманджи',
+        'brandLabel' => 'Jimanji',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -67,7 +67,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Джуманджи <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Jimanji <?= date('Y') ?></p>
 
         <p class="pull-right">Powered by VelorTeam</p>
     </div>

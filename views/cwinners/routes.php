@@ -50,7 +50,14 @@ function loadData(){
 }
 $(document).ready(function(){
     loadData();
-
+$("body").click(function(){
+    $("#w0").fadeIn(2000);
+})
+ $("#w0").mouseleave(function(){
+     $("#w0").fadeOut(2000);
+ });
+ $("#w0").fadeOut(2000);
+ $(".footer").fadeOut(2000);
 })
 </script>
 <style>
@@ -68,9 +75,9 @@ $(document).ready(function(){
 }
 body{
     background-image: url('http://yii.local/app/images/route22.jpg');
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: right 48px; 
+    
 }
 .name{
     background-image: url('http://yii.local/app/images/routename.png');
@@ -89,7 +96,7 @@ body{
 }
 
 .container-fluid{
-    margin-top:20vw;
+    margin-top:15vw;
     width:auto;
     height:auto;
 }
