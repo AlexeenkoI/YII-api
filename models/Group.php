@@ -50,13 +50,13 @@ class Group extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Название',
+            'name' => 'Имя',
             'description' => 'Описание',
-            'totemname' => 'Имя тотема',
+            'totemname' => 'Название тотема',
             'totemimage' => 'Изображение тотема',
             'color' => 'Цвет',
             'colorhex' => 'Colorhex',
-            'isdeleted' => 'Удален',
+            'isdeleted' => 'Isdeleted',
         ];
     }
 
