@@ -10,8 +10,8 @@ function loadData(){
 		url:"http://localhost/yiilocal/cwinners/ajaxwinners",
 		dataType:"html",
         success:function(data){
-            
-        }
+                
+            }
         });
 }
 

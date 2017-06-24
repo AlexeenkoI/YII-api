@@ -38,8 +38,8 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Командный зачет', 'url' => ['/cwinners/index']],
-            ['label' => 'Возможно тоже', 'url' => ['/site/about']],
-            ['label' => 'И тут', 'url' => ['/site/contact']],
+            ['label' => 'Индивидуальный зачет', 'url' => ['/cwinners/individual']],
+            ['label' => 'Маршруты', 'url' => ['/cwinners/routes']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Может даже тут', 'url' => ['/site/login']]
             ) : (
