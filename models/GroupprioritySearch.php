@@ -18,7 +18,7 @@ class GroupprioritySearch extends Grouppriority
     public function rules()
     {
         return [
-            [['id', 'groupid', 'batchid', 'p1', 'p2', 'p3'], 'integer'],
+            [['id', 'groupid', 'batchid', 'p1', 'p2', 'p3', 'p4'], 'integer'],
         ];
     }
 
@@ -64,6 +64,7 @@ class GroupprioritySearch extends Grouppriority
             'p1' => $this->p1,
             'p2' => $this->p2,
             'p3' => $this->p3,
+            'p4' => $this->p4,
         ]);
 
         return $dataProvider;

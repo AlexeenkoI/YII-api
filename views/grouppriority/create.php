@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Grouppriority */
 
-$this->title = 'Create Grouppriority';
-$this->params['breadcrumbs'][] = ['label' => 'Grouppriorities', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Создать приоритет';
+//$this->params['breadcrumbs'][] = ['label' => 'Grouppriorities', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="grouppriority-create">
 

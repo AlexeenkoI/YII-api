@@ -7,8 +7,8 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Grouppriority */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Grouppriorities', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = ['label' => 'Grouppriorities', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="grouppriority-view">
 
@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'p1',
             'p2',
             'p3',
+            'p4',
         ],
     ]) ?>
 

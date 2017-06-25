@@ -7,8 +7,8 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\GroupprioritySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Grouppriorities';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Приоритет групп';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="grouppriority-index">
 
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Grouppriority', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать приоритет', ['create'], ['class' => 'btn btn-success']) ?>
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
@@ -30,7 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'batchid',
             'p1',
             'p2',
-            // 'p3',
+            'p3',
+            'p4',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

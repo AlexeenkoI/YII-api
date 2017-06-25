@@ -13,6 +13,7 @@ use Yii;
  * @property integer $p1
  * @property integer $p2
  * @property integer $p3
+ * @property integer $p4
  *
  * @property Group $group
  * @property Batch $batch
@@ -33,8 +34,8 @@ class Grouppriority extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['groupid', 'batchid', 'p1', 'p2', 'p3'], 'required'],
-            [['groupid', 'batchid', 'p1', 'p2', 'p3'], 'integer'],
+            [['groupid', 'batchid', 'p1', 'p2', 'p3', 'p4'], 'required'],
+            [['groupid', 'batchid', 'p1', 'p2', 'p3', 'p4'], 'integer'],
             [['groupid'], 'exist', 'skipOnError' => true, 'targetClass' => Group::className(), 'targetAttribute' => ['groupid' => 'id']],
             [['batchid'], 'exist', 'skipOnError' => true, 'targetClass' => Batch::className(), 'targetAttribute' => ['batchid' => 'id']],
         ];
@@ -48,10 +49,11 @@ class Grouppriority extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'groupid' => 'id Группы',
-            'batchid' => 'id Приезда',
+            'batchid' => 'id Заезда',
             'p1' => 'P1',
             'p2' => 'P2',
             'p3' => 'P3',
+            'p4' => 'P4',
         ];
     }
 
