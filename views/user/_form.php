@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\base\ViewContextInterface;
 use yii\base\Configurable;
 use yii\helpers\BaseHtml;
-
+use yii\helpers\ArrayHelper;
 /* @var $this yii\web\View */
 /* @var $model app\models\User */
 /* @var $form yii\widgets\ActiveForm */
@@ -23,11 +23,11 @@ use yii\helpers\BaseHtml;
 
     <?= $form->field($model, 'rfcid')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'groupid')->dropDownList($model,[]) ?>
+    <?= $form->field($model, 'groupid')->dropDownList(ArrayHelper::map(app\models\Group::find()->all(), 'id', 'name')) ?>
 
-    <?= $form->field($model, 'batchid')->dropDownList($model,[]) ?>
+    <?= $form->field($model, 'batchid')->dropDownList(ArrayHelper::map(app\models\Batch::find()->all(), 'id', 'name')) ?>
 
-    <?= $form->field($model, 'routeid')->dropDownList($model,[]) ?>
+    <?= $form->field($model, 'routeid')->dropDownList(ArrayHelper::map(app\models\Batch::find()->all(), 'id', 'name')) ?>
 
     <?= $form->field($model, 'iscap')->checkbox() ?>
 

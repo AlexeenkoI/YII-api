@@ -44,7 +44,7 @@ function loadData(){
                 //console.log(data[0].capacity);
             setTimeout(function(){
                 loadData()
-            },500);
+            },2000);
         }
     });
 }

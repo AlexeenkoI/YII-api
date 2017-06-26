@@ -213,6 +213,11 @@ class UserController extends Controller
         }
         return $this->asJson($totalscore);
     }
+
+    public function actionGetindividualdata(){
+        $data =User::find()->joinWith('group')->joinWith('moneylog')->where(['type'=>0])->orderBy(['money'=>SORT_DESC])->all();
+        return $this->asJson($data);
+    }
 }
 /* {
 	"User":
