@@ -31,7 +31,7 @@ function loadData(){
             const pos2 = "#t2Tbody";
             $(pos1).empty();
             $(pos2).empty();
-            var tableCounter = 0;
+            var tableCounter = 1;
             var maxForTable = data.length/2;
             for(var i = 0; i<data.length; i++){
                 if(tableCounter<=maxForTable){
