@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 $this->title = 'Jumanji';
+
 ?>
 <style>
 body{
@@ -70,5 +71,6 @@ background-image: url(http://img.zoneland.ru/images5/593067ww_5.jpg.jpg);
     <p><?= yii\helpers\Html::a('Команды', ['group/index'], ['class' => 'btn btn-primary'])?></p>
     <p><?= yii\helpers\Html::a('Приоритет групп', ['grouppriority/index'], ['class' => 'btn btn-primary'])?></p>
     <p><?= yii\helpers\Html::a('Выбрать текущий заезд', ['currbatch/index'], ['class' => 'btn btn-primary'])?></p>
+    <p><?= yii\helpers\Html::a('События', ['event/index'], ['class' => 'btn btn-primary'])?></p>
 </div>
 </body>
