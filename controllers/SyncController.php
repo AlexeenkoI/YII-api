@@ -87,15 +87,78 @@ class SyncController extends Controller {
     public function actionSetUser() {
         $batch = Currbatch::find()->one();
 
-        var_dump(User::findOne(["id" => Yii::$app->request->post("id")]));
+        $user = User::findOne(["id" => Yii::$app->request->post("id")]);
+
+        if ($user == NULL) {
+            $user = new User();
+        }
         
+        $user->setAttributes(Yii::$app->request->post());
 
-        // $user = new User();
-        // $user->setAttributes(Yii::$app->request->post());
+        $user->batchid = $batch->currentbatch;
 
-        // $user->batchid = $batch->currentbatch;
+        if ($user->groupid == -1) $user->groupid = NULL;
+        if ($user->routeid == -1) $user->routeid = NULL;
 
+        $user->save();
+
+        return $this->asJson($user->id);
+    }
+
+    public function actionSetPriority() {
+        $batch = Currbatch::find()->one();
+
+        $priority = Grouppriority::findOne(["id" => Yii::$app->request->post("id")]);
+
+        if ($priority == NULL) {
+            $priority = new Grouppriority();
+        }
         
+        $priority->setAttributes(Yii::$app->request->post());
+
+        $priority->batchid = $batch->currentbatch;
+
+        if ($priority->p1 == -1) $priority->p1 = 0;
+        if ($priority->p2 == -1) $priority->p2 = 0;
+        if ($priority->p3 == -1) $priority->p3 = 0;
+        if ($priority->p4 == -1) $priority->p4 = 0;
+
+        $priority->save();
+
+        return $this->asJson($priority->id);
+    }
+
+
+    public function actionSetMoney() {
+        $batch = Currbatch::find()->one();
+
+        $money = Moneylog::findOne(["id" => Yii::$app->request->post("id")]);
+
+        if ($money == NULL) {
+            $money = new Moneylog();
+        }
+        
+        $money->setAttributes(Yii::$app->request->post());
+
+        $money->save();
+
+        return $this->asJson($money->id);
+    }
+
+    public function actionSetUserMorda() {
+        $batch = Currbatch::find()->one();
+
+        $morda = UserMorda::findOne(["id" => Yii::$app->request->post("id")]);
+
+        if ($morda == NULL) {
+            $morda = new UserMorda();
+        }
+        
+        $morda->setAttributes(Yii::$app->request->post());
+
+        $morda->save();
+
+        return $this->asJson($morda->id);
     }
 
     
