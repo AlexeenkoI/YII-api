@@ -47,7 +47,7 @@ class SyncController extends Controller {
 
         $data = User::find()->where(["batchid" => $batch->currentbatch])->all();
 
-        return $this->asJson($batch);
+        return $this->asJson($data);
     }
 
     public function actionGetMoney() {
@@ -55,7 +55,7 @@ class SyncController extends Controller {
 
         $data = Moneylog::find()->leftJoin("user", "user.id = moneylog.userid")->where(["batchid" => $batch->currentbatch])->all();
 
-        return $this->asJson($batch);
+        return $this->asJson($data);
     }
 
 
@@ -65,7 +65,7 @@ class SyncController extends Controller {
 
         $data = Morda::find()->where(["batchid" => $batch->currentbatch])->all();
 
-        return $this->asJson($batch);
+        return $this->asJson($data);
     }
     
 }
