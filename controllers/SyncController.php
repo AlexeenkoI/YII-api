@@ -84,5 +84,19 @@ class SyncController extends Controller {
         return $this->asJson($data);
     }
 
+    public function actionSetUser() {
+        $batch = Currbatch::find()->one();
+
+        var_dump(User::findOne(["id" => 2]));
+        
+
+        // $user = new User();
+        // $user->setAttributes(Yii::$app->request->post());
+
+        // $user->batchid = $batch->currentbatch;
+
+        
+    }
+
     
 }
