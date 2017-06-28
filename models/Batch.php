@@ -11,7 +11,9 @@ use Yii;
  * @property string $name
  * @property string $description
  *
+ * @property Currbatch $currbatch
  * @property Grouppriority[] $grouppriorities
+ * @property Morda[] $mordas
  * @property User[] $users
  */
 class Batch extends \yii\db\ActiveRecord
@@ -43,9 +45,17 @@ class Batch extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Название',
-            'description' => 'Описание',
+            'name' => 'Name',
+            'description' => 'Description',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCurrbatch()
+    {
+        return $this->hasOne(Currbatch::className(), ['currentbatch' => 'id']);
     }
 
     /**
@@ -54,6 +64,14 @@ class Batch extends \yii\db\ActiveRecord
     public function getGrouppriorities()
     {
         return $this->hasMany(Grouppriority::className(), ['batchid' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMordas()
+    {
+        return $this->hasMany(Morda::className(), ['batchid' => 'id']);
     }
 
     /**

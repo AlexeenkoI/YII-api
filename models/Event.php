@@ -5,25 +5,22 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "route".
+ * This is the model class for table "event".
  *
  * @property integer $id
  * @property string $name
  * @property string $description
- * @property integer $capacity
  * @property integer $price
  * @property integer $isdeleted
- *
- * @property User[] $users
  */
-class Route extends \yii\db\ActiveRecord
+class Event extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'route';
+        return 'event';
     }
 
     /**
@@ -32,8 +29,8 @@ class Route extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'description', 'capacity', 'price'], 'required'],
-            [['capacity', 'price', 'isdeleted'], 'integer'],
+            [['name', 'description', 'price'], 'required'],
+            [['price', 'isdeleted'], 'integer'],
             [['name'], 'string', 'max' => 50],
             [['description'], 'string', 'max' => 255],
         ];
@@ -48,17 +45,8 @@ class Route extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'description' => 'Description',
-            'capacity' => 'Capacity',
             'price' => 'Price',
             'isdeleted' => 'Isdeleted',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUsers()
-    {
-        return $this->hasMany(User::className(), ['routeid' => 'id']);
     }
 }

@@ -14,6 +14,8 @@ use Yii;
  * @property string $totemimage
  * @property string $color
  * @property string $colorhex
+ * @property integer $price
+ * @property integer $vip
  * @property integer $isdeleted
  *
  * @property Grouppriority[] $grouppriorities
@@ -35,8 +37,8 @@ class Group extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'description', 'totemname', 'totemimage', 'color', 'colorhex'], 'required'],
-            [['isdeleted'], 'integer'],
+            [['name', 'description', 'totemname', 'totemimage', 'color', 'colorhex', 'price'], 'required'],
+            [['price', 'vip', 'isdeleted'], 'integer'],
             [['name', 'totemname', 'color', 'colorhex'], 'string', 'max' => 50],
             [['description'], 'string', 'max' => 255],
             [['totemimage'], 'string', 'max' => 100],
@@ -50,12 +52,14 @@ class Group extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Имя',
-            'description' => 'Описание',
-            'totemname' => 'Название тотема',
-            'totemimage' => 'Изображение тотема',
-            'color' => 'Цвет',
+            'name' => 'Name',
+            'description' => 'Description',
+            'totemname' => 'Totemname',
+            'totemimage' => 'Totemimage',
+            'color' => 'Color',
             'colorhex' => 'Colorhex',
+            'price' => 'Price',
+            'vip' => 'Vip',
             'isdeleted' => 'Isdeleted',
         ];
     }
