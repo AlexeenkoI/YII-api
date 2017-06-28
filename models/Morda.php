@@ -11,8 +11,10 @@ use Yii;
  * @property string $fio
  * @property string $description
  * @property string $pic
+ * @property integer $batchid
  * @property integer $isdeleted
  *
+ * @property Batch $batch
  * @property UserMorda[] $userMordas
  */
 class Morda extends \yii\db\ActiveRecord
@@ -31,10 +33,11 @@ class Morda extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['fio', 'description', 'pic'], 'required'],
-            [['isdeleted'], 'integer'],
+            [['fio', 'description', 'pic', 'batchid'], 'required'],
+            [['batchid', 'isdeleted'], 'integer'],
             [['fio'], 'string', 'max' => 100],
             [['description', 'pic'], 'string', 'max' => 255],
+            [['batchid'], 'exist', 'skipOnError' => true, 'targetClass' => Batch::className(), 'targetAttribute' => ['batchid' => 'id']],
         ];
     }
 
@@ -45,11 +48,20 @@ class Morda extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'fio' => 'ФИО',
-            'description' => 'Описание',
-            'pic' => 'Картинка',
-            'isdeleted' => 'Удален',
+            'fio' => 'Fio',
+            'description' => 'Description',
+            'pic' => 'Pic',
+            'batchid' => 'Batchid',
+            'isdeleted' => 'Isdeleted',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBatch()
+    {
+        return $this->hasOne(Batch::className(), ['id' => 'batchid']);
     }
 
     /**
