@@ -87,7 +87,7 @@ class SyncController extends Controller {
     public function actionSetUser() {
         $batch = Currbatch::find()->one();
 
-        var_dump(User::findOne(["id" => 2]));
+        var_dump(User::findOne(["id" => Yii::$app->request->post("id")]));
         
 
         // $user = new User();
