@@ -45,7 +45,7 @@ class SyncController extends Controller {
     public function actionGetUser() {
         $batch = Currbatch::find()->one();
 
-        $data = User::find()->where(["batchid" => $batch->currbatch])->all();
+        $data = User::find()->where(["batchid" => $batch->currentbatch])->all();
 
         return $this->asJson($batch);
     }
@@ -53,7 +53,7 @@ class SyncController extends Controller {
     public function actionGetMoney() {
         $batch = Currbatch::find()->one();
 
-        $data = Moneylog::find()->leftJoin("user", "user.id = moneylog.userid")->where(["batchid" => $batch->currbatch])->all();
+        $data = Moneylog::find()->leftJoin("user", "user.id = moneylog.userid")->where(["batchid" => $batch->currentbatch])->all();
 
         return $this->asJson($batch);
     }
@@ -63,7 +63,7 @@ class SyncController extends Controller {
     public function actionGetMorda() {
         $batch = Currbatch::find()->one();
 
-        $data = Morda::find()->where(["batchid" => $batch->currbatch])->all();
+        $data = Morda::find()->where(["batchid" => $batch->currentbatch])->all();
 
         return $this->asJson($batch);
     }
