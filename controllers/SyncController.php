@@ -14,7 +14,8 @@ use app\models\Group;
 use app\models\Route;
 use app\models\User;
 use app\models\Moneylog;
-
+use app\models\Grouppriority;
+use app\models\UserMorda;
 
 class SyncController extends Controller {
 
@@ -58,8 +59,6 @@ class SyncController extends Controller {
         return $this->asJson($data);
     }
 
-
-
     public function actionGetMorda() {
         $batch = Currbatch::find()->one();
 
@@ -67,5 +66,23 @@ class SyncController extends Controller {
 
         return $this->asJson($data);
     }
+
+    public function actionGetPriority()
+    {
+        $batch = Currbatch::find()->one();
+
+        $data = Grouppriority::find()->where(["batchid" => $batch->currentbatch])->all();
+
+        return $this->asJson($data);
+    }
+
+    public function actionGetUserMorda() {
+        $batch = Currbatch::find()->one();
+
+        $data = UserMorda::find()->leftJoin("user", "user.id = user_morda.userid")->where(["batchid" => $batch->currentbatch])->all();
+
+        return $this->asJson($data);
+    }
+
     
 }
