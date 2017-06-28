@@ -85,12 +85,19 @@ th{
 td{
     font-size:35px;
 }
+.container-fluid{
+    margin-top:15vw;
+    width:auto;
+    height
+}
 </style>
 <h1 class="text-center">Награждение победителей</h1>
 <h3 class="text-center">Индивидуальный зачет</h3> 
 <body>
-
-   <div class="col-md-6">
+<div class="container-fluid">
+    <div class="col-lg-6">
+    </div>
+   <div class="col-lg-6">
       <div>
          <table id="t1" class="table">
             <thead>
@@ -106,31 +113,10 @@ td{
                   <td class="position text-center">Two</td>
                   <td class="name text-center">Two</td>
                   <td class="team text-center">Two</td>
-                  <td class="totalscore text-center"></td>
+                  <td class="totalscore text-center">Two</td>
             </tbody>
          </table>
-      </div>
+        </div>
    </div>
-   <div class="col-md-6">
-      <div>
-         <table id = "t2" class="table">
-            <thead>
-               <tr>
-                  <th class="text-center">Место</th>
-                  <th class="text-center">Имя</th>
-                  <th class="text-center">Команда</th>
-                  <th class="text-center">Баллы</th>
-               </tr>
-            <thead>
-            <tbody id="t2Tbody">
-               <tr>
-                  <td class="position text-center">Two</td>
-                  <td class="name text-center">Two</td>
-                  <td class="team text-center">Two</td>
-                  <td class="totalscore text-center"></td>
-         </table>
-      </div>
-   </div>
-
-
+</div>
 </body>

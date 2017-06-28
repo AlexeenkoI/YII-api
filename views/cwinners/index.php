@@ -74,54 +74,103 @@ $("body").click(function(){
 })
 </script>
 <style>
+body{
+    background-image: url('http://yii.local/app/images/command.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.table {
+    border-bottom:0px !important;
+}
+.table th, .table td {
+    border: 1px !important;
+}
+.fixed-table-container {
+    border:0px !important;
+}
+tr{
+
+}
 th{
-    font-size:35px;
+    font-size:25px;
 }
 td{
-    font-size:35px;
+    font-size:23px;
+}
+.container{
+    margin-right:5vh !important;
+    width:100% !important;
+}
+.row{
+    margin-top:17vw;
+    width:100% !important;
+}
+#tbl{
+    padding-left:4.5vh;
+    width:43% !important;
+    margin-left:3vh !important;
+}
+.place{
+    width:100%;
+    height:100%;
+}
+.imgfirst{
+    position:absolute;
+    left:19.5vw;
+    bottom:38vh;
+    width:300px;
+    height:300px;
+}
+.imgsecond{
+    position:absolute;
+    left:8vw;
+    bottom:26vh;
+    width:300px;
+    height:300px;
+}
+.imgthird{
+    position:absolute;
+    left:31vw;
+    bottom:32vh;
+    width:300px;
+    height:300px;
 }
 </style>
-<h1 class="text-center">Награждение победителей</h1>
-<h3 class="text-center">Командный зачет</h3> 
 <body>
-<div class="container-fluid">
-   <div class="col-md-6">
-      <div class="table-responsive">
-         <table id="t1" class="table">
-            <thead>
-               <tr>
-                  <th class="text-center">Место</th>
-                  <th class="text-center">Команда</th>
-                  <th class="text-center">Баллы</th>
-               </tr>
-            <thead>
+<div class="row">
+    <div class="col-lg-6">
+    </div>
+   <div id="tbl"class="col-lg-6">
+      <div>
+         <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
                   <td class="position text-center">Two</td>
                   <td class="team text-center">Two</td>
                   <td class="totalscore text-center">Two</td>
-            </tbody>
-         </table>
-      </div>
-   </div>
-   <div class="col-md-6">
-      <div class="table-responsive">
-         <table id = "t2" class="table">
-            <thead>
-               <tr>
-                  <th class="text-center">Место</th>
-                  <th class="text-center">Команда</th>
-                  <th class="text-center">Баллы</th>
                </tr>
-            <thead>
-            <tbody id="t2Tbody">
-               <tr>
+                              <tr>
                   <td class="position text-center">Two</td>
                   <td class="team text-center">Two</td>
                   <td class="totalscore text-center">Two</td>
+               </tr>
+                              <tr>
+                  <td class="position text-center">Two</td>
+                  <td class="team text-center">Two</td>
+                  <td class="totalscore text-center">Two</td>
+               </tr>
+            </tbody>
          </table>
-      </div>
+        </div>
    </div>
 </div>
-
+<div class="imgfirst">
+<img src="http://yii.local/app/images/tiger.png" alt="Первое место" class="img-rounded place">
+</div>
+<div class="imgsecond">
+<img src="http://yii.local/app/images/zebra.png" alt="Второе место" class="img-rounded place">
+</div>
+<div class="imgthird">
+<img src="http://yii.local/app/images/elephant.png" alt="Третье место" class="img-rounded place">
+</div>
 </body>
