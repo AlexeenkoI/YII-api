@@ -29,7 +29,7 @@ class SyncController extends Controller {
     public function actionGetMorda() {
         $batch = Currbatch::find()->one();
 
-        //$data = Morda::find()->where(["isdeleted" => "0"])->all();
+        $data = Morda::find()->where(["batchid" => $batch->id])->all();
 
         return $this->asJson($batch);
     }
