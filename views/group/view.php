@@ -23,6 +23,7 @@ $this->title = $model->name;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Назад', ['group/index'], ['class' => 'btn btn-danger']) ?>
     </p>
 
     <?= DetailView::widget([

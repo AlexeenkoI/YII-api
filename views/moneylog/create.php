@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Moneylog */
 
-$this->title = 'Create Moneylog';
-$this->params['breadcrumbs'][] = ['label' => 'Moneylogs', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Создать лог';
+//$this->params['breadcrumbs'][] = ['label' => 'Moneylogs', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="moneylog-create">
 

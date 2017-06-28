@@ -23,6 +23,7 @@ $this->title = $model->currentbatch;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Назад', ['currbatch/index'], ['class' => 'btn btn-danger']) ?>
     </p>
 
     <?= DetailView::widget([

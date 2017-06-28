@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Currbatch */
 
-$this->title = 'Update Currbatch: ' . $model->currentbatch;
-$this->params['breadcrumbs'][] = ['label' => 'Currbatches', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->currentbatch, 'url' => ['view', 'id' => $model->currentbatch]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Обновить текущий заезд: ' . $model->currentbatch;
+//$this->params['breadcrumbs'][] = ['label' => 'Currbatches', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = ['label' => $model->currentbatch, 'url' => ['view', 'id' => $model->currentbatch]];
+//$this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="currbatch-update">
 

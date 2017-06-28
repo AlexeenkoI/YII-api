@@ -22,7 +22,7 @@ use yii\widgets\ActiveForm;
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-        <?= Html::a("Назад", ['user/index'], ['class'=>'btn btn-danger'])?>
+        <?= Html::a("Назад", ['morda/index'], ['class'=>'btn btn-danger'])?>
     </div>
 
     <?php ActiveForm::end(); ?>

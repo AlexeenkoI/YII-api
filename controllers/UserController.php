@@ -127,11 +127,10 @@ class UserController extends Controller
     }
 	
     public function actionGetall() {
-
-    $searchModel = new UserSearch();
-    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-    $result = $dataProvider->getModels();
-    return $this->asJson($result);
+        $searchModel = new UserSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $result = $dataProvider->getModels();
+        return $this->asJson($result);
 	}
 	
 	
@@ -150,7 +149,6 @@ class UserController extends Controller
 	
 	public function actionUpdateuser(){
         $data = Yii::$app->getRequest()->getBodyParams();
-        
         $user = User::find()->where(['id'=>$data["User"]["id"]])->one();
 		if($user){
             $user->load($data);
@@ -171,7 +169,6 @@ class UserController extends Controller
         $data = Yii::$app->getRequest()->getBodyParams();
         $curr = User::find()->joinWith('userMordas')->where(["mordaid"=>$data["speakerid"]])->all();
         return $this->asJson($curr);
-       
     }
 
     public function actionGetusermoneylog(){
@@ -195,7 +192,7 @@ class UserController extends Controller
                 $totalscore+=$curr->getAttribute("money");
             }else if($curr->getAttribute("type")===1){
                 $totalscore-=$curr->getAttribute("money");
-                }
+            }
         }
         return $this->asJson($totalscore);
     }
@@ -209,7 +206,7 @@ class UserController extends Controller
                 $totalscore+=$curr->getAttribute("money");
             }else if($curr->getAttribute("type")===1){
                 $totalscore-=$curr->getAttribute("money");
-                }
+            }
         }
         return $this->asJson($totalscore);
     }
