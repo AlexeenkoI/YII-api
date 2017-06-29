@@ -85,6 +85,7 @@ class SyncController extends Controller {
     }
 
     public function actionAddUser() {
+        $batch = Currbatch::find()->one();
             
         $user = new User();
         $user->setAttributes(Yii::$app->request->post());
@@ -146,6 +147,8 @@ class SyncController extends Controller {
     }
 
     public function actionAddPriority() {
+        $batch = Currbatch::find()->one();
+        
         $priority = new Grouppriority();
         
         $priority->setAttributes(Yii::$app->request->post());
