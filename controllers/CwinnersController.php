@@ -17,6 +17,14 @@ class CwinnersController extends \yii\web\Controller
         return $this->render('routes');
     }
 
+    public function actionIndividualpos(){
+        return $this->render('individualpos');
+    }
+
+    public function actionTeampos(){
+        return $this->render('teampos');
+    }
+
     public function actionAjaxwinners(){
         // todo data dor ajaxrequest from cwinners view
     }

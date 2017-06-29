@@ -35,32 +35,28 @@ function loadData(){
 		url:"",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
-            const table1 = "#t1Tbody";
-            const table2 = "#t2Tbody";
-            $(table1).empty();
-            $(table2).empty();
-            var position = 1;
-            var tableCounter = 0;
+            const pos1 = "#t1Tbody";
+            const pos2 = "#t2Tbody";
+            $(pos1).empty();
+            $(pos2).empty();
+            var tableCounter = 1;
             var maxForTable = data.length/2;
             for(var i = 0; i<data.length; i++){
-                if(tableCounter>=12){
-                    break;
+                if(tableCounter<=maxForTable){
+                    appendText(pos1,data[i].name,data[i].capacity);
+                    tableCounter++;
                 }else{
-                    if(tableCounter<=maxForTable){
-                        appendText(table1,position,data[i].group,data[i].money);
-                        position
-                        tableCounter++;
-                    }else{
-                        appendText(table2,position,data[i].group,data[i].money)
-                        position++;
-                        tableCounter++;
-                    }
+                    appendText(pos2,data[i].name,data[i].capacity)
                 }
             }
-
+                //console.log(data[0].capacity);
+            setTimeout(function(){
+                loadData()
+            },2000);
         }
     });
 }
+
 $(document).ready(function(){
     loadData();
 $("body").click(function(){
@@ -97,13 +93,10 @@ th{
 td{
     font-size:23px;
 }
-.container{
-    margin-right:5vh !important;
-    width:100% !important;
-}
 .row{
-    margin-top:17vw;
-    width:100% !important;
+    margin-top:24%;
+    margin-left:52%;
+    margin-right:6%;
 }
 #tbl{
     padding-left:4.5vh;
@@ -135,34 +128,24 @@ td{
     width:300px;
     height:300px;
 }
+
 </style>
 <body>
+<div class="container-fluid">
 <div class="row">
-    <div class="col-lg-6">
-    </div>
-   <div id="tbl"class="col-lg-6">
-      <div>
+   <div class="col-xs-12 offset3">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
                   <td class="position text-center">Two</td>
-                  <td class="team text-center">Two</td>
+                  <td class="name text-center">Two</td>
                   <td class="totalscore text-center">Two</td>
-               </tr>
-                              <tr>
-                  <td class="position text-center">Two</td>
-                  <td class="team text-center">Two</td>
-                  <td class="totalscore text-center">Two</td>
-               </tr>
-                              <tr>
-                  <td class="position text-center">Two</td>
-                  <td class="team text-center">Two</td>
-                  <td class="totalscore text-center">Two</td>
-               </tr>
+                  </tr>
             </tbody>
          </table>
         </div>
    </div>
+</div>>
 </div>
 <div class="imgfirst">
 <img src="http://yii.local/app/images/tiger.png" alt="Первое место" class="img-rounded place">

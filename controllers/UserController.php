@@ -212,9 +212,13 @@ class UserController extends Controller
     }
 
     public function actionGetindividualdata(){
-        $data =User::find()->joinWith('group')->joinWith('moneylog')->where(['type'=>0])->orderBy(['money'=>SORT_DESC])->all();
+        //$data = User::find()->leftJoin('group','group.id=user.id')->leftJoin('moneylog','moneylog.id=user.id')->where(["type"=>"1"])->all();
+        $user = User::find()->all();
+        $data = \app\models\Moneylog::find()->leftJoin('user','user.id=moneylog.id')->where(['type'=>'1'])->all();
+
         return $this->asJson($data);
     }
+
 }
 /* {
 	"User":

@@ -42,9 +42,9 @@ function loadData(){
                 }
             }
                 //console.log(data[0].capacity);
-            setTimeout(function(){
-                loadData()
-            },2000);
+            //setTimeout(function(){
+            //    loadData()
+            //},2000);
         }
     });
 }
@@ -95,18 +95,17 @@ body{
     color:#191970;
 }
 
-.container-fluid{
-    margin-top:15vw;
-    width:auto;
-    height:auto;
+.row{
+    margin-top:20%;
+    margin-left:14%;
+    
 }
 
 </style>
-<html>
-<body>
+
 <div class="container-fluid">
-   <div class="col-md-6 ">
-      <div >
+<div class="row">
+   <div class="col-xs-5">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
@@ -123,10 +122,8 @@ body{
                </tr>
             </tbody>
          </table>
-      </div>
    </div>
-   <div class="col-md-6 ">
-      <div>
+   <div class="col-xs-5">
          <table id = "t2" class="table borderless">
             <tbody id="t2Tbody">
                <tr>
@@ -137,9 +134,8 @@ body{
                   <td class="name text-center">Название маршрута555</td>
                   <td class="count text-center">55</td>
                </tr>
+               </tbody>
          </table>
       </div>
-   </div>
 </div>
-</body>
-</html>
+</div>

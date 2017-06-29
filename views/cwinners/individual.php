@@ -79,44 +79,45 @@ $("body").click(function(){
 })
 </script>
 <style>
+body{
+    background-image: url('http://yii.local/app/images/individualwin.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.table {
+    border-bottom:0px !important;
+}
+.table th, .table td {
+    border: 1px !important;
+}
+.fixed-table-container {
+    border:0px !important;
+}
 th{
-    font-size:35px;
+    font-size:24px;
 }
 td{
-    font-size:35px;
+    font-size:24px;
 }
-.container-fluid{
-    margin-top:15vw;
-    width:auto;
-    height
+
+.row{
+    margin-top:24%;
+    margin-left:52%;
+    margin-right:6%;
 }
 </style>
-<h1 class="text-center">Награждение победителей</h1>
-<h3 class="text-center">Индивидуальный зачет</h3> 
-<body>
 <div class="container-fluid">
-    <div class="col-lg-6">
-    </div>
-   <div class="col-lg-6">
-      <div>
-         <table id="t1" class="table">
-            <thead>
-               <tr>
-                  <th class="text-center">Место</th>
-                  <th class="text-center">Имя</th>
-                  <th class="text-center">Команда</th>
-                  <th class="text-center">Баллы</th>
-               </tr>
-            <thead>
+<div class="row">
+   <div class="col-xs-12 offset3">
+         <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
                   <td class="position text-center">Two</td>
                   <td class="name text-center">Two</td>
-                  <td class="team text-center">Two</td>
                   <td class="totalscore text-center">Two</td>
+                  </tr>
             </tbody>
          </table>
         </div>
    </div>
 </div>
-</body>

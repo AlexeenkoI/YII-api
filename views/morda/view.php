@@ -23,8 +23,8 @@ $this->title = $model->id;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a("Назад", ['morda/index'], ['class'=>'btn btn-danger'])?>
     </p>
-
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
