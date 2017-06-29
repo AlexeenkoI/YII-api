@@ -186,10 +186,10 @@ class SyncController extends Controller {
 
     public function actionAddMoney() {
         $money = new Moneylog();
-
-        $money->id = NULL;
         
         $money->setAttributes(Yii::$app->request->post());
+
+	$money->id = NULL;
 
         $money->save();
 
@@ -215,9 +215,9 @@ class SyncController extends Controller {
 
     public function actionAddUserMorda() {
         $morda = new UserMorda();
-        $morda->id = NULL;
-        
+
         $morda->setAttributes(Yii::$app->request->post());
+        $morda->id = NULL;
 
         $morda->save();
 
