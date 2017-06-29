@@ -84,6 +84,23 @@ class SyncController extends Controller {
         return $this->asJson($data);
     }
 
+    public function actionAddUser() {
+            
+        $user = new User();
+        $user->setAttributes(Yii::$app->request->post());
+        $user->id = NULL;
+
+        $user->batchid = $batch->currentbatch;
+
+        if ($user->groupid == -1) $user->groupid = NULL;
+        if ($user->routeid == -1) $user->routeid = NULL;
+
+        $user->save();
+
+        return $this->asJson($user->id);
+    }
+
+
     public function actionSetUser() {
         $batch = Currbatch::find()->one();
 
@@ -128,6 +145,25 @@ class SyncController extends Controller {
         return $this->asJson($priority->id);
     }
 
+    public function actionAddPriority() {
+        $priority = new Grouppriority();
+        
+        $priority->setAttributes(Yii::$app->request->post());
+        $priority->id = NULL;
+
+        $priority->batchid = $batch->currentbatch;
+
+        if ($priority->p1 == -1) $priority->p1 = 0;
+        if ($priority->p2 == -1) $priority->p2 = 0;
+        if ($priority->p3 == -1) $priority->p3 = 0;
+        if ($priority->p4 == -1) $priority->p4 = 0;
+
+        $priority->save();
+
+        return $this->asJson($priority->id);
+    }
+
+
 
     public function actionSetMoney() {
         $batch = Currbatch::find()->one();
@@ -145,6 +181,19 @@ class SyncController extends Controller {
         return $this->asJson($money->id);
     }
 
+    public function actionAddMoney() {
+        $money = new Moneylog();
+
+        $money->id = NULL;
+        
+        $money->setAttributes(Yii::$app->request->post());
+
+        $money->save();
+
+        return $this->asJson($money->id);
+    }
+
+
     public function actionSetUserMorda() {
         $batch = Currbatch::find()->one();
 
@@ -160,6 +209,18 @@ class SyncController extends Controller {
 
         return $this->asJson($morda->id);
     }
+
+    public function actionAddUserMorda() {
+        $morda = new UserMorda();
+        $morda->id = NULL;
+        
+        $morda->setAttributes(Yii::$app->request->post());
+
+        $morda->save();
+
+        return $this->asJson($morda->id);
+    }
+
 
     
 }
