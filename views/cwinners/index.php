@@ -4,7 +4,7 @@ $this->title = 'Командный зачет';
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-function appendText(table,pos,team,score){
+function appendText(viewport,pos,team,score){
     var insertRow = document.createElement("tr");
     var insertPos = document.createElement("td");
     var insertTeam = document.createElement("td");
@@ -23,7 +23,6 @@ function appendText(table,pos,team,score){
     insertScore.innerText=score;
 
     $(insertRow).append(insertPos);
-    $(insertRow).append(insertName);
     $(insertRow).append(insertTeam);
     $(insertRow).append(insertScore);
 
@@ -35,24 +34,15 @@ function loadData(){
 		url:"",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
-            const pos1 = "#t1Tbody";
-            const pos2 = "#t2Tbody";
-            $(pos1).empty();
-            $(pos2).empty();
-            var tableCounter = 1;
-            var maxForTable = data.length/2;
-            for(var i = 0; i<data.length; i++){
-                if(tableCounter<=maxForTable){
-                    appendText(pos1,data[i].name,data[i].capacity);
-                    tableCounter++;
-                }else{
-                    appendText(pos2,data[i].name,data[i].capacity)
-                }
+            const vewport = "#t1Tbody";
+            $(vewport).empty();
+            var pos = 1;
+            $(".imgfirst").attr('src',src1);
+            $(".imgsecond").attr('src',src2);
+            $(".imgthird").attr('src',src3);
+            for(var i = 3; i<data.length; i++){  
+                appendText(viewport,pos,data[i].team,data[i].score);          
             }
-                //console.log(data[0].capacity);
-            setTimeout(function(){
-                loadData()
-            },2000);
         }
     });
 }
@@ -71,7 +61,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://yii.local/app/images/command.png');
+    background-image: url('http://194.67.194.82/app/images/command.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -143,8 +133,8 @@ td{
                   </tr>
             </tbody>
          </table>
-        </div>
-   </div>
+    </div>
+</div>
 </div>>
 </div>
 <div class="imgfirst">

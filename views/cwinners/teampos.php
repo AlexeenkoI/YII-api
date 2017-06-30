@@ -4,8 +4,58 @@ $this->title = 'Маршруты';
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-    
+function appendText(viewport,pos,group,score){
+    var insertRow = document.createElement("tr");
+
+    var insertPos = document.createElement("td");
+    $(insertPos).addClass("position");
+    $(insertPos).addClass("text-center");
+
+    var insertGroup = document.createElement("td");
+    $(insertCount).addClass("team");
+    $(insertCount).addClass("text-center");
+
+    var insertScore = document.createElement("td");
+    $(insertScore).addClass("totalscore");
+    $(insertScore).addClass("text-center");
+
+    insertName.innerText = name;
+    insertGroup.innerText = group;
+    insertScore.innerText = score;
+
+    $(insertRow).append(insertPos);
+    $(insertRow).append(insertGroup);
+    $(insertRow).append(insertScore);
+    $(viewport).append(insertRow);
+}
+function loadData(){
+    	$.ajax({
+		type:"POST",
+		url:"",//заменить при переносе на сервер
+		dataType:"json",
+        success:function(data){
+            const viewport1 = "#t1Tbody";
+            const viewport2 = "#t2Tbody";
+            $(viewport1).empty();
+            $(viewport2).empty();
+            var pos = 1;
+            var tableCounter = 1;
+            var maxForTable = data.length/2;
+            for(var i = 0; i<data.length; i++){
+                if(tableCounter<=maxForTable){
+                    appendText(viewport1,pos,data[i],group,data[i].score);
+                    tableCounter++;
+                }else{
+                    appendText(viewport2,pos,data[i],group,data[i].score)
+                }
+            }
+            setTimeout(function(){
+                loadData()
+            },2000);
+        }
+    });
+}
+$(document).ready(function(){   
 $("body").click(function(){
     $("#w0").fadeIn(2000);
 })
@@ -18,7 +68,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://yii.local/app/images/individualpos.png');
+    background-image: url('http://194.67.194.82/app/images/individualpos.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

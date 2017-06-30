@@ -4,6 +4,58 @@ $this->title = 'Индивидуальное положение';
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
+function appendText(viewport,pos,name,score){
+    var insertRow = document.createElement("tr");
+
+    var insertPos = document.createElement("td");
+    $(insertPos).addClass("position");
+    $(insertPos).addClass("text-center");
+
+    var insertName = document.createElement("td");
+    $(insertName).addClass("name");
+    $(insertName).addClass("text-center");
+
+    var insertScore = document.createElement("td");
+    $(insertScore).addClass("totalscore");
+    $(insertScore).addClass("text-center");
+
+    insertPos.innerText = pos;
+    insertName.innerText = name;
+    insertScore.innerText = score;
+
+    $(insertRow).append(insertPos);
+    $(insertRow).append(insertName);
+    $(insertRow).append(insertScore);
+    $(viewport).append(insertRow);
+}
+function loadData(){
+    	$.ajax({
+		type:"POST",
+		url:"",//заменить при переносе на сервер
+		dataType:"json",
+        success:function(data){
+            const viewport1 = "#t1Tbody";
+            const viewport2 = "#t2Tbody";
+            $(viewport1).empty();
+            $(viewport2).empty();
+            var pos = 1;
+            var tableCounter = 1;
+            var maxForTable = data.length/2;
+            for(var i = 0; i<data.length; i++){
+                if(tableCounter<=maxForTable){
+                    appendText(viewport1,pos,data[i],name,data[i].score);
+                    tableCounter++;
+                }else{
+                    appendText(viewport2,pos,data[i],name,data[i].score)
+                }
+            }
+            setTimeout(function(){
+                loadData()
+            },2000);
+        }
+    });
+}
+
 $(document).ready(function(){
     
 $("body").click(function(){
@@ -18,7 +70,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://yii.local/app/images/teampos.png');
+    background-image: url('http://194.67.194.82/app/images/teampos.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

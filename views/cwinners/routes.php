@@ -24,7 +24,7 @@ function appendText(pos,name,count){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://yii.local/route/getajaxroute",//заменить при переносе на сервер
+		url:"http://194.67.194.82/route/getajaxroute",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const pos1 = "#t1Tbody";
@@ -42,9 +42,9 @@ function loadData(){
                 }
             }
                 //console.log(data[0].capacity);
-            //setTimeout(function(){
-            //    loadData()
-            //},2000);
+            setTimeout(function(){
+                loadData()
+            },2000);
         }
     });
 }
@@ -74,13 +74,13 @@ $("body").click(function(){
     border:0px !important;
 }
 body{
-    background-image: url('http://yii.local/app/images/route22.jpg');
+    background-image: url('http://194.67.194.82/app/images/route22.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
 }
 .name{
-    background-image: url('http://yii.local/app/images/routename.png');
+    background-image: url('http://194.67.194.82/app/images/routename.png');
     background-size:95% 85%;
     background-repeat: no-repeat;
     font-size:35px;
@@ -88,7 +88,7 @@ body{
     background-position:bottom 10px;
 }
 .count{
-    background-image: url('http://yii.local/app/images/routecount.png');
+    background-image: url('http://194.67.194.82/app/images/routecount.png');
     background-size:100% 85%;
     background-repeat: no-repeat;
     font-size:35px;

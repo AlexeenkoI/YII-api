@@ -4,24 +4,19 @@ $this->title = 'Индивидуальный зачет';
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-function appendText(table,pos,name,team,score){
+function appendText(viewport,pos,name,score){
     var insertRow = document.createElement("tr");
     var insertPos = document.createElement("td");
-    var insertName = document.createElement("td");
     var insertTeam = document.createElement("td");
     var insertScore = document.createElement("td");
 
     $(insertPos).addClass("position");
     $(insertPos).addClass("text-center");
     insertPos.innerText=pos;
-    
+
     $(insertName).addClass("name");
     $(insertName).addClass("text-center");
-    insertName.innerText=name;
-
-    $(insertTeam).addClass("team");
-    $(insertTeam).addClass("text-center");
-    insertTeam.innerText=team;
+    insertName.innerText=team;
 
     $(insertScore).addClass("score");
     $(insertScore).addClass("text-center");
@@ -29,7 +24,6 @@ function appendText(table,pos,name,team,score){
 
     $(insertRow).append(insertPos);
     $(insertRow).append(insertName);
-    $(insertRow).append(insertTeam);
     $(insertRow).append(insertScore);
 
     $(table).append(insertRow);
@@ -40,29 +34,15 @@ function loadData(){
 		url:"",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
-            const table1 = "#t1Tbody";
-            const table2 = "#t2Tbody";
-            $(table1).empty();
-            $(table2).empty();
-            var position = 1;
-            var tableCounter = 0;
-            var maxForTable = data.length/2;
-            for(var i = 0; i<data.length; i++){
-                if(tableCounter>=12){
-                    break;
-                }else{
-                    if(tableCounter<=maxForTable){
-                        appendText(table1,position,data[i].name,data[i].group,data[i].money);
-                        position
-                        tableCounter++;
-                    }else{
-                        appendText(table2,position,data[i].name,data[i].group,data[i].money)
-                        position++;
-                        tableCounter++;
-                    }
-                }
+            const vewport = "#t1Tbody";
+            $(vewport).empty();
+            var pos = 1;
+            $(".imgfirst").attr('src',src1);
+            $(".imgsecond").attr('src',src2);
+            $(".imgthird").attr('src',src3);
+            for(var i = 3; i<data.length; i++){  
+                appendText(viewport,pos,data[i].name,data[i].score);          
             }
-
         }
     });
 }
@@ -80,7 +60,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://yii.local/app/images/individualwin.png');
+    background-image: url('http://194.67.194.82/app/images/individualwin.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -105,6 +85,27 @@ td{
     margin-left:52%;
     margin-right:6%;
 }
+.imgfirst{
+    position:absolute;
+    left:21.5vw;
+    bottom:34vh;
+    width:300px;
+    height:300px;
+}
+.imgsecond{
+    position:absolute;
+    left:9vw;
+    bottom:25vh;
+    width:300px;
+    height:300px;
+}
+.imgthird{
+    position:absolute;
+    left:31vw;
+    bottom:28vh;
+    width:300px;
+    height:300px;
+}
 </style>
 <div class="container-fluid">
 <div class="row">
@@ -120,4 +121,13 @@ td{
          </table>
         </div>
    </div>
+</div>
+<div class="imgfirst">
+<img src="http://yii.local/app/images/tiger.png" alt="Первое место" class="img-rounded place">
+</div>
+<div class="imgsecond">
+<img src="http://yii.local/app/images/zebra.png" alt="Второе место" class="img-rounded place">
+</div>
+<div class="imgthird">
+<img src="http://yii.local/app/images/elephant.png" alt="Третье место" class="img-rounded place">
 </div>
