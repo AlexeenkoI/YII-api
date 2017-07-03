@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\BatchSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
+<div class="container">
 <div class="batch-search">
 
     <?php $form = ActiveForm::begin([
@@ -28,4 +28,5 @@ use yii\widgets\ActiveForm;
 
     <?php ActiveForm::end(); ?>
 
+</div>
 </div>

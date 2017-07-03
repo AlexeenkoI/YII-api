@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Текущий заезд';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="currbatch-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -31,4 +32,5 @@ $this->title = 'Текущий заезд';
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

@@ -10,6 +10,7 @@ $this->title = 'Создать маршрут';
 //$this->params['breadcrumbs'][] = ['label' => 'Routes', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="route-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -18,4 +19,5 @@ $this->title = 'Создать маршрут';
         'model' => $model,
     ]) ?>
 
+</div>
 </div>

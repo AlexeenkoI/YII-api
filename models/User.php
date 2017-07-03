@@ -123,7 +123,6 @@ class User extends \yii\db\ActiveRecord
 	
 	public function addUserFromJson($data)
 	{
-        echo "here";
 		$query = Yii::$app->db->createCommand('INSERT INTO `user`(`firstname`, `lastname`, `patronymic`, `rfcid`, `groupid`, `batchid`, `routeid`) VALUES (:firstname,:lastname,:patronymic,:rfcid,:groupid,:batchid,:routeid')
 		->bindValue(':firstname',data['firstname'])
 		->bindValue(':lastname',data['lastname'])

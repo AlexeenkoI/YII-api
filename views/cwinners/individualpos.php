@@ -70,12 +70,13 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://194.67.194.82/app/images/teampos.png');
+    /*background-image: url('http://194.67.194.82/app/images/teampos.png');*/
+    background-image: url(http://yii.local/app/images/individual.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .row{
-    margin-top:30%;
+    margin-top:26.5%;
     margin-left:1%;
     
 }
@@ -94,7 +95,7 @@ body{
     border:0px !important;
 }
 td{
-    font-size:24px;
+    font-size:22px;
 }
 </style>
 <div class="container-fluid">

@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Приоритет групп';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="grouppriority-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -36,4 +37,5 @@ $this->title = 'Приоритет групп';
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

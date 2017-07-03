@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Команды';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="group-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -38,4 +39,5 @@ $this->title = 'Команды';
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

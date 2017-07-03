@@ -10,6 +10,7 @@ $this->title = $model->id;
 //$this->params['breadcrumbs'][] = ['label' => 'Grouppriorities', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="grouppriority-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -39,4 +40,5 @@ $this->title = $model->id;
         ],
     ]) ?>
 
+</div>
 </div>

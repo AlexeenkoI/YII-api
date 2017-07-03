@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'События';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="event-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -36,4 +37,5 @@ $this->title = 'События';
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

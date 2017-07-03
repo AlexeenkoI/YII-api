@@ -10,6 +10,7 @@ $this->title = $model->name;
 //$this->params['breadcrumbs'][] = ['label' => 'Groups', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="group-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -40,4 +41,5 @@ $this->title = $model->name;
         ],
     ]) ?>
 
+</div>
 </div>

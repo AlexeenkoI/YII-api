@@ -74,7 +74,8 @@ $("body").click(function(){
     border:0px !important;
 }
 body{
-    background-image: url('http://194.67.194.82/app/images/route22.jpg');
+    /*background-image: url('http://194.67.194.82/app/images/route22.jpg');*/
+    background-image: url(http://yii.local/app/images/route22.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -96,7 +97,7 @@ body{
 }
 
 .row{
-    margin-top:20%;
+    margin-top:18%;
     margin-left:14%;
     
 }

@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Morda */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
+<div class="container">
 <div class="morda-form">
 
     <?php $form = ActiveForm::begin(); ?>
@@ -27,4 +27,5 @@ use yii\widgets\ActiveForm;
 
     <?php ActiveForm::end(); ?>
 
+</div>
 </div>

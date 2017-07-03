@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Заезды';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="batch-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -33,4 +34,5 @@ $this->title = 'Заезды';
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

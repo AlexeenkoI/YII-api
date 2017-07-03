@@ -10,6 +10,7 @@ $this->title = $model->name;
 //$this->params['breadcrumbs'][] = ['label' => 'Routes', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="route-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -23,6 +24,7 @@ $this->title = $model->name;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Назад', ['route/index'], ['class' => 'btn btn-danger']) ?>
     </p>
 
     <?= DetailView::widget([
@@ -36,4 +38,5 @@ $this->title = $model->name;
         ],
     ]) ?>
 
+</div>
 </div>

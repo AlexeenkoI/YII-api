@@ -68,18 +68,19 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://194.67.194.82/app/images/individualpos.png');
+    /*background-image: url('http://194.67.194.82/app/images/individualpos.png');*/
+    background-image: url(http://yii.local/app/images/individualpos.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 td{
     font-size:20px;
 }
-.row{
-    margin-top:24%;
+/*.row{
+    margin-top:26%;
     margin-left:14%;
     
-}
+}*/
 .table {
     border-bottom:0px !important;
 }
@@ -90,7 +91,7 @@ td{
     border:0px !important;
 }
 .row{
-    margin-top:30%;
+    margin-top:26.5%;
     margin-left:1%;
     
 }

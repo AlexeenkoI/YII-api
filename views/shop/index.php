@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Магазин';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="shop-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -36,4 +37,5 @@ $this->title = 'Магазин';
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

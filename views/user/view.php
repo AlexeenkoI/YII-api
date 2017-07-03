@@ -10,6 +10,7 @@ $this->title = $model->id;
 //$this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="user-view">
 
     <h1><?= yii\helpers\Html::encode($this->title) ?></h1>
@@ -42,4 +43,5 @@ $this->title = $model->id;
         ],
     ]) ?>
 
+</div>
 </div>

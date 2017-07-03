@@ -7,7 +7,7 @@ use yii\helpers\ArrayHelper;
 /* @var $model app\models\Currbatch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
+<div class="container">
 <div class="currbatch-form">
 
     <?php $form = ActiveForm::begin(); ?>
@@ -21,4 +21,5 @@ use yii\helpers\ArrayHelper;
 
     <?php ActiveForm::end(); ?>
 
+</div>
 </div>

@@ -10,6 +10,7 @@ $this->title = 'Обновить Спикера: ' . $model->id;
 //$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
 //$this->params['breadcrumbs'][] = 'Update';
 ?>
+<div class="container">
 <div class="morda-update">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -18,4 +19,5 @@ $this->title = 'Обновить Спикера: ' . $model->id;
         'model' => $model,
     ]) ?>
 
+</div>
 </div>

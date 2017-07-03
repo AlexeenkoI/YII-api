@@ -10,6 +10,7 @@ $this->title = $model->currentbatch;
 //$this->params['breadcrumbs'][] = ['label' => 'Currbatches', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="currbatch-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -33,4 +34,5 @@ $this->title = $model->currentbatch;
         ],
     ]) ?>
 
+</div>
 </div>

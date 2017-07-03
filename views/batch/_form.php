@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Batch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
+<div class="container">
 <div class="batch-form">
 
     <?php $form = ActiveForm::begin(); ?>
@@ -23,4 +23,5 @@ use yii\widgets\ActiveForm;
 
     <?php ActiveForm::end(); ?>
 
+</div>
 </div>

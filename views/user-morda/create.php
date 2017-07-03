@@ -10,6 +10,7 @@ $this->title = 'Записать на спикеров';
 //$this->params['breadcrumbs'][] = ['label' => 'User Mordas', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="user-morda-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -18,4 +19,5 @@ $this->title = 'Записать на спикеров';
         'model' => $model,
     ]) ?>
 
+</div>
 </div>

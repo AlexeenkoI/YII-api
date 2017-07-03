@@ -60,7 +60,8 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://194.67.194.82/app/images/individualwin.png');
+    /*background-image: url('http://194.67.194.82/app/images/individualwin.png');*/
+    background-image: url(http://yii.local/app/images/individualwin.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -81,7 +82,7 @@ td{
 }
 
 .row{
-    margin-top:24%;
+    margin-top:21%;
     margin-left:52%;
     margin-right:6%;
 }
