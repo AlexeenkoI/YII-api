@@ -10,6 +10,7 @@ $this->title = 'Создать товар';
 //$this->params['breadcrumbs'][] = ['label' => 'Shops', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="shop-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -18,4 +19,5 @@ $this->title = 'Создать товар';
         'model' => $model,
     ]) ?>
 
+</div>
 </div>

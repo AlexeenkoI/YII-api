@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Grouppriority */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
+<div class="container">
 <div class="grouppriority-form">
 
     <?php $form = ActiveForm::begin(); ?>
@@ -31,4 +31,5 @@ use yii\widgets\ActiveForm;
 
     <?php ActiveForm::end(); ?>
 
+</div>
 </div>

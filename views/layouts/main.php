@@ -38,32 +38,22 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Командный зачет', 'url' => ['/cwinners/index']],
+            ['label' => 'Промежуточный командный', 'url' => ['/cwinners/teampos']],
             ['label' => 'Индивидуальный зачет', 'url' => ['/cwinners/individual']],
+            ['label' => 'Промежуточный индивидуальный', 'url' => ['/cwinners/individualpos']],
             ['label' => 'Маршруты', 'url' => ['/cwinners/routes']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Может даже тут', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
         ],
     ]);
     NavBar::end();
     ?>
 
-    <div class="container">
+    
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= $content ?>
     </div>
-</div>
+
 
 <footer class="footer">
     <div class="container">

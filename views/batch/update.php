@@ -10,6 +10,7 @@ $this->title = 'Обновить заезд: ' . $model->name;
 //$this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 //$this->params['breadcrumbs'][] = 'Update';
 ?>
+<div class="container">
 <div class="batch-update">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -18,4 +19,5 @@ $this->title = 'Обновить заезд: ' . $model->name;
         'model' => $model,
     ]) ?>
 
+</div>
 </div>

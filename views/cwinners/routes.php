@@ -24,7 +24,7 @@ function appendText(pos,name,count){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://yii.local/route/getajaxroute",//заменить при переносе на сервер
+		url:"http://194.67.194.82/route/getajaxroute",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const pos1 = "#t1Tbody";
@@ -74,13 +74,14 @@ $("body").click(function(){
     border:0px !important;
 }
 body{
-    background-image: url('http://yii.local/app/images/route22.jpg');
+    /*background-image: url('http://194.67.194.82/app/images/route22.jpg');*/
+    background-image: url(http://yii.local/app/images/route22.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
 }
 .name{
-    background-image: url('http://yii.local/app/images/routename.png');
+    background-image: url('http://194.67.194.82/app/images/routename.png');
     background-size:95% 85%;
     background-repeat: no-repeat;
     font-size:35px;
@@ -88,25 +89,24 @@ body{
     background-position:bottom 10px;
 }
 .count{
-    background-image: url('http://yii.local/app/images/routecount.png');
+    background-image: url('http://194.67.194.82/app/images/routecount.png');
     background-size:100% 85%;
     background-repeat: no-repeat;
     font-size:35px;
     color:#191970;
 }
 
-.container-fluid{
-    margin-top:15vw;
-    width:auto;
-    height:auto;
+.row{
+    margin-top:18%;
+    margin-left:14%;
+    
 }
 
 </style>
-<html>
-<body>
+
 <div class="container-fluid">
-   <div class="col-md-6 ">
-      <div >
+<div class="row">
+   <div class="col-xs-5">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
@@ -123,10 +123,8 @@ body{
                </tr>
             </tbody>
          </table>
-      </div>
    </div>
-   <div class="col-md-6 ">
-      <div>
+   <div class="col-xs-5">
          <table id = "t2" class="table borderless">
             <tbody id="t2Tbody">
                <tr>
@@ -137,9 +135,8 @@ body{
                   <td class="name text-center">Название маршрута555</td>
                   <td class="count text-center">55</td>
                </tr>
+               </tbody>
          </table>
       </div>
-   </div>
 </div>
-</body>
-</html>
+</div>

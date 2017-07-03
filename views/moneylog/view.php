@@ -10,6 +10,7 @@ $this->title = $model->id;
 //$this->params['breadcrumbs'][] = ['label' => 'Moneylogs', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="moneylog-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -23,6 +24,7 @@ $this->title = $model->id;
                 'method' => 'post',
             ],
         ]) ?>
+         <?= Html::a('Назад', ['moneylog/index'], ['class' => 'btn btn-danger']) ?>
     </p>
 
     <?= DetailView::widget([
@@ -37,4 +39,5 @@ $this->title = $model->id;
         ],
     ]) ?>
 
+</div>
 </div>

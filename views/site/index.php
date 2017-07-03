@@ -6,9 +6,9 @@ $this->title = 'Jumanji';
 
 ?>
 <style>
-body{
+/*body{
 background-image: url(http://img.zoneland.ru/images5/593067ww_5.jpg.jpg);
-}
+}*/
 </style>
 <body>
 <!--<div class="site-index">

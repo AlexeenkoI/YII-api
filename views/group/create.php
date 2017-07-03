@@ -10,6 +10,7 @@ $this->title = 'Создать команду';
 //$this->params['breadcrumbs'][] = ['label' => 'Groups', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="group-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -18,4 +19,5 @@ $this->title = 'Создать команду';
         'model' => $model,
     ]) ?>
 
+</div>
 </div>

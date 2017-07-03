@@ -4,7 +4,7 @@ $this->title = 'Командный зачет';
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-function appendText(table,pos,team,score){
+function appendText(viewport,pos,team,score){
     var insertRow = document.createElement("tr");
     var insertPos = document.createElement("td");
     var insertTeam = document.createElement("td");
@@ -23,7 +23,6 @@ function appendText(table,pos,team,score){
     insertScore.innerText=score;
 
     $(insertRow).append(insertPos);
-    $(insertRow).append(insertName);
     $(insertRow).append(insertTeam);
     $(insertRow).append(insertScore);
 
@@ -35,32 +34,19 @@ function loadData(){
 		url:"",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
-            const table1 = "#t1Tbody";
-            const table2 = "#t2Tbody";
-            $(table1).empty();
-            $(table2).empty();
-            var position = 1;
-            var tableCounter = 0;
-            var maxForTable = data.length/2;
-            for(var i = 0; i<data.length; i++){
-                if(tableCounter>=12){
-                    break;
-                }else{
-                    if(tableCounter<=maxForTable){
-                        appendText(table1,position,data[i].group,data[i].money);
-                        position
-                        tableCounter++;
-                    }else{
-                        appendText(table2,position,data[i].group,data[i].money)
-                        position++;
-                        tableCounter++;
-                    }
-                }
+            const vewport = "#t1Tbody";
+            $(vewport).empty();
+            var pos = 1;
+            $(".imgfirst").attr('src',src1);
+            $(".imgsecond").attr('src',src2);
+            $(".imgthird").attr('src',src3);
+            for(var i = 3; i<data.length; i++){  
+                appendText(viewport,pos,data[i].team,data[i].score);          
             }
-
         }
     });
 }
+
 $(document).ready(function(){
     loadData();
 $("body").click(function(){
@@ -75,6 +61,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
+    /*background-image: url('http://194.67.194.82/app/images/command.png');*/
     background-image: url('http://yii.local/app/images/command.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -97,13 +84,10 @@ th{
 td{
     font-size:23px;
 }
-.container{
-    margin-right:5vh !important;
-    width:100% !important;
-}
 .row{
-    margin-top:17vw;
-    width:100% !important;
+    margin-top:21%;
+    margin-left:52%;
+    margin-right:6%;
 }
 #tbl{
     padding-left:4.5vh;
@@ -135,34 +119,24 @@ td{
     width:300px;
     height:300px;
 }
+
 </style>
 <body>
+<div class="container-fluid">
 <div class="row">
-    <div class="col-lg-6">
-    </div>
-   <div id="tbl"class="col-lg-6">
-      <div>
+   <div class="col-xs-12 offset3">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
                   <td class="position text-center">Two</td>
-                  <td class="team text-center">Two</td>
+                  <td class="name text-center">Two</td>
                   <td class="totalscore text-center">Two</td>
-               </tr>
-                              <tr>
-                  <td class="position text-center">Two</td>
-                  <td class="team text-center">Two</td>
-                  <td class="totalscore text-center">Two</td>
-               </tr>
-                              <tr>
-                  <td class="position text-center">Two</td>
-                  <td class="team text-center">Two</td>
-                  <td class="totalscore text-center">Two</td>
-               </tr>
+                  </tr>
             </tbody>
          </table>
-        </div>
-   </div>
+    </div>
+</div>
+</div>>
 </div>
 <div class="imgfirst">
 <img src="http://yii.local/app/images/tiger.png" alt="Первое место" class="img-rounded place">

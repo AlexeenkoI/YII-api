@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Маршруты';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="route-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -35,4 +36,5 @@ $this->title = 'Маршруты';
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

@@ -10,6 +10,7 @@ $this->title = $model->id;
 //$this->params['breadcrumbs'][] = ['label' => 'Mordas', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="morda-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -23,8 +24,8 @@ $this->title = $model->id;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a("Назад", ['morda/index'], ['class'=>'btn btn-danger'])?>
     </p>
-
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -36,4 +37,5 @@ $this->title = $model->id;
         ],
     ]) ?>
 
+</div>
 </div>

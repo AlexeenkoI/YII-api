@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Денежные логи';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="moneylog-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -36,4 +37,5 @@ $this->title = 'Денежные логи';
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

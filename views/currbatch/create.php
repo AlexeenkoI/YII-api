@@ -10,6 +10,7 @@ $this->title = 'Выбрать заезд';
 //$this->params['breadcrumbs'][] = ['label' => 'Currbatches', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="container">
 <div class="currbatch-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -18,4 +19,5 @@ $this->title = 'Выбрать заезд';
         'model' => $model,
     ]) ?>
 
+</div>
 </div>
