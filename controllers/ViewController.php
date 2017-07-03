@@ -30,4 +30,14 @@ class ViewController  extends Controller {
                                                         order by score desc")->queryAll());
     }
 
+    public function actionKubik() {
+        $this->asJson(Yii::$app->db->createCommand("select 
+                                                    `group`.name,
+                                                    IF(ISNULL(p1), 0, p1) as p1,
+                                                    IF(ISNULL(p2), 0, p2) as p2,
+                                                    IF(ISNULL(p3), 0, p3) as p3
+                                                    from `group`
+                                                    left join (select * from grouppriority where batchid = (select currentbatch from currbatch limit 1)) as t on `group`.id = t.groupid")->queryAll());
+    }
+
 }

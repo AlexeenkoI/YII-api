@@ -25,6 +25,10 @@ class CwinnersController extends \yii\web\Controller
         return $this->render('teampos');
     }
 
+    public function actionKubik() {
+        return $this->render('teampos1');
+    }
+
     public function actionAjaxwinners(){
         // todo data dor ajaxrequest from cwinners view
     }

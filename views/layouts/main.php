@@ -42,6 +42,7 @@ AppAsset::register($this);
             ['label' => 'Индивидуальный зачет', 'url' => ['/cwinners/individual']],
             ['label' => 'Промежуточный индивидуальный', 'url' => ['/cwinners/individualpos']],
             ['label' => 'Маршруты', 'url' => ['/cwinners/routes']],
+            ['label' => 'Кубики', 'url' => ['/cwinners/kubik']],
         ],
     ]);
     NavBar::end();

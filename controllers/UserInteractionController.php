@@ -10,7 +10,6 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\Response;
 
-var_dump("123123") exit();
 class UserInteractionController extends \yii\web\Controller
 {
     public function actionGetAll()
