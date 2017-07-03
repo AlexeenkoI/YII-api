@@ -12,14 +12,13 @@ function appendText(viewport,pos,group,score){
     $(insertPos).addClass("text-center");
 
     var insertGroup = document.createElement("td");
-    $(insertCount).addClass("team");
-    $(insertCount).addClass("text-center");
+    $(insertGroup).addClass("team");
+    $(insertGroup).addClass("text-center");
 
     var insertScore = document.createElement("td");
     $(insertScore).addClass("totalscore");
     $(insertScore).addClass("text-center");
-
-    insertName.innerText = name;
+    insertPos.innerText = pos;
     insertGroup.innerText = group;
     insertScore.innerText = score;
 
@@ -31,7 +30,7 @@ function appendText(viewport,pos,group,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"",//заменить при переносе на сервер
+		url:"http://194.67.194.82/view/index",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const viewport1 = "#t1Tbody";
@@ -40,13 +39,18 @@ function loadData(){
             $(viewport2).empty();
             var pos = 1;
             var tableCounter = 1;
-            var maxForTable = data.length/2;
+            var maxForTable = 14;
             for(var i = 0; i<data.length; i++){
-                if(tableCounter<=maxForTable){
-                    appendText(viewport1,pos,data[i],group,data[i].score);
+                if(pos<=7){
+                    appendText(viewport1,pos,data[i].group,data[i].score);
                     tableCounter++;
+                    pos++;
                 }else{
-                    appendText(viewport2,pos,data[i],group,data[i].score)
+                    if(pos>7 && pos<=14){
+                    appendText(viewport2,pos,data[i].group,data[i].score)
+                    tableCounter++;
+                     pos++;
+                    }
                 }
             }
             setTimeout(function(){
@@ -55,7 +59,8 @@ function loadData(){
         }
     });
 }
-$(document).ready(function(){   
+$(document).ready(function(){  
+    loadData(); 
 $("body").click(function(){
     $("#w0").fadeIn(2000);
 })
@@ -95,15 +100,19 @@ td{
     margin-left:1%;
     
 }
+.tbl1{
+    margin-left:6%;
+    margin-right:0%;
+}
 .tbl2{
-    margin-left:-2%;
+    margin-left:4.5%;
     padding-right:8%;
     padding-top:1.5vh;
 }
 </style>
 <div class="container-fluid">
 <div class="row">
-   <div class="col-xs-6">
+   <div class="col-xs-5 tbl1">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
@@ -123,8 +132,8 @@ td{
                </tr>
             </tbody>
          </table>
-   </div>
-   <div class="col-xs-6 tbl2">
+</div>
+   <div class="col-xs-5 tbl2">
          <table id = "t2" class="table borderless">
             <tbody id="t2Tbody">
                <tr>

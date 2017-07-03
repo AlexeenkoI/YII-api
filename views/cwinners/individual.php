@@ -7,16 +7,16 @@ $this->title = 'Индивидуальный зачет';
 function appendText(viewport,pos,name,score){
     var insertRow = document.createElement("tr");
     var insertPos = document.createElement("td");
-    var insertTeam = document.createElement("td");
+    var insertName = document.createElement("td");
     var insertScore = document.createElement("td");
 
     $(insertPos).addClass("position");
-    $(insertPos).addClass("text-center");
+    $(insertPos).addClass("text-right");
     insertPos.innerText=pos;
 
     $(insertName).addClass("name");
     $(insertName).addClass("text-center");
-    insertName.innerText=team;
+    insertName.innerText=name;
 
     $(insertScore).addClass("score");
     $(insertScore).addClass("text-center");
@@ -26,20 +26,20 @@ function appendText(viewport,pos,name,score){
     $(insertRow).append(insertName);
     $(insertRow).append(insertScore);
 
-    $(table).append(insertRow);
+    $(viewport).append(insertRow);
 }
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"",//заменить при переносе на сервер
+		url:"http://194.67.194.82/view/user",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
-            const vewport = "#t1Tbody";
-            $(vewport).empty();
+            const viewport = "#t1Tbody";
+            $(viewport).empty();
             var pos = 1;
-            $(".imgfirst").attr('src',src1);
-            $(".imgsecond").attr('src',src2);
-            $(".imgthird").attr('src',src3);
+            // $(".imgfirst").attr('src',src1);
+            // $(".imgsecond").attr('src',src2);
+            // $(".imgthird").attr('src',src3);
             for(var i = 3; i<data.length; i++){  
                 appendText(viewport,pos,data[i].name,data[i].score);          
             }
@@ -78,13 +78,13 @@ th{
     font-size:24px;
 }
 td{
-    font-size:24px;
+    font-size:18px;
 }
 
 .row{
     margin-top:21%;
-    margin-left:52%;
-    margin-right:6%;
+    margin-left:56%;
+    margin-right:8%;
 }
 .imgfirst{
     position:absolute;
@@ -114,9 +114,9 @@ td{
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
-                  <td class="position text-center">Two</td>
+                  <td class="position text-right">Two</td>
                   <td class="name text-center">Two</td>
-                  <td class="totalscore text-center">Two</td>
+                  <td class="totalscore text-left">Two</td>
                   </tr>
             </tbody>
          </table>

@@ -31,7 +31,7 @@ function appendText(viewport,pos,name,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"",//заменить при переносе на сервер
+		url:"http://194.67.194.82/view/user",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const viewport1 = "#t1Tbody";
@@ -43,10 +43,10 @@ function loadData(){
             var maxForTable = data.length/2;
             for(var i = 0; i<data.length; i++){
                 if(tableCounter<=maxForTable){
-                    appendText(viewport1,pos,data[i],name,data[i].score);
+                    appendText(viewport1,pos,data[i].name,data[i].score);
                     tableCounter++;
                 }else{
-                    appendText(viewport2,pos,data[i],name,data[i].score)
+                    appendText(viewport2,pos,data[i].name,data[i].score)
                 }
             }
             setTimeout(function(){
@@ -57,7 +57,7 @@ function loadData(){
 }
 
 $(document).ready(function(){
-    
+    loadData();
 $("body").click(function(){
     $("#w0").fadeIn(2000);
 })
@@ -81,7 +81,7 @@ body{
     
 }
 .tbl2{
-    margin-left:-2%;
+    margin-left:4.5%;
     padding-right:8%;
     padding-top:1.5vh;
 }
@@ -97,10 +97,13 @@ body{
 td{
     font-size:22px;
 }
+.tbl1{
+    margin-left:7%;
+}
 </style>
 <div class="container-fluid">
 <div class="row">
-   <div class="col-xs-6">
+   <div class="col-xs-5 tbl1">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
@@ -121,7 +124,7 @@ td{
             </tbody>
          </table>
    </div>
-   <div class="col-xs-6 tbl2">
+   <div class="col-xs-5 tbl2">
          <table id = "t2" class="table borderless">
             <tbody id="t2Tbody">
                <tr>

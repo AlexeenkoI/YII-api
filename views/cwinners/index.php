@@ -11,7 +11,7 @@ function appendText(viewport,pos,team,score){
     var insertScore = document.createElement("td");
 
     $(insertPos).addClass("position");
-    $(insertPos).addClass("text-center");
+    $(insertPos).addClass("text-right");
     insertPos.innerText=pos;
 
     $(insertTeam).addClass("team");
@@ -26,22 +26,29 @@ function appendText(viewport,pos,team,score){
     $(insertRow).append(insertTeam);
     $(insertRow).append(insertScore);
 
-    $(table).append(insertRow);
+    $(viewport).append(insertRow);
 }
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"",//заменить при переносе на сервер
+		url:"http://194.67.194.82/view/index",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
-            const vewport = "#t1Tbody";
-            $(vewport).empty();
-            var pos = 1;
-            $(".imgfirst").attr('src',src1);
-            $(".imgsecond").attr('src',src2);
-            $(".imgthird").attr('src',src3);
+            const viewport = "#t1Tbody";
+            var counter = 0
+            var tableCounter = 13;
+            $(viewport).empty();
+            var pos = 3;
+            // $(".imgfirst").attr('src',src1);
+            // $(".imgsecond").attr('src',src2);
+            // $(".imgthird").attr('src',src3);
             for(var i = 3; i<data.length; i++){  
-                appendText(viewport,pos,data[i].team,data[i].score);          
+            var tableCounter = 8;
+                if(counter<=tableCounter){
+                appendText(viewport,pos,data[i].group,data[i].score);
+                counter++;
+                pos++;          
+                }
             }
         }
     });
@@ -82,16 +89,17 @@ th{
     font-size:25px;
 }
 td{
-    font-size:23px;
+    font-size:20px;
 }
 .row{
-    margin-top:21%;
-    margin-left:52%;
+    margin-top:22%;
+    margin-left:51%;
     margin-right:6%;
 }
-#tbl{
-    padding-left:4.5vh;
-    width:43% !important;
+.appendTexttbl{
+    padding-left:5vh;
+    padding-right:3%;
+    width:34% !important;
     margin-left:3vh !important;
 }
 .place{
@@ -124,7 +132,7 @@ td{
 <body>
 <div class="container-fluid">
 <div class="row">
-   <div class="col-xs-12 offset3">
+   <div class="col-xs-12 offset3 tbl1">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
