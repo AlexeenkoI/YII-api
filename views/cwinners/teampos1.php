@@ -76,7 +76,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://ds.citrus24.com/app/images/individualpos.png');
+    /*background-image: url('http://ds.citrus24.com/app/images/individualpos.png');*/
     /*background-image: url(http://yii.local/app/images/individualpos.png);*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ td{
 }
 </style>
 <div class="container-fluid">
-<div class="row">
+
    <table style="width:100%;">
         <tr>
             <th>Комманда</th>
@@ -126,5 +126,5 @@ td{
 
         </tbody>
    </table>
-</div>
+
 </div>
