@@ -70,7 +70,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://194.67.194.82/app/images/individual.png');
+    background-image: url(http://194.67.194.82/app/images/individual.png);
     /*background-image: url(http://yii.local/app/images/individual.png);*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -85,12 +85,14 @@ body{
     padding-right:8%;
     padding-top:1.5vh;
 }
+
 .table {
     border-bottom:0px !important;
 }
 .table th, .table td {
     border: 1px !important;
 }
+
 .fixed-table-container {
     border:0px !important;
 }
