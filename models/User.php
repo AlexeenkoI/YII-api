@@ -40,7 +40,7 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['firstname', 'lastname', 'patronymic', 'rfcid'], 'required'],
+            [['firstname', 'lastname', 'patronymic'], 'required'],
             [['groupid', 'batchid', 'routeid', 'iscap', 'isdeleted'], 'integer'],
             [['firstname', 'lastname', 'patronymic', 'rfcid'], 'string', 'max' => 50],
             [['groupid'], 'exist', 'skipOnError' => true, 'targetClass' => Group::className(), 'targetAttribute' => ['groupid' => 'id']],
