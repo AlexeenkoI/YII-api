@@ -60,8 +60,8 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    /*background-image: url('http://194.67.194.82/app/images/individualwin.png');*/
-    background-image: url(http://yii.local/app/images/individualwin.png);
+    background-image: url('http://194.67.194.82/app/images/individualwin.png');
+    /*background-image: url(http://yii.local/app/images/individualwin.png);*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -107,11 +107,12 @@ td{
     width:300px;
     height:300px;
 }
+
 </style>
 <div class="container-fluid">
 <div class="row">
    <div class="col-xs-12 offset3">
-         <table id="t1" class="table borderless">
+         <table id="t1" class="table borderless tbl1">
             <tbody id="t1Tbody">
                <tr>
                   <td class="position text-right">Two</td>
