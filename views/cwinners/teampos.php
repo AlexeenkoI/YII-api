@@ -30,7 +30,7 @@ function appendText(viewport,pos,group,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://194.67.194.82/view/index",//заменить при переносе на сервер
+		url:"http://ds.citrus24.com/view/index",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const viewport1 = "#t1Tbody";
@@ -73,7 +73,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://194.67.194.82/app/images/individualpos.png');
+    background-image: url('http://ds.citrus24.com/app/images/individualpos.png');
     /*background-image: url(http://yii.local/app/images/individualpos.png);*/
     background-size: 100% 100%;
     background-repeat: no-repeat;

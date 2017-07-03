@@ -31,7 +31,7 @@ function appendText(viewport,pos,team,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://194.67.194.82/view/index",//заменить при переносе на сервер
+		url:"http://ds.citrus24.com/view/index",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const viewport = "#t1Tbody";
@@ -68,7 +68,7 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://194.67.194.82/app/images/command.png');
+    background-image: url('http://ds.citrus24.com/app/images/command.png');
     /*background-image: url('http://yii.local/app/images/command.png');*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -147,12 +147,12 @@ td{
 </div>>
 </div>
 <div class="imgfirst">
-<img src="http://194.67.194.82/app/images/tiger.png" alt="Первое место" class="img-rounded place">
+<img src="http://ds.citrus24.com/app/images/tiger.png" alt="Первое место" class="img-rounded place">
 </div>
 <div class="imgsecond">
-<img src="http://194.67.194.82/app/images/zebra.png" alt="Второе место" class="img-rounded place">
+<img src="http://ds.citrus24.com/app/images/zebra.png" alt="Второе место" class="img-rounded place">
 </div>
 <div class="imgthird">
-<img src="http://194.67.194.82/app/images/elephant.png" alt="Третье место" class="img-rounded place">
+<img src="http://ds.citrus24.com/app/images/elephant.png" alt="Третье место" class="img-rounded place">
 </div>
 </body>
