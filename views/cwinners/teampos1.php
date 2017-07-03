@@ -115,12 +115,12 @@ td{
 </style>
 <div class="container-fluid">
 <div class="row">
-   <table>
+   <table style="width:100%;">
         <tr>
-            <th>Комманда<th>
-            <th>Кубик 1<th>
-            <th>Кубик 2<th>
-            <th>Кубик 3<th>
+            <th>Комманда</th>
+            <th>Кубик 1</th>
+            <th>Кубик 2</th>
+            <th>Кубик 3</th>
         </tr>
         <tbody id="tablebodythis">
 
