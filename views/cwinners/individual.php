@@ -124,11 +124,11 @@ td{
    </div>
 </div>
 <div class="imgfirst">
-<img src="http://yii.local/app/images/tiger.png" alt="Первое место" class="img-rounded place">
+<img src="http://194.67.194.82/app/images/tiger.png" alt="Первое место" class="img-rounded place">
 </div>
 <div class="imgsecond">
-<img src="http://yii.local/app/images/zebra.png" alt="Второе место" class="img-rounded place">
+<img src="http://194.67.194.82/app/images/zebra.png" alt="Второе место" class="img-rounded place">
 </div>
 <div class="imgthird">
-<img src="http://yii.local/app/images/elephant.png" alt="Третье место" class="img-rounded place">
+<img src="http://194.67.194.82/app/images/elephant.png" alt="Третье место" class="img-rounded place">
 </div>
