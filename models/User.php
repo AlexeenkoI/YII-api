@@ -76,6 +76,13 @@ class User extends \yii\db\ActiveRecord
         return $this->hasMany(Moneylog::className(), ['userid' => 'id']);
     }
 
+    public function deleteRecursive($relations = array()){
+        if($relations == []){
+            $relations = ["batch","route","group","moneylog"];
+        }
+        parent::deleteRecursive($relations);
+        
+    }
     /**
      * @return \yii\db\ActiveQuery
      */
