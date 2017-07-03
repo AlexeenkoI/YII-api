@@ -90,11 +90,10 @@ class UserController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post())) {
-            var_dump($model); exit();
             if ($model->rfcid == "0")
             $model->rfcid = NULL;
 
-            $model->save();
+            var_dump($model->save()); exit();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
