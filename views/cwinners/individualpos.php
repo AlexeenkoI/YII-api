@@ -70,8 +70,8 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    /*background-image: url('http://194.67.194.82/app/images/teampos.png');*/
-    background-image: url(http://yii.local/app/images/individual.png);
+    background-image: url('http://194.67.194.82/app/images/individual.png');
+    /*background-image: url(http://yii.local/app/images/individual.png);*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

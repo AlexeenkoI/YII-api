@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use Yii;
+use app\models\app\models\Moneylog;
 use app\models\User;
 use app\models\UserSearch;
 use app\models\UserMorda;
@@ -133,6 +134,12 @@ class UserController extends Controller
         return $this->asJson($result);
 	}
 	
+    public function beforeDelete(){
+        foreach($this->Moneylog as $model){
+            $model->delete();
+        }
+
+    }
 	
 	public function actionAdduser() {
         $data = Yii::$app->getRequest()->getBodyParams();
