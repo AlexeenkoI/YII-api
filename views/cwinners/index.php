@@ -11,7 +11,7 @@ function appendText(viewport,pos,team,score){
     var insertScore = document.createElement("td");
 
     $(insertPos).addClass("position");
-    $(insertPos).addClass("text-right");
+    $(insertPos).addClass("text-center");
     insertPos.innerText=pos;
 
     $(insertTeam).addClass("team");
@@ -68,19 +68,20 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url('http://ds.citrus24.com/app/images/command.png');
-    /*background-image: url('http://yii.local/app/images/command.png');*/
+    /*background-image: url('http://ds.citrus24.com/app/images/command.png');*/
+    background-image: url('http://ds.citrus24.com/app/images/background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .table {
     border-bottom:0px !important;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 .table th, .table td {
     border: 1px !important;
 }
 .fixed-table-container {
-    border:0px !important;
+    border:px !important;
 }
 tr{
 
@@ -92,7 +93,7 @@ td{
     font-size:20px;
 }
 .row{
-    margin-top:22%;
+    margin-top:16%;
     margin-left:51%;
     margin-right:6%;
 }
@@ -128,16 +129,40 @@ td{
     height:300px;
 }
 
+#logo{
+    width:4%;
+    max-width:5%;
+    height:40px;
+    margin-left:62%;
+    margin-right:10%;
+    margin-top: 2vh;
+    margin-bottom:0%;
+}
+.posfirst{
+    text-align:center;
+}
 </style>
 <body>
 <div class="container-fluid">
+<div id="logo" class="col-xs-1">
+<image src="http://yii.local/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
+</div>
 <div class="row">
+<h1 class="text-center">Награждение победителей</h1>
+<h3 class="text-center">Командный зачет</h3>
    <div class="col-xs-12 offset3 tbl1">
          <table id="t1" class="table borderless">
+         <thead>
+         <tr>
+         <th class="text-center">Место</th>
+         <th class="text-center">Команда</th>
+         <th class="text-center">Баллов</th>
+         </tr>
+         </thead>
             <tbody id="t1Tbody">
                <tr>
                   <td class="position text-center">Two</td>
-                  <td class="name text-center">Two</td>
+                  <td class="group text-center">Two</td>
                   <td class="totalscore text-center">Two</td>
                   </tr>
             </tbody>
@@ -147,12 +172,21 @@ td{
 </div>>
 </div>
 <div class="imgfirst">
-<img src="http://ds.citrus24.com/app/images/tiger.png" alt="Первое место" class="img-rounded place">
+<img src="http://ds.citrus24.com/app/images/tiger.png" alt="Первое место" class="img-rounded place img-fluid center-block">
+    <div class="posfirst">
+        <img src="http://ds.citrus24.com/app/images/pos1.png" class="img-fluid center-block">
+    </div>
 </div>
 <div class="imgsecond">
-<img src="http://ds.citrus24.com/app/images/zebra.png" alt="Второе место" class="img-rounded place">
+<img src="http://ds.citrus24.com/app/images/zebra.png" alt="Второе место" class="img-rounded place ">
+    <div class="posthird">
+        <img src="http://ds.citrus24.com/app/images/pos3.png" class="img-fluid center-block">
+    </div>
 </div>
 <div class="imgthird">
 <img src="http://ds.citrus24.com/app/images/elephant.png" alt="Третье место" class="img-rounded place">
+    <div class="posecond">
+        <img src="http://ds.citrus24.com/app/images/pos2.png" class="img-fluid center-block">
+    </div>
 </div>
 </body>

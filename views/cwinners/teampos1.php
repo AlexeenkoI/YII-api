@@ -30,7 +30,7 @@ function appendText(viewport,pos,group,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://ds.citrus24.com/view/kubik",//заменить при переносе на сервер
+		url:"http://yii.local/view/kubik",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             var table = $('#tablebodythis');
@@ -44,9 +44,13 @@ function loadData(){
                 var tdp3 = $("<td>");
 
                 tdname.html(data[i].name);
+                tdname.addClass("text-center");
                 tdp1.html(data[i].p1);
+                tdp1.addClass("text-center");
                 tdp2.html(data[i].p2);
+                tdp2.addClass("text-center");
                 tdp3.html(data[i].p3);
+                tdp3.addClass("text-center");
 
                 tr.append(tdname);
                 tr.append(tdp1);
@@ -103,6 +107,12 @@ td{
     margin-left:1%;
     
 }
+th{
+    font-size:24px;
+}
+tr{
+    font-size:20px;
+}
 .tbl1{
     margin-left:6%;
     margin-right:0%;
@@ -113,18 +123,19 @@ td{
     padding-top:1.5vh;
 }
 </style>
+<div class="container">
 <div class="container-fluid">
 
    <table style="width:100%;">
         <tr>
-            <th>Комманда</th>
-            <th>Кубик 1</th>
-            <th>Кубик 2</th>
-            <th>Кубик 3</th>
+            <th class="text-center">Комманда</th>
+            <th class="text-center">Кубик 1</th>
+            <th class="text-center">Кубик 2</th>
+            <th class="text-center">Кубик 3</th>
         </tr>
         <tbody id="tablebodythis">
 
         </tbody>
    </table>
-
+</div>
 </div>

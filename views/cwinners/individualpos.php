@@ -45,8 +45,10 @@ function loadData(){
                 if(tableCounter<=maxForTable){
                     appendText(viewport1,pos,data[i].name,data[i].score);
                     tableCounter++;
+                    pos++;
                 }else{
                     appendText(viewport2,pos,data[i].name,data[i].score)
+                    pos++;
                 }
             }
             setTimeout(function(){
@@ -70,44 +72,91 @@ $("body").click(function(){
 </script>
 <style>
 body{
-    background-image: url(http://ds.citrus24.com/app/images/individual.png);
-    /*background-image: url(http://yii.local/app/images/individual.png);*/
+    /*background-image: url('http://ds.citrus24.com/app/images/individualpos.png');*/
+    background-image: url(http://ds.citrus24.com/app/images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.row{
-    margin-top:26.5%;
-    margin-left:1%;
+/*td{
+    font-size:20px;
+}*/
+/*.row{
+    margin-top:26%;
+    margin-left:14%;
     
+}*/
+.table {
+    border-bottom:0px !important;
+    width:90% !important;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color:blue;
+}
+.table th, .table td {
+    border: 1px !important;
+    
+}
+.fixed-table-container {
+    border:0px !important;
+}
+h1,h3{
+    width:95%;
+    margin-left:0% !important;
+    color:#000066;
+}
+.row{
+    margin-top:14%;
+    margin-left:4%;
+    
+}
+th{
+    font-size:20px;
+    color:#000066;
+}
+td {
+    font-size:18px;
+}
+#logo{
+    width:4%;
+    max-width:5%;
+    height:40px;
+    margin-left:40%;
+    margin-right:10%;
+    margin-top: 1vh;
+    margin-bottom:0%;
+}
+/*image{
+width:100%; 
+height:auto; 
+}*/
+/*.tbl1{
+    margin-left:6%;
+    margin-right:0%;
 }
 .tbl2{
     margin-left:4.5%;
     padding-right:8%;
     padding-top:1.5vh;
-}
-
-.table {
-    border-bottom:0px !important;
-}
-.table th, .table td {
-    border: 1px !important;
-}
-
-.fixed-table-container {
-    border:0px !important;
-}
-td{
-    font-size:22px;
-}
-.tbl1{
-    margin-left:7%;
-}
+}*/
+</style>
 </style>
 <div class="container-fluid">
+<div id="logo" class="center-block text-center">
+<image src="http://yii.local/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
+</div>
 <div class="row">
-   <div class="col-xs-5 tbl1">
+<h1 class="text-center">Текущее положение</h1>
+<h3 class="text-center">Командный зачет</h3>
+   <div class="col-xs-6">
          <table id="t1" class="table borderless">
+         <thead>
+            <tr>
+                <th class="text-center">Место</th>
+                <th class="text-center">Команда</th>
+                <th class="text-center">Очки</th>
+            </tr>
+         </thead>
             <tbody id="t1Tbody">
+
                <tr>
                   <td class="position text-center">Two</td>
                   <td class="name text-center">Two</td>
@@ -121,13 +170,20 @@ td{
                <tr>
                   <td class="position text-center">Two</td>
                   <td class="name text-center">Two</td>
-                  <td class="totalscore text-center">Two</td>>
+                  <td class="totalscore text-center">Two</td>
                </tr>
             </tbody>
          </table>
    </div>
-   <div class="col-xs-5 tbl2">
+   <div class="col-xs-6">
          <table id = "t2" class="table borderless">
+         <thead>
+             <tr>
+                <th class="text-center">Место</th>
+                <th class="text-center">Команда</th>
+                <th class="text-center">Очки</th>
+            </tr>
+         </thead>
             <tbody id="t2Tbody">
                <tr>
                   <td class="position text-center">Two</td>
