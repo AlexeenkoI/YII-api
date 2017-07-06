@@ -105,7 +105,7 @@ h1,h3{
     color:#000066;
 }
 .row{
-    margin-top:16%;
+    margin-top:-2%;
     margin-left:4%;
     
 }
@@ -121,9 +121,11 @@ td {
     max-width:5%;
     height:40px;
     margin-left:40%;
-    margin-right:10%;
-    margin-top: 1vh;
+    margin-right:40%;
+    margin-top: 2vh;
     margin-bottom:0%;
+    display:inline;
+    position:relative;
 }
 /*.tbl1{
     margin-left:6%;
@@ -136,7 +138,7 @@ td {
 }*/
 </style>
 <div class="container-fluid">
-<div id="logo" class="col-xs-1">
+<div id="logo" class="">
 <image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
 </div>
 <div class="row">

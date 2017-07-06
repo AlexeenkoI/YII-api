@@ -129,7 +129,7 @@ td{
     height:300px;
 }
 
-#logo{
+/*#logo{
     width:4%;
     max-width:5%;
     height:40px;
@@ -137,6 +137,17 @@ td{
     margin-right:10%;
     margin-top: 2vh;
     margin-bottom:0%;
+}*/
+#logo{
+    width:4%;
+    max-width:5%;
+    height:40px;
+    left:62%;
+    margin-right:40%;
+    margin-top: 2vh;
+    margin-bottom:0%;
+
+    position:relative
 }
 .posfirst{
     text-align:center;
@@ -144,8 +155,8 @@ td{
 </style>
 <body>
 <div class="container-fluid">
-<div id="logo" class="col-xs-1">
-<image src="http://yii.local/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
+<div id="logo" class="">
+<image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
 </div>
 <div class="row">
 <h1 class="text-center">Награждение победителей</h1>

@@ -104,7 +104,7 @@ h1,h3{
     color:#000066;
 }
 .row{
-    margin-top:14%;
+    margin-top:0%;
     margin-left:4%;
     
 }
@@ -115,15 +115,19 @@ th{
 td {
     font-size:18px;
 }
+
 #logo{
     width:4%;
     max-width:5%;
     height:40px;
     margin-left:40%;
-    margin-right:10%;
-    margin-top: 1vh;
+    margin-right:40%;
+    margin-top: 2vh;
     margin-bottom:0%;
+    display:inline;
+    position:relative;
 }
+
 /*image{
 width:100%; 
 height:auto; 
@@ -140,10 +144,10 @@ height:auto;
 </style>
 </style>
 <div class="container-fluid">
-<div id="logo" class="center-block text-center">
-<image src="http://yii.local/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
+<div id="logo" class="text-center">
+<image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
 </div>
-<div class="row">
+<div class="row text-center">
 <h1 class="text-center">Текущее положение</h1>
 <h3 class="text-center">Командный зачет</h3>
    <div class="col-xs-6">
@@ -156,7 +160,6 @@ height:auto;
             </tr>
          </thead>
             <tbody id="t1Tbody">
-
                <tr>
                   <td class="position text-center">Two</td>
                   <td class="name text-center">Two</td>

@@ -74,8 +74,8 @@ $("body").click(function(){
     border:0px !important;
 }
 body{
-    background-image: url('http://ds.citrus24.com/app/images/route22.jpg');
-    /*background-image: url(http://yii.local/app/images/route22.jpg);*/
+    /*background-image: url('http://ds.citrus24.com/app/images/route22.jpg');*/
+    background-image: url(http://ds.citrus24.com/app/images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -83,30 +83,58 @@ body{
 .name{
     background-image: url('http://ds.citrus24.com/app/images/routename.png');
     background-size:95% 85%;
+    background-position:center;
     background-repeat: no-repeat;
-    font-size:35px;
+    font-size:25px;
     color:#191970;
-    background-position:bottom 10px;
+    /*background-position:bottom 10px;*/
 }
 .count{
     background-image: url('http://ds.citrus24.com/app/images/routecount.png');
     background-size:100% 85%;
+    background-position:center;
     background-repeat: no-repeat;
-    font-size:35px;
+    font-size:25px;
     color:#191970;
 }
 
 .row{
-    margin-top:18%;
-    margin-left:14%;
+    top:32%;
+    left:10% !important;
+    right:10% !important;
+    position:absolute;
+    /*width:90%;*/
+    /*margin-top:18%;
+    margin-left:14%;*/
     
 }
 
+h1{
+    /*left:5%;
+    right:5%;*/
+    font-size:55px;
+    color:#000066;
+}
+#logo{
+    width:4%;
+    max-width:5%;
+    height:40px;
+    margin-left:40%;
+    margin-right:40%;
+    margin-top: 2vh;
+    margin-bottom:0%;
+    display:inline;
+    position:relative;
+}
 </style>
 
 <div class="container-fluid">
-<div class="row">
-   <div class="col-xs-5">
+<div id="logo" class="text-center">
+<image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
+</div>
+<div class="row text-center">
+<h1 class="text-center">Маршруты</h1>
+   <div class="col-xs-6">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
                <tr>
@@ -124,7 +152,7 @@ body{
             </tbody>
          </table>
    </div>
-   <div class="col-xs-5">
+   <div class="col-xs-6">
          <table id = "t2" class="table borderless">
             <tbody id="t2Tbody">
                <tr>

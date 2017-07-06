@@ -85,7 +85,7 @@ td{
     font-size:20px;
 }
 .row{
-    margin-top:16%;
+    margin-top:0%;
     margin-left:51%;
     margin-right:6%;
 }
@@ -103,32 +103,34 @@ td{
     position:absolute;
     left:19.5vw;
     bottom:38vh;
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
 }
 .imgsecond{
     position:absolute;
     left:8vw;
     bottom:26vh;
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
 }
 .imgthird{
     position:absolute;
     left:31vw;
     bottom:32vh;
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
 }
 
 #logo{
-    width:4%;
+    /*width:4%;
     max-width:5%;
-    height:40px;
-    margin-left:62%;
+    height:40px;*/
+    margin-left:62% !important;
     margin-right:10%;
     margin-top: 2vh;
     margin-bottom:0%;
+    /*display:inline;*/
+    position:relative;
 }
 .posfirst{
     text-align:center;
@@ -136,9 +138,9 @@ td{
 </style>
 <body>
 <div class="container-fluid">
-<div id="logo" class="col-xs-1">
-<image src="http://yii.local/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-</div>
+
+<image id ="logo" src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
+
 <div class="row">
 <h1 class="text-center">Награждение победителей</h1>
 <h3 class="text-center">Индивидуальный зачет</h3>
@@ -172,13 +174,13 @@ td{
 <div class="imgsecond">
 <img src="http://ds.citrus24.com/app/images/zebra.png" alt="Второе место" class="img-rounded place ">
     <div class="posthird">
-        <img src="http://ds.citrus24.com/app/images/pos3.png" class="img-fluid center-block">
+        <img src="http://ds.citrus24.com/app/images/pos3.png" class="img-fluid center-block"/>
     </div>
 </div>
 <div class="imgthird">
-<img src="http://ds.citrus24.com/app/images/elephant.png" alt="Третье место" class="img-rounded place">
+<img src="http://ds.citrus24.com/app/images/elephant.png" alt="Третье место" class="img-rounded place"/>
     <div class="posecond">
-        <img src="http://ds.citrus24.com/app/images/pos2.png" class="img-fluid center-block">
+        <img src="http://ds.citrus24.com/app/images/pos2.png" class="img-fluid center-block"/>
     </div>
 </div>
 </body>
