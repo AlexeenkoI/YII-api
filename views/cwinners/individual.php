@@ -11,7 +11,7 @@ function appendText(viewport,pos,name,score){
     var insertScore = document.createElement("td");
 
     $(insertPos).addClass("position");
-    $(insertPos).addClass("text-right");
+    $(insertPos).addClass("text-center");
     insertPos.innerText=pos;
 
     $(insertName).addClass("name");
@@ -34,14 +34,21 @@ function loadData(){
 		url:"http://ds.citrus24.com/view/user",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
+            const firstpos = ".imgfirst";
+            const secondpos = ".imgsecond";
+            const thirdpos = ".imgthird";
+            $(firstpos).append(data[0].name);
+            $(secondpos).append(data[1].name);
+            $(thirdpos).append(data[2].name);
             const viewport = "#t1Tbody";
             $(viewport).empty();
-            var pos = 1;
+            var pos = 3;
             // $(".imgfirst").attr('src',src1);
             // $(".imgsecond").attr('src',src2);
             // $(".imgthird").attr('src',src3);
             for(var i = 3; i<data.length; i++){  
-                appendText(viewport,pos,data[i].name,data[i].score);          
+                appendText(viewport,pos,data[i].name,data[i].score);
+                pos++;          
             }
         }
     });
@@ -63,6 +70,7 @@ body{
     /*background-image: url('http://ds.citrus24.com/app/images/command.png');*/
     background-image: url('http://ds.citrus24.com/app/images/background.png');
     background-size: 100% 100%;
+    background-position:center;
     background-repeat: no-repeat;
 }
 .table {
@@ -99,27 +107,39 @@ td{
     width:100%;
     height:100%;
 }
-.imgfirst{
-    position:absolute;
-    left:19.5vw;
-    bottom:38vh;
-    width:250px;
-    height:250px;
+.imgfirst {
+    position: absolute;
+    bottom: 35px;
+    width: 100px;
+    height: 300px;
+    top: 325px;
+    left: 470px;
+    font-size: 25px;
+    text-align: center;
 }
-.imgsecond{
-    position:absolute;
-    left:8vw;
-    bottom:26vh;
-    width:250px;
-    height:250px;
+
+
+.imgsecond {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 135px;
+    top: 480px;
+    font-size: 25px;
+    text-align: center;
 }
-.imgthird{
-    position:absolute;
-    left:31vw;
-    bottom:32vh;
-    width:250px;
-    height:250px;
+
+
+.imgthird {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 420px;
+    left: 600px;
+    font-size: 25px;
+    text-align: center;
 }
+
 
 #logo{
     /*width:4%;
@@ -132,8 +152,12 @@ td{
     /*display:inline;*/
     position:relative;
 }
-.posfirst{
-    text-align:center;
+.posfirst {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 400px;
+    left: 40px;
 }
 </style>
 <body>
@@ -165,22 +189,22 @@ td{
 </div>
 </div>>
 </div>
-<div class="imgfirst">
-<img src="http://ds.citrus24.com/app/images/tiger.png" alt="Первое место" class="img-rounded place img-fluid center-block">
+<div class="imgfirst text-center">
+<!--<img src="http://ds.citrus24.com/app/images/tiger.png" alt="Первое место" class="img-rounded place img-fluid center-block">-->
+</div>
     <div class="posfirst">
-        <img src="http://ds.citrus24.com/app/images/pos1.png" class="img-fluid center-block">
+        <img src="http://ds.citrus24.com/app/images/tumbs.png" class="img-fluid center-block">
     </div>
+<div class="imgsecond text-center">
+<!--<img src="http://ds.citrus24.com/app/images/zebra.png" alt="Второе место" class="img-rounded place ">-->
+    <!--<div class="posthird">
+        <img src="http://yii.local/app/images/pos3.png" class="img-fluid center-block">
+    </div>-->
 </div>
-<div class="imgsecond">
-<img src="http://ds.citrus24.com/app/images/zebra.png" alt="Второе место" class="img-rounded place ">
-    <div class="posthird">
-        <img src="http://ds.citrus24.com/app/images/pos3.png" class="img-fluid center-block"/>
-    </div>
-</div>
-<div class="imgthird">
-<img src="http://ds.citrus24.com/app/images/elephant.png" alt="Третье место" class="img-rounded place"/>
-    <div class="posecond">
-        <img src="http://ds.citrus24.com/app/images/pos2.png" class="img-fluid center-block"/>
-    </div>
+<div class="imgthird text-center">
+<!--<img src="http://ds.citrus24.com/app/images/elephant.png" alt="Третье место" class="img-rounded place">-->
+    <!--<div class="posecond">
+        <img src="http://yii.local/app/images/pos2.png" class="img-fluid center-block">
+    </div>-->
 </div>
 </body>

@@ -4,6 +4,52 @@ $this->title = 'Командный зачет';
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
+function totems(pos,name){
+    var totem = [
+        'http://ds.citrus24.com/app/images/antilopa.png',
+        'http://ds.citrus24.com/app/images/bear.png',
+        'http://ds.citrus24.com/app/images/behemot.png',
+        'http://ds.citrus24.com/app/images/cobra.png',
+        'http://ds.citrus24.com/app/images/crocodile.png',
+        'http://ds.citrus24.com/app/images/elephant.png',
+        'http://ds.citrus24.com/app/images/enot.png',
+        'http://ds.citrus24.com/app/images/flamingo.png',
+        'http://ds.citrus24.com/app/images/giraf.png',
+        'http://ds.citrus24.com/app/images/letmish.png',
+        'http://ds.citrus24.com/app/images/lion.png',
+        'http://ds.citrus24.com/app/images/monkey.png',
+        'http://ds.citrus24.com/app/images/nosorog.png',
+        'http://ds.citrus24.com/app/images/parrot.png',
+        'http://ds.citrus24.com/app/images/tiger.png',
+        'http://ds.citrus24.com/app/images/wolf.png',
+    ];
+    var val = 0;
+    switch (name){
+        case 'Антилопы': val = totem[0]; break;
+        case 'Медведи' : val = totem[1]; break;
+        case 'Бегемоты': val = totem[2]; break;
+        case 'Кобры' : val = totem[3];  break;
+        case 'Крокодилы': val = totem[4]; break;
+        case 'Слоны': val = totem[5]; break;
+        case 'Еноты': val = totem[6]; break;
+        case 'Фламинго': val = totem[7]; break;
+        case 'Жирафы' : val = totem[8]; break;
+        case 'Летучие мыши' : val = totem[9]; break;
+        case 'Львы' : val = totem[10]; break;
+        case 'Обезьяны' : val = totem[11]; break;
+        case 'Носороги' : val = totem[12]; break;
+        case 'Попугаи' : val = totem[13]; break;
+        case 'Тигры' : val = totem[14]; break;
+        case 'Волки' : val = totem[15]; break;
+    }
+    if(pos==1){
+        $(".if").attr('src',val);
+    }else if(pos==2){
+        $(".is").attr('src',val);
+    }else if(pos==3){
+        $(".ith").attr('src',val);
+    }
+}
 function appendText(viewport,pos,team,score){
     var insertRow = document.createElement("tr");
     var insertPos = document.createElement("td");
@@ -34,12 +80,16 @@ function loadData(){
 		url:"http://ds.citrus24.com/view/index",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
+            console.log(data);
             const viewport = "#t1Tbody";
             var counter = 0
             var tableCounter = 13;
             $(viewport).empty();
             var pos = 3;
-            // $(".imgfirst").attr('src',src1);
+            totems(1,data[0].group);
+            totems(2,data[1].group);
+            totems(3,data[2].group);
+             //$(".if").attr('src','http://ds.citrus24.com/app/images/tiger.png');
             // $(".imgsecond").attr('src',src2);
             // $(".imgthird").attr('src',src3);
             for(var i = 3; i<data.length; i++){  
@@ -93,7 +143,7 @@ td{
     font-size:20px;
 }
 .row{
-    margin-top:16%;
+    margin-top:14%;
     margin-left:51%;
     margin-right:6%;
 }
@@ -107,37 +157,31 @@ td{
     width:100%;
     height:100%;
 }
-.imgfirst{
-    position:absolute;
-    left:19.5vw;
-    bottom:38vh;
-    width:300px;
-    height:300px;
-}
-.imgsecond{
-    position:absolute;
-    left:8vw;
-    bottom:26vh;
-    width:300px;
-    height:300px;
-}
-.imgthird{
-    position:absolute;
-    left:31vw;
-    bottom:32vh;
-    width:300px;
-    height:300px;
+.imgfirst {
+    position: absolute;
+    bottom: 35px;
+    width: 300px;
+    height: 300px;
+    top: 165px;
+    left: 370px;
 }
 
-/*#logo{
-    width:4%;
-    max-width:5%;
-    height:40px;
-    margin-left:62%;
-    margin-right:10%;
-    margin-top: 2vh;
-    margin-bottom:0%;
-}*/
+.imgsecond {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 135px;
+    top: 270px;
+}
+
+.imgthird {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 240px;
+    left: 600px;
+}
+
 #logo{
     width:4%;
     max-width:5%;
@@ -149,9 +193,14 @@ td{
 
     position:relative
 }
-.posfirst{
-    text-align:center;
+.posfirst {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 400px;
+    left: 40px;
 }
+
 </style>
 <body>
 <div class="container-fluid">
@@ -180,24 +229,24 @@ td{
          </table>
     </div>
 </div>
-</div>>
+</div>
 </div>
 <div class="imgfirst">
-<img src="http://ds.citrus24.com/app/images/tiger.png" alt="Первое место" class="img-rounded place img-fluid center-block">
-    <div class="posfirst">
-        <img src="http://ds.citrus24.com/app/images/pos1.png" class="img-fluid center-block">
-    </div>
+<img src="" alt="Первое место" class="img-rounded place img-fluid if center-block">
 </div>
-<div class="imgsecond">
-<img src="http://ds.citrus24.com/app/images/zebra.png" alt="Второе место" class="img-rounded place ">
-    <div class="posthird">
-        <img src="http://ds.citrus24.com/app/images/pos3.png" class="img-fluid center-block">
+    <div class="posfirst">
+        <img src="http://ds.citrus24.com/app/images/tumbs.png" class="img-fluid center-block">
     </div>
+<div class="imgsecond">
+<img src="" alt="Второе место" class="img-rounded is place ">
+    <!--<div class="posthird">
+        <img src="http://yii.local/app/images/pos3.png" class="img-fluid center-block">
+    </div>-->
 </div>
 <div class="imgthird">
-<img src="http://ds.citrus24.com/app/images/elephant.png" alt="Третье место" class="img-rounded place">
-    <div class="posecond">
-        <img src="http://ds.citrus24.com/app/images/pos2.png" class="img-fluid center-block">
-    </div>
+<img src="" alt="Третье место" class="img-rounded ith place">
+    <!--<div class="posecond">
+        <img src="http://yii.local/app/images/pos2.png" class="img-fluid center-block">
+    </div>-->
 </div>
 </body>
