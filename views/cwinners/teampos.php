@@ -39,14 +39,14 @@ function loadData(){
             $(viewport2).empty();
             var pos = 1;
             var tableCounter = 1;
-            var maxForTable = 14;
+            var maxForTable = 20;
             for(var i = 0; i<data.length; i++){
-                if(pos<=7){
+                if(pos<=10){
                     appendText(viewport1,pos,data[i].group,data[i].score);
                     tableCounter++;
                     pos++;
                 }else{
-                    if(pos>7 && pos<=14){
+                    if(pos>10){
                     appendText(viewport2,pos,data[i].group,data[i].score)
                     tableCounter++;
                      pos++;
@@ -102,16 +102,16 @@ body{
 h1,h3{
     width:95%;
     margin-left:0% !important;
-    color:#000066;
+    /*color:#000066;*/
 }
 .row{
-    margin-top:-2%;
+    margin-top:2%;
     margin-left:4%;
     
 }
 th{
     font-size:20px;
-    color:#000066;
+    /*color:#000066;*/
 }
 td {
     font-size:18px;
@@ -138,9 +138,9 @@ td {
 }*/
 </style>
 <div class="container-fluid">
-<div id="logo" class="">
+<!--<div id="logo" class="">
 <image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-</div>
+</div>-->
 <div class="row">
 
 <h1 class="text-center">Текущее положение</h1>
