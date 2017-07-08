@@ -85,7 +85,7 @@ function loadData(){
             var counter = 0
             var tableCounter = 13;
             $(viewport).empty();
-            var pos = 3;
+            var pos = 4;
             totems(1,data[0].group);
             totems(2,data[1].group);
             totems(3,data[2].group);

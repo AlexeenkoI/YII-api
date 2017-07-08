@@ -42,11 +42,11 @@ function loadData(){
             $(thirdpos).append(data[2].name);
             const viewport = "#t1Tbody";
             $(viewport).empty();
-            var pos = 3;
+            var pos = 4;
             // $(".imgfirst").attr('src',src1);
             // $(".imgsecond").attr('src',src2);
             // $(".imgthird").attr('src',src3);
-            for(var i = 2; i<data.length; i++){  
+            for(var i = 3; i<data.length; i++){  
                 appendText(viewport,pos,data[i].name,data[i].score);
                 pos++;          
             }
