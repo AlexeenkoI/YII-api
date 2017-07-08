@@ -66,7 +66,8 @@ $("body").click(function(){
 }
 .table {
     border-bottom:0px !important;
-    border-spacing:10px;
+    border-spacing: 10px;
+    border-collapse: separate;
 }
 .table th, .table td {
     border: 1px !important;
@@ -83,19 +84,19 @@ body{
     font-weight: bold;
 }
 .name{
-    background:  rgba(255,255,255,.8);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    background:  rgba(255,255,255,.7);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     font-size:25px;
     /*color:#191970;*/
     /*background-position:bottom 10px;*/
 }
 .count{
-    background: rgba(255,255,255,.8);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    background: rgba(255,255,255,.7);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     font-size:25px;
     /*color:#191970;*/
 }
