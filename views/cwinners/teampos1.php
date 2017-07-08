@@ -4,7 +4,7 @@ $this->title = 'Маршруты';
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-function appendText(viewport,pos,totem,score){
+function appendText(viewport,pos,totem,score,scoret){
     var insertRow = document.createElement("tr");
 
     var insertPos = document.createElement("td");
@@ -18,15 +18,43 @@ function appendText(viewport,pos,totem,score){
     var insertScore = document.createElement("td");
     $(insertScore).addClass("score");
     $(insertScore).addClass("text-center");
-    insertPos.innerText = pos;
-    insertTotem.innerText = totem;
-    insertScore.innerText = score;
+
+    var insertScoret = document.createElement("td");
+    $(insertScoret).addClass("scoret");
+    $(insertScoret).addClass("text-center");
+
+
+    $(insertPos).html(pos);
+    $(insertTotem).html(totem);
+    $(insertScore).html(score);
+    $(insertScoret).html(scoret);
 
     $(insertRow).append(insertPos);
     $(insertRow).append(insertTotem);
     $(insertRow).append(insertScore);
+    $(insertRow).append(insertScoret);
     $(viewport).append(insertRow);
 }
+
+function doScore(p1, p2, p3) {
+    var score = parseInt(p1) + parseInt(p2);
+
+    return score;
+}
+
+function doScoret(p1, p2, p3) {
+    var lab = ""
+
+    if (p3 == "1") lab += "HС";
+    if (p3 == "2") lab += "ГЛ";
+    if (p3 == "3") lab += "УХ";
+    if (p3 == "4") lab += "КР";
+    if (p3 == "5") lab += "ЛП";
+    if (p3 == "6") lab += "ХВ";
+
+    return lab;
+}
+
 function loadData(){
     	$.ajax({
 		type:"POST",
@@ -43,31 +71,37 @@ function loadData(){
             tableCounter = 1;
             for (var i = 0; i < data.length; i++) { 
                    if(tableCounter<=7){
-                       var score = data[i].p1+data[i].p2+data[i].p3;
-                       appendText(viewport1,pos,data[i].name,score);
+                       var score = doScore(data[i].p1, data[i].p2, data[i].p3);
+                       var scoret = doScoret(data[i].p1, data[i].p2, data[i].p3);
+                       appendText(viewport1,pos,data[i].name,score,scoret);
                        tableCounter++;
                        pos++;
+                       continue;
                    }
                    if(tableCounter>7 && tableCounter<=14){
-                       var score = data[i].p1+data[i].p2+data[i].p3;
-                       appendText(viewport2,pos,data[i].name,score);
+                       var score = doScore(data[i].p1, data[i].p2, data[i].p3);
+                       var scoret = doScoret(data[i].p1, data[i].p2, data[i].p3);
+                       appendText(viewport2,pos,data[i].name,score,scoret);
                        tableCounter++;
                        pos++;
+                       continue;
                    }
                    if(tableCounter>14){
-                       var score = data[i].p1+data[i].p2+data[i].p3;
-                       appendText(viewport3,pos,data[i].name,score);
+                       var score = doScore(data[i].p1, data[i].p2, data[i].p3);
+                       var scoret = doScoret(data[i].p1, data[i].p2, data[i].p3);
+                       appendText(viewport3,pos,data[i].name,score,scoret);
                        tableCounter++;
                        pos++;
+                       continue;
                    }
-                   if(pos>21&&tableCounter>21){
-                       pos = 1;
-                       tableCounter = 1;
-                   }
+                //    if(pos>21&&tableCounter>21){
+                //        pos = 1;
+                //        tableCounter = 1;
+                //    }
             }
-            setTimeout(function(){
-                loadData()
-            },2000);
+            // setTimeout(function(){
+            //     loadData()
+            // },2000);
         }
     });
 }
@@ -89,6 +123,8 @@ body{
     background-image: url(http://ds.citrus24.com/app/images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    color: #095764;
+    font-weight: bold;
 }
 td{
     font-size:20px;
@@ -100,7 +136,9 @@ td{
 }*/
 .table {
     border-bottom:0px !important;
-    width:85%;
+    width:100%;
+    border-spacing: 10px;
+    border-collapse: separate;
 }
 .table th, .table td {
     border: 1px !important;
@@ -111,7 +149,7 @@ td{
 .row{
     margin-top:2%;
     margin-left:5%;
-    
+    margin-right: 50px;
 }
 th{
     font-size:24px;
@@ -141,26 +179,33 @@ td{
 }
 .position{
     color:white;
-    background:url(http://ds.citrus24.com/app/images/placetest.png);
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:60% 90%;
+     background:  rgba(0,84,95,.7);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     width:4%;
 }
 .totem{
-    background:url(http://ds.citrus24.com/app/images/coubtotem.png);
-    background-size:90% 85%;
-    background-position:center;
-    background-repeat:no-repeat;
+     background:  rgba(255,255,255,.7);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     width:15%;
 }
 
 .score{
-    color:#000066;
-    background:url(http://ds.citrus24.com/app/images/coubscore.png);
-    background-size:60% 90%;
-    background-position:center;
-    background-repeat:no-repeat;
+    background:  rgba(255,255,255,.7);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width:5%;
+}
+.scoret{
+    color:white;
+    background:  rgba(0,84,95,.7);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     width:5%;
 }
 </style>
@@ -183,10 +228,11 @@ td{
 
 
 <div class="container-fluid">
-<div id="logo" class="text-center">
+<!--<div id="logo" class="text-center">
 <image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-</div>
+</div>-->
 <div class="row text-center">
+<h1 class="text-center">Последовательность записи</h1>
    <div class="col-xs-4">
          <table id="t1" class="table borderless">
             <tbody id="t1Tbody">
