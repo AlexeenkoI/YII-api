@@ -82,19 +82,19 @@ body{
     font-weight: bold;
 }
 .name{
-    background-image:  rgba(255,255,255,.8);
-    background-size:95% 85%;
-    background-position:center;
-    background-repeat: no-repeat;
+    background:  rgba(255,255,255,.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     font-size:25px;
     /*color:#191970;*/
     /*background-position:bottom 10px;*/
 }
 .count{
-    background-image: rgba(255,255,255,.8);
-    background-size:100% 85%;
-    background-position:center;
-    background-repeat: no-repeat;
+    background: rgba(255,255,255,.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     font-size:25px;
     /*color:#191970;*/
 }
