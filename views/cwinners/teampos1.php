@@ -99,9 +99,9 @@ function loadData(){
                 //        tableCounter = 1;
                 //    }
             }
-            // setTimeout(function(){
-            //     loadData()
-            // },2000);
+            setTimeout(function(){
+                loadData()
+            },2000);
         }
     });
 }
