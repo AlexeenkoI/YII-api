@@ -52,11 +52,7 @@ class Route extends \yii\db\ActiveRecord
             'capacity' => 'Кол-во мест',
             'price' => 'Цена',
             'isdeleted' => 'Isdeleted',
-<<<<<<< HEAD
             'isvip' => 'Вип-маршрут',
-=======
-            'isvip' => 'Isvip',
->>>>>>> 7605891411f628657e350790050f5b0d1dc698fd
         ];
     }
 
