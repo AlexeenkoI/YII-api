@@ -2,7 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+// use kartik\widgets\ActiveForm;
+use kartik\date\DatePicker;
 /* @var $this yii\web\View */
 /* @var $model app\models\Moneylog */
 /* @var $form yii\widgets\ActiveForm */
@@ -22,7 +23,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'isdeleted')->checkbox() ?>
 
-    <?= $form->field($model, 'date')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'date')->widget(DatePicker::classname(), [
+    'options' => ['placeholder' => 'Enterdate'],
+    'pluginOptions' => [
+        'autoclose'=>true,
+        'format' => 'mm/dd/yyyy, D'
+    ]
+]); ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
