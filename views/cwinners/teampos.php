@@ -102,7 +102,7 @@ body{
 h1,h3{
     width:95%;
     margin-left:0% !important;
-    color:#000066;
+    /*color:#000066;*/
 }
 .row{
     margin-top:2%;
@@ -111,7 +111,7 @@ h1,h3{
 }
 th{
     font-size:20px;
-    color:#000066;
+    /*color:#000066;*/
 }
 td {
     font-size:18px;
