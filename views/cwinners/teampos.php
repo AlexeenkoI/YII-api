@@ -105,7 +105,7 @@ h1,h3{
     color:#000066;
 }
 .row{
-    margin-top:-2%;
+    margin-top:2%;
     margin-left:4%;
     
 }
@@ -138,9 +138,9 @@ td {
 }*/
 </style>
 <div class="container-fluid">
-<div id="logo" class="">
+<!--<div id="logo" class="">
 <image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-</div>
+</div>-->
 <div class="row">
 
 <h1 class="text-center">Текущее положение</h1>
