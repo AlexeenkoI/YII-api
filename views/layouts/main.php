@@ -34,21 +34,31 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Командный зачет', 'url' => ['/cwinners/index']],
-            ['label' => 'Промежуточный командный', 'url' => ['/cwinners/teampos']],
-            ['label' => 'Индивидуальный зачет', 'url' => ['/cwinners/individual']],
-            ['label' => 'Индивидуальный зачет женский', 'url' => ['/cwinners/individualf']],
-            ['label' => 'Индивидуальный зачет мужской', 'url' => ['/cwinners/individualm']],
-            ['label' => 'Промежуточный индивидуальный', 'url' => ['/cwinners/individualpos']],
-            ['label' => 'Промежуточный индивидуальный женский', 'url' => ['/cwinners/individualposf']],
-            ['label' => 'Промежуточный индивидуальный мужской', 'url' => ['/cwinners/individualposm']],
-            ['label' => 'Маршруты', 'url' => ['/cwinners/routes']],
-            ['label' => 'Кубики', 'url' => ['/cwinners/kubik']],
-        ],
-    ]);
+
+    if (Yii::$app->controller->id == "cwinners") {
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => [
+                ['label' => 'Командный зачет', 'url' => ['/cwinners/index']],
+                ['label' => 'Промежуточный командный', 'url' => ['/cwinners/teampos']],
+                ['label' => 'Индивидуальный зачет', 'url' => ['/cwinners/individual']],
+                ['label' => 'Индивидуальный зачет женский', 'url' => ['/cwinners/individualf']],
+                ['label' => 'Индивидуальный зачет мужской', 'url' => ['/cwinners/individualm']],
+                ['label' => 'Промежуточный индивидуальный', 'url' => ['/cwinners/individualpos']],
+                ['label' => 'Промежуточный индивидуальный женский', 'url' => ['/cwinners/individualposf']],
+                ['label' => 'Промежуточный индивидуальный мужской', 'url' => ['/cwinners/individualposm']],
+                ['label' => 'Маршруты', 'url' => ['/cwinners/routes']],
+                ['label' => 'Кубики', 'url' => ['/cwinners/kubik']],
+            ],
+        ]);
+    } else {
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => [
+                ['label' => 'Командный зачет', 'url' => ['/cwinners/index']],
+            ],
+        ]);
+    }
     NavBar::end();
     ?>
 
