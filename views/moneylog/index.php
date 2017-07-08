@@ -18,7 +18,7 @@ $this->title = 'Денежные логи';
 
     <p>
         <?= Html::a('Создать лог', ['create'], ['class' => 'btn btn-success']) ?>
-        <?= Html::a('Назад', ['moneylog/index'], ['class' => 'btn btn-danger']) ?>
+        <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
         'summary'=>'Логов {count} - Страница {page}',
