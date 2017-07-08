@@ -87,6 +87,7 @@ body{
     -moz-border-radius: 5px;
     border-radius: 5px;
     font-size:25px;
+    margin:20px;
     /*color:#191970;*/
     /*background-position:bottom 10px;*/
 }
@@ -96,6 +97,7 @@ body{
     -moz-border-radius: 5px;
     border-radius: 5px;
     font-size:25px;
+    margin:20px;
     /*color:#191970;*/
 }
 
