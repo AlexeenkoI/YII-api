@@ -122,6 +122,9 @@ body{
     background-image: url('http://ds.citrus24.com/app/images/background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    color: #095764;
+    font-weight: bold;
+
 }
 .table {
     border-bottom:0px !important;
@@ -133,6 +136,9 @@ body{
 .fixed-table-container {
     border:px !important;
 }
+#w0{
+    width:100%;
+}
 tr{
 
 }
@@ -143,7 +149,7 @@ td{
     font-size:20px;
 }
 .row{
-    margin-top:14%;
+    margin-top:10%;
     margin-left:51%;
     margin-right:6%;
 }
@@ -204,9 +210,9 @@ td{
 </style>
 <body>
 <div class="container-fluid">
-<div id="logo" class="">
+<!--<div id="logo" class="">
 <image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-</div>
+</div>-->
 <div class="row">
 <h1 class="text-center">Награждение победителей</h1>
 <h3 class="text-center">Командный зачет</h3>

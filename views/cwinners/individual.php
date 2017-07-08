@@ -72,6 +72,9 @@ body{
     background-size: 100% 100%;
     background-position:center;
     background-repeat: no-repeat;
+    color: #095764;
+    font-weight: bold;
+
 }
 .table {
     border-bottom:0px !important;
@@ -93,7 +96,7 @@ td{
     font-size:20px;
 }
 .row{
-    margin-top:0%;
+    margin-top:10%;
     margin-left:51%;
     margin-right:6%;
 }
@@ -162,9 +165,7 @@ td{
 </style>
 <body>
 <div class="container-fluid">
-
-<image id ="logo" src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-
+<!--<image id ="logo" src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>-->
 <div class="row">
 <h1 class="text-center">Награждение победителей</h1>
 <h3 class="text-center">Индивидуальный зачет</h3>
