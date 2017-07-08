@@ -78,10 +78,11 @@ body{
     background-image: url(http://ds.citrus24.com/app/images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    
+    color: #095764;
+    font-weight: bold;
 }
 .name{
-    background-image: url('http://ds.citrus24.com/app/images/routename.png');
+    background-image:  rgba(255,255,255,.8);
     background-size:95% 85%;
     background-position:center;
     background-repeat: no-repeat;
@@ -90,7 +91,7 @@ body{
     /*background-position:bottom 10px;*/
 }
 .count{
-    background-image: url('http://ds.citrus24.com/app/images/routecount.png');
+    background-image: rgba(255,255,255,.8);
     background-size:100% 85%;
     background-position:center;
     background-repeat: no-repeat;

@@ -74,6 +74,8 @@ body{
     background-image: url(http://ds.citrus24.com/app/images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    color: #095764;
+    font-weight: bold;
 }
 /*td{
     font-size:20px;
