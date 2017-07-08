@@ -19,9 +19,9 @@ function appendText(viewport,pos,name,score){
     $(insertScore).addClass("totalscore");
     $(insertScore).addClass("text-center");
 
-    insertPos.innerText = pos;
-    insertName.innerText = name;
-    insertScore.innerText = score;
+    $(insertPos).html(pos);
+    $(insertName).html(name);
+    $(insertScore).html(score);
 
     $(insertRow).append(insertPos);
     $(insertRow).append(insertName);
