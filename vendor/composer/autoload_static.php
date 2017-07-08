@@ -31,7 +31,12 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
         ),
         'k' => 
         array (
+            'kartik\\sortable\\' => 16,
+            'kartik\\select2\\' => 15,
+            'kartik\\grid\\' => 12,
             'kartik\\form\\' => 12,
+            'kartik\\export\\' => 14,
+            'kartik\\dynagrid\\' => 16,
             'kartik\\date\\' => 12,
             'kartik\\base\\' => 12,
         ),
@@ -116,9 +121,29 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
+        'kartik\\sortable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-sortable',
+        ),
+        'kartik\\select2\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-select2',
+        ),
+        'kartik\\grid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-grid',
+        ),
         'kartik\\form\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-activeform',
+        ),
+        'kartik\\export\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-export',
+        ),
+        'kartik\\dynagrid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-dynagrid',
         ),
         'kartik\\date\\' => 
         array (
@@ -216,6 +241,10 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
+            ),
+            'PHPExcel' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpoffice/phpexcel/Classes',
             ),
         ),
         'H' => 
