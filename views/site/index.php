@@ -1,5 +1,4 @@
 <?php
-
 /* @var $this yii\web\View */
 
 $this->title = 'Jumanji';
@@ -59,6 +58,7 @@ background-image: url(http://img.zoneland.ru/images5/593067ww_5.jpg.jpg);
     </div>
 </div>-->
 <title>Джуманджи</title>
+?>
 <div class="jumbotron">
 <h1>Панель Администратора</h1>
     <p><?= yii\helpers\Html::a('Пользователи', ['user/index'], ['class' => 'btn btn-primary'])?></p>
