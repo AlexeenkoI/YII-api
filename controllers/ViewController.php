@@ -33,7 +33,8 @@ class ViewController  extends Controller {
                                                     left join (
                                                         select userid as uid, sum(money) as money from moneylog where moneylog.type = 'ADD_MONEY' group by moneylog.userid
                                                         ) as t on user.id = t.uid
-                                                        order by score desc")->queryAll());
+                                                        order by score desc
+                                                        limit 20")->queryAll());
     }
 
     public function actionKubik() {

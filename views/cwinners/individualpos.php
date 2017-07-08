@@ -101,16 +101,16 @@ body{
 h1,h3{
     width:95%;
     margin-left:0% !important;
-    color:#000066;
+    /*color:#000066;*/
 }
 .row{
-    margin-top:0%;
+    margin-top:2%;
     margin-left:4%;
     
 }
 th{
     font-size:20px;
-    color:#000066;
+    /*color:#000066;*/
 }
 td {
     font-size:18px;
@@ -144,9 +144,9 @@ height:auto;
 </style>
 </style>
 <div class="container-fluid">
-<div id="logo" class="text-center">
+<!--<div id="logo" class="text-center">
 <image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-</div>
+</div>-->
 <div class="row text-center">
 <h1 class="text-center">Текущее положение</h1>
 <h3 class="text-center">Командный зачет</h3>
