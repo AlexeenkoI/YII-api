@@ -66,6 +66,7 @@ $("body").click(function(){
 }
 .table {
     border-bottom:0px !important;
+    border-spacing:10px;
 }
 .table th, .table td {
     border: 1px !important;
@@ -87,7 +88,6 @@ body{
     -moz-border-radius: 5px;
     border-radius: 5px;
     font-size:25px;
-    margin:20px;
     /*color:#191970;*/
     /*background-position:bottom 10px;*/
 }
@@ -97,7 +97,6 @@ body{
     -moz-border-radius: 5px;
     border-radius: 5px;
     font-size:25px;
-    margin:20px;
     /*color:#191970;*/
 }
 
