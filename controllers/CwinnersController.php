@@ -24,7 +24,14 @@ class CwinnersController extends \yii\web\Controller
     }
 
     public function actionIndividualpos(){
-        return $this->render('individualpos');
+        return $this->render('individualpos', ["ANEX" => ""]);
+    }
+
+    public function actionIndividualposm(){
+        return $this->render('individualpos', ["ANEX" => "m"]);
+    }
+    public function actionIndividualposf(){
+        return $this->render('individualpos', ["ANEX" => "f"]);
     }
 
     public function actionTeampos(){
