@@ -53,7 +53,7 @@ function loadData(){
                 }
             }
             if (data.length % 2 == 1){
-                appendText(viewport2,"","","")
+                appendText(viewport2,"&nbsp;","&nbsp;","&nbsp;")
             }
 
             setTimeout(function(){
