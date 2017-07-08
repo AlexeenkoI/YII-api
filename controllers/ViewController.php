@@ -12,11 +12,17 @@ class ViewController  extends Controller {
 
     public function actionIndex() {
         $this->asJson(Yii::$app->db->createCommand("select 
-                                                    `group`.name as `group`,
-                                                    IF(ISNULL(p1), 0, p1 + p2 + p3)  as `score`
-                                                from `group`
-                                                join grouppriority on grouppriority.groupid = `group`.id and grouppriority.batchid = (select currentbatch from currbatch limit 1)
-                                                order by p1 + p2 + p3 desc")->queryAll());
+                                                        t1.name as `group`,
+                                                        IF(ISNULL(t2.p1), 0, t2.p1 + t2.p2 + t2.p3)  as `score`
+                                                    from (
+                                                        select * from `group`
+                                                    ) as t1 
+                                                        left join (
+                                                            select * from `grouppriority` 
+                                                            where grouppriority.batchid = (select currentbatch from currbatch limit 1)
+                                                            group by groupid) as t2
+                                                        on t1.id = t2.groupid
+                                                    order by t2.p1 + t2.p2 + t2.p3 desc, t2.p4 desc")->queryAll());
     }
 
 
