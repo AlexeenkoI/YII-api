@@ -31,7 +31,7 @@ function appendText(viewport,pos,name,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://ds.citrus24.com/view/user",//заменить при переносе на сервер
+		url:"http://ds.citrus24.com/view/user<?php echo $ANEX; ?>",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const firstpos = ".imgfirst";
@@ -46,7 +46,7 @@ function loadData(){
             // $(".imgfirst").attr('src',src1);
             // $(".imgsecond").attr('src',src2);
             // $(".imgthird").attr('src',src3);
-            for(var i = 3; i<data.length; i++){  
+            for(var i = 2; i<data.length; i++){  
                 appendText(viewport,pos,data[i].name,data[i].score);
                 pos++;          
             }
@@ -96,7 +96,7 @@ td{
     font-size:20px;
 }
 .row{
-    margin-top:10%;
+    margin-top:5%;
     margin-left:51%;
     margin-right:6%;
 }
@@ -112,34 +112,30 @@ td{
 }
 .imgfirst {
     position: absolute;
-    bottom: 35px;
-    width: 100px;
-    height: 300px;
-    top: 325px;
-    left: 470px;
-    font-size: 25px;
+    top: -75px;
+    left: 242px;
     text-align: center;
+    width: 200px;
+    font-size: 23px;
 }
 
 
 .imgsecond {
     position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 135px;
-    top: 480px;
-    font-size: 25px;
+    left: 462px;
+    top: -9px;
+    font-size: 23px;
     text-align: center;
+    width: 200px;
 }
 
 
 .imgthird {
     position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 420px;
-    left: 600px;
-    font-size: 25px;
+    width: 200px;
+    top: 43px;
+    left: 18px;
+    font-size: 23px;
     text-align: center;
 }
 
@@ -157,10 +153,10 @@ td{
 }
 .posfirst {
     text-align: center;
-    width: 50%;
+    width: 680px;
     position: absolute;
     top: 400px;
-    left: 40px;
+    left: 70px;
 }
 </style>
 <body>
@@ -190,22 +186,19 @@ td{
 </div>
 </div>>
 </div>
-<div class="imgfirst text-center">
-<!--<img src="http://ds.citrus24.com/app/images/tiger.png" alt="Первое место" class="img-rounded place img-fluid center-block">-->
-</div>
-    <div class="posfirst">
-        <img src="http://ds.citrus24.com/app/images/tumbs.png" class="img-fluid center-block">
+
+<div class="posfirst">
+    <img src="http://ds.citrus24.com/app/images/tumbs.png" class="img-fluid center-block">
+
+    <div class="imgfirst text-center">
     </div>
-<div class="imgsecond text-center">
-<!--<img src="http://ds.citrus24.com/app/images/zebra.png" alt="Второе место" class="img-rounded place ">-->
-    <!--<div class="posthird">
-        <img src="http://yii.local/app/images/pos3.png" class="img-fluid center-block">
-    </div>-->
+
+    <div class="imgsecond text-center">
+    </div>
+
+    <div class="imgthird text-center">
+    </div>
+
 </div>
-<div class="imgthird text-center">
-<!--<img src="http://ds.citrus24.com/app/images/elephant.png" alt="Третье место" class="img-rounded place">-->
-    <!--<div class="posecond">
-        <img src="http://yii.local/app/images/pos2.png" class="img-fluid center-block">
-    </div>-->
-</div>
+
 </body>
