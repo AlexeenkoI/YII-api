@@ -39,14 +39,14 @@ function loadData(){
             $(viewport2).empty();
             var pos = 1;
             var tableCounter = 1;
-            var maxForTable = 14;
+            var maxForTable = 20;
             for(var i = 0; i<data.length; i++){
-                if(pos<=7){
+                if(pos<=10){
                     appendText(viewport1,pos,data[i].group,data[i].score);
                     tableCounter++;
                     pos++;
                 }else{
-                    if(pos>7 && pos<=14){
+                    if(pos>10){
                     appendText(viewport2,pos,data[i].group,data[i].score)
                     tableCounter++;
                      pos++;
