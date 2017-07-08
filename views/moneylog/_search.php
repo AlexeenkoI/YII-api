@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\MoneylogSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-<div class="container">
+
 <div class="moneylog-search">
 
     <?php $form = ActiveForm::begin([
@@ -27,6 +27,8 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'isdeleted') ?>
 
+    <?php // echo $form->field($model, 'date') ?>
+
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
         <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
@@ -34,5 +36,4 @@ use yii\widgets\ActiveForm;
 
     <?php ActiveForm::end(); ?>
 
-</div>
 </div>

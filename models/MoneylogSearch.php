@@ -18,8 +18,8 @@ class MoneylogSearch extends Moneylog
     public function rules()
     {
         return [
-            [['id', 'userid', 'money', 'type', 'isdeleted'], 'integer'],
-            [['description'], 'safe'],
+            [['id', 'userid', 'money', 'isdeleted'], 'integer'],
+            [['type', 'description', 'date'], 'safe'],
         ];
     }
 
@@ -62,11 +62,12 @@ class MoneylogSearch extends Moneylog
             'id' => $this->id,
             'userid' => $this->userid,
             'money' => $this->money,
-            'type' => $this->type,
             'isdeleted' => $this->isdeleted,
         ]);
 
-        $query->andFilterWhere(['like', 'description', $this->description]);
+        $query->andFilterWhere(['like', 'type', $this->type])
+            ->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'date', $this->date]);
 
         return $dataProvider;
     }

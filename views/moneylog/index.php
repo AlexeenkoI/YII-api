@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Денежные логи';
-//$this->params['breadcrumbs'][] = $this->title;
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
 <div class="moneylog-index">
@@ -17,22 +17,21 @@ $this->title = 'Денежные логи';
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Создать Лог', ['create'], ['class' => 'btn btn-success']) ?>
-        <?= Html::a("Назад", ['site/index'], ['class'=>'btn btn-danger'])?>
+        <?= Html::a('Создать лог', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Назад', ['moneylog/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
-        'summary'=>'Записей {count} - Страниц {page}',
+        'summary'=>'Логов {count} - Страница {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            //['class' => 'yii\grid\SerialColumn'],
-
             'id',
             'userid',
             'money',
             'type',
             'description',
             // 'isdeleted',
+             'date',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
