@@ -154,7 +154,12 @@ height:auto;
 </div>-->
 <div class="row text-center">
 <h1 class="text-center">Текущее положение</h1>
-<h3 class="text-center">Командный зачет</h3>
+<h3 class="text-center">Индивидуальный зачет 
+    <?php 
+        if ($ANEX == "m") echo "мужской";
+        if ($ANEX == "f") echo "женский";
+    ?>
+</h3>
    <div class="col-xs-6">
          <table id="t1" class="table borderless">
          <thead>
