@@ -149,7 +149,7 @@ td{
     font-size:20px;
 }
 .row{
-    margin-top:10%;
+    margin-top:5%;
     margin-left:51%;
     margin-right:6%;
 }
@@ -165,27 +165,31 @@ td{
 }
 .imgfirst {
     position: absolute;
-    bottom: 35px;
-    width: 300px;
-    height: 300px;
-    top: 165px;
-    left: 370px;
+    top: -205px;
+    left: 242px;
+    text-align: center;
+    width: 200px;
+    font-size: 23px;
 }
+
 
 .imgsecond {
     position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 135px;
-    top: 270px;
+    left: 462px;
+    top: -109px;
+    font-size: 23px;
+    text-align: center;
+    width: 200px;
 }
+
 
 .imgthird {
     position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 240px;
-    left: 600px;
+    width: 200px;
+    top: -47px;
+    left: 18px;
+    font-size: 23px;
+    text-align: center;
 }
 
 #logo{
@@ -201,10 +205,10 @@ td{
 }
 .posfirst {
     text-align: center;
-    width: 50%;
+    width: 680px;
     position: absolute;
     top: 400px;
-    left: 40px;
+    left: 70px;
 }
 
 </style>
@@ -237,22 +241,26 @@ td{
 </div>
 </div>
 </div>
-<div class="imgfirst">
-<img src="" alt="Первое место" class="img-rounded place img-fluid if center-block">
-</div>
-    <div class="posfirst">
-        <img src="http://ds.citrus24.com/app/images/tumbs.png" class="img-fluid center-block">
+
+<div class="posfirst">
+    <img src="http://ds.citrus24.com/app/images/tumbs.png" class="img-fluid center-block">
+
+    <div class="imgfirst text-center">
+        <img src="" alt="Первое место" class="img-rounded place img-fluid if center-block">
     </div>
-<div class="imgsecond">
-<img src="" alt="Второе место" class="img-rounded is place ">
-    <!--<div class="posthird">
-        <img src="http://yii.local/app/images/pos3.png" class="img-fluid center-block">
-    </div>-->
+
+    <div class="imgsecond text-center">
+        <img src="" alt="Второе место" class="img-rounded is place ">
+    </div>
+
+    <div class="imgthird text-center">
+        <img src="" alt="Третье место" class="img-rounded ith place">
+    </div>
+
 </div>
-<div class="imgthird">
-<img src="" alt="Третье место" class="img-rounded ith place">
-    <!--<div class="posecond">
-        <img src="http://yii.local/app/images/pos2.png" class="img-fluid center-block">
-    </div>-->
-</div>
+
+
+
+
+
 </body>
