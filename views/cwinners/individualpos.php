@@ -41,6 +41,7 @@ function loadData(){
             var pos = 1;
             var tableCounter = 1;
             var maxForTable = data.length/2;
+            if (data.length % 2 == 1) maxForTable ++;
             for(var i = 0; i<data.length; i++){
                 if(tableCounter<=maxForTable){
                     appendText(viewport1,pos,data[i].name,data[i].score);
@@ -51,6 +52,10 @@ function loadData(){
                     pos++;
                 }
             }
+            if (data.length % 2 == 1){
+                appendText(viewport2,"","","")
+            }
+
             setTimeout(function(){
                 loadData()
             },2000);
