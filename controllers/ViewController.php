@@ -34,7 +34,7 @@ class ViewController  extends Controller {
                                                         select userid as uid, sum(money) as money from moneylog where moneylog.type = 'ADD_MONEY' group by moneylog.userid
                                                         ) as t on user.id = t.uid
                                                         order by score desc
-                                                        limit 20")->queryAll());
+                                                        limit 10")->queryAll());
     }
 
     public function actionUserm() {
@@ -45,7 +45,7 @@ class ViewController  extends Controller {
                                                         ) as t on user.id = t.uid
                                                         where sex = 'M'
                                                         order by score desc
-                                                        limit 20")->queryAll());
+                                                        limit 10")->queryAll());
     }
     public function actionUserf() {
         $this->asJson(Yii::$app->db->createCommand("select CONCAT(lastname, ' ' ,SUBSTR(firstname, 1, 1), '.', SUBSTR(patronymic, 1, 1), '.') as name , 
@@ -55,7 +55,7 @@ class ViewController  extends Controller {
                                                         ) as t on user.id = t.uid
                                                         where sex = 'F'
                                                         order by score desc
-                                                        limit 20")->queryAll());
+                                                        limit 10")->queryAll());
     }
 
     public function actionKubik() {
