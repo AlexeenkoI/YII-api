@@ -92,7 +92,9 @@ function loadData(){
              //$(".if").attr('src','http://ds.citrus24.com/app/images/tiger.png');
             // $(".imgsecond").attr('src',src2);
             // $(".imgthird").attr('src',src3);
-            for(var i = 3; i<data.length; i++){  
+            final = data.length;
+            if (final > 10) final = 10;
+            for(var i = 3; i<final; i++){  
             var tableCounter = 8;
                 if(counter<=tableCounter){
                 appendText(viewport,pos,data[i].group,data[i].score);

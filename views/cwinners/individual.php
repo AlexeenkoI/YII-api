@@ -46,7 +46,9 @@ function loadData(){
             // $(".imgfirst").attr('src',src1);
             // $(".imgsecond").attr('src',src2);
             // $(".imgthird").attr('src',src3);
-            for(var i = 3; i<data.length; i++){  
+            final = data.length;
+            if (final > 10) final = 10;
+            for(var i = 3; i<final; i++){  
                 appendText(viewport,pos,data[i].name,data[i].score);
                 pos++;          
             }
