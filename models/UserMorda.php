@@ -44,8 +44,8 @@ class UserMorda extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'userid' => 'Userid',
-            'mordaid' => 'Mordaid',
+            'userid' => 'Пользователь',
+            'mordaid' => 'Спикер',
         ];
     }
 

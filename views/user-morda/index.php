@@ -28,8 +28,14 @@ $this->title = 'Подписки на Спикеров';
             //['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'userid',
-            'mordaid',
+            [
+                'attribute' => 'userid',
+                'value' => 'user.firstname'
+            ],
+            [
+                'attribute' => 'mordaid',
+                'value' => 'morda.fio'
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
