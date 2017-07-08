@@ -19,9 +19,9 @@ function appendText(viewport,pos,name,score){
     $(insertScore).addClass("totalscore");
     $(insertScore).addClass("text-center");
 
-    insertPos.innerText = pos;
-    insertName.innerText = name;
-    insertScore.innerText = score;
+    $(insertPos).html(pos);
+    $(insertName).html(name);
+    $(insertScore).html(score);
 
     $(insertRow).append(insertPos);
     $(insertRow).append(insertName);
@@ -31,7 +31,7 @@ function appendText(viewport,pos,name,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://ds.citrus24.com/view/user",//заменить при переносе на сервер
+		url:"http://ds.citrus24.com/view/user<?php echo $ANEX; ?>",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const viewport1 = "#t1Tbody";
@@ -41,6 +41,7 @@ function loadData(){
             var pos = 1;
             var tableCounter = 1;
             var maxForTable = data.length/2;
+            if (data.length % 2 == 1) maxForTable ++;
             for(var i = 0; i<data.length; i++){
                 if(tableCounter<=maxForTable){
                     appendText(viewport1,pos,data[i].name,data[i].score);
@@ -51,6 +52,10 @@ function loadData(){
                     pos++;
                 }
             }
+            if (data.length % 2 == 1){
+                appendText(viewport2,"&nbsp;","&nbsp;","&nbsp;")
+            }
+
             setTimeout(function(){
                 loadData()
             },2000);
@@ -76,6 +81,8 @@ body{
     background-image: url(http://ds.citrus24.com/app/images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    color: #095764;
+    font-weight: bold;
 }
 /*td{
     font-size:20px;
@@ -101,16 +108,16 @@ body{
 h1,h3{
     width:95%;
     margin-left:0% !important;
-    color:#000066;
+    /*color:#000066;*/
 }
 .row{
-    margin-top:0%;
+    margin-top:2%;
     margin-left:4%;
     
 }
 th{
     font-size:20px;
-    color:#000066;
+    /*color:#000066;*/
 }
 td {
     font-size:18px;
@@ -144,18 +151,23 @@ height:auto;
 </style>
 </style>
 <div class="container-fluid">
-<div id="logo" class="text-center">
+<!--<div id="logo" class="text-center">
 <image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-</div>
+</div>-->
 <div class="row text-center">
 <h1 class="text-center">Текущее положение</h1>
-<h3 class="text-center">Командный зачет</h3>
+<h3 class="text-center">Индивидуальный зачет 
+    <?php 
+        if ($ANEX == "m") echo "мужской";
+        if ($ANEX == "f") echo "женский";
+    ?>
+</h3>
    <div class="col-xs-6">
          <table id="t1" class="table borderless">
          <thead>
             <tr>
                 <th class="text-center">Место</th>
-                <th class="text-center">Команда</th>
+                <th class="text-center">Ф.И.О.</th>
                 <th class="text-center">Очки</th>
             </tr>
          </thead>
@@ -183,7 +195,7 @@ height:auto;
          <thead>
              <tr>
                 <th class="text-center">Место</th>
-                <th class="text-center">Команда</th>
+                <th class="text-center">Ф.И.О.</th>
                 <th class="text-center">Очки</th>
             </tr>
          </thead>

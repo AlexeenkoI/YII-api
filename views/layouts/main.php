@@ -41,6 +41,8 @@ AppAsset::register($this);
             ['label' => 'Промежуточный командный', 'url' => ['/cwinners/teampos']],
             ['label' => 'Индивидуальный зачет', 'url' => ['/cwinners/individual']],
             ['label' => 'Промежуточный индивидуальный', 'url' => ['/cwinners/individualpos']],
+            ['label' => 'Промежуточный индивидуальный женский', 'url' => ['/cwinners/individualposf']],
+            ['label' => 'Промежуточный индивидуальный мужской', 'url' => ['/cwinners/individualposm']],
             ['label' => 'Маршруты', 'url' => ['/cwinners/routes']],
             ['label' => 'Кубики', 'url' => ['/cwinners/kubik']],
         ],

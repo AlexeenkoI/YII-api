@@ -24,7 +24,7 @@ function appendText(pos,name,count){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://ds.citrus24.com/route/getajaxroute",//заменить при переносе на сервер
+		url:"http://ds.citrus24.com/view/getajaxroute",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const pos1 = "#t1Tbody";
@@ -66,6 +66,8 @@ $("body").click(function(){
 }
 .table {
     border-bottom:0px !important;
+    border-spacing: 10px;
+    border-collapse: separate;
 }
 .table th, .table td {
     border: 1px !important;
@@ -78,28 +80,29 @@ body{
     background-image: url(http://ds.citrus24.com/app/images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    
+    color: #095764;
+    font-weight: bold;
 }
 .name{
-    background-image: url('http://ds.citrus24.com/app/images/routename.png');
-    background-size:95% 85%;
-    background-position:center;
-    background-repeat: no-repeat;
+    background:  rgba(255,255,255,.7);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     font-size:25px;
-    color:#191970;
+    /*color:#191970;*/
     /*background-position:bottom 10px;*/
 }
 .count{
-    background-image: url('http://ds.citrus24.com/app/images/routecount.png');
-    background-size:100% 85%;
-    background-position:center;
-    background-repeat: no-repeat;
+    background: rgba(255,255,255,.7);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     font-size:25px;
-    color:#191970;
+    /*color:#191970;*/
 }
 
 .row{
-    top:32%;
+    top:6%;
     left:10% !important;
     right:10% !important;
     position:absolute;
@@ -113,7 +116,7 @@ h1{
     /*left:5%;
     right:5%;*/
     font-size:55px;
-    color:#000066;
+    /*color:#000066;*/
 }
 #logo{
     width:4%;
@@ -129,9 +132,9 @@ h1{
 </style>
 
 <div class="container-fluid">
-<div id="logo" class="text-center">
+<!--<div id="logo" class="text-center">
 <image src="http://ds.citrus24.com/app/images/logo.png" class="img-fluid center-block" width="350" height="350"/>
-</div>
+</div>-->
 <div class="row text-center">
 <h1 class="text-center">Маршруты</h1>
    <div class="col-xs-6">

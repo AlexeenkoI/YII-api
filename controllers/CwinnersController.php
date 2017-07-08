@@ -10,7 +10,13 @@ class CwinnersController extends \yii\web\Controller
     }
 
     public function actionIndividual(){
-        return $this->render('individual');
+        return $this->render('individual', ["ANEX" => ""]);
+    }
+    public function actionIndividualm(){
+        return $this->render('individual', ["ANEX" => "m"]);
+    }
+    public function actionIndividualf(){
+        return $this->render('individual', ["ANEX" => "f"]);
     }
 
     public function actionRoutes(){
@@ -18,7 +24,14 @@ class CwinnersController extends \yii\web\Controller
     }
 
     public function actionIndividualpos(){
-        return $this->render('individualpos');
+        return $this->render('individualpos', ["ANEX" => ""]);
+    }
+
+    public function actionIndividualposm(){
+        return $this->render('individualpos', ["ANEX" => "m"]);
+    }
+    public function actionIndividualposf(){
+        return $this->render('individualpos', ["ANEX" => "f"]);
     }
 
     public function actionTeampos(){
