@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Маршруты';
-//$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
 <div class="route-index">
@@ -25,13 +25,13 @@ $this->title = 'Маршруты';
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            //['class' => 'yii\grid\SerialColumn'],
-
             'id',
             'name',
             'description',
             'capacity',
-            'isdeleted',
+            'price',
+            // 'isdeleted',
+             'isvip',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

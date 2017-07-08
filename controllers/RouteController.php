@@ -74,11 +74,6 @@ class RouteController extends Controller
         }
     }
 
-    public function actionGetajaxroute(){
-        $data = Route::find()->all();
-        return $this->asJson($data);
-    }
-
     /**
      * Updates an existing Route model.
      * If update is successful, the browser will be redirected to the 'view' page.

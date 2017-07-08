@@ -23,7 +23,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'capacity') ?>
 
-    <?= $form->field($model, 'isdeleted') ?>
+    <?= $form->field($model, 'price') ?>
+
+    <?php // echo $form->field($model, 'isdeleted') ?>
+
+    <?php // echo $form->field($model, 'isvip') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

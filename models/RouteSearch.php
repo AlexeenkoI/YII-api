@@ -18,7 +18,7 @@ class RouteSearch extends Route
     public function rules()
     {
         return [
-            [['id', 'capacity', 'isdeleted'], 'integer'],
+            [['id', 'capacity', 'price', 'isdeleted', 'isvip'], 'integer'],
             [['name', 'description'], 'safe'],
         ];
     }
@@ -61,7 +61,9 @@ class RouteSearch extends Route
         $query->andFilterWhere([
             'id' => $this->id,
             'capacity' => $this->capacity,
+            'price' => $this->price,
             'isdeleted' => $this->isdeleted,
+            'isvip' => $this->isvip,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])

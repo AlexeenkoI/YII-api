@@ -13,6 +13,7 @@ use Yii;
  * @property integer $capacity
  * @property integer $price
  * @property integer $isdeleted
+ * @property integer $isvip
  *
  * @property User[] $users
  */
@@ -33,7 +34,7 @@ class Route extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'description', 'capacity', 'price'], 'required'],
-            [['capacity', 'price', 'isdeleted'], 'integer'],
+            [['capacity', 'price', 'isdeleted', 'isvip'], 'integer'],
             [['name'], 'string', 'max' => 50],
             [['description'], 'string', 'max' => 255],
         ];
@@ -46,11 +47,12 @@ class Route extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'capacity' => 'Capacity',
-            'price' => 'Price',
+            'name' => 'Название',
+            'description' => 'Описание',
+            'capacity' => 'Кол-во мест',
+            'price' => 'Цена',
             'isdeleted' => 'Isdeleted',
+            'isvip' => 'Вип-маршрут',
         ];
     }
 

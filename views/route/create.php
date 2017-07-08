@@ -7,8 +7,8 @@ use yii\helpers\Html;
 /* @var $model app\models\Route */
 
 $this->title = 'Создать маршрут';
-//$this->params['breadcrumbs'][] = ['label' => 'Routes', 'url' => ['index']];
-//$this->params['breadcrumbs'][] = $this->title;
+// $this->params['breadcrumbs'][] = ['label' => 'Routes', 'url' => ['index']];
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
 <div class="route-create">

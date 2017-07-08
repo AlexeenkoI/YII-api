@@ -7,8 +7,8 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Route */
 
 $this->title = $model->name;
-//$this->params['breadcrumbs'][] = ['label' => 'Routes', 'url' => ['index']];
-//$this->params['breadcrumbs'][] = $this->title;
+// $this->params['breadcrumbs'][] = ['label' => 'Routes', 'url' => ['index']];
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
 <div class="route-view">
@@ -16,8 +16,8 @@ $this->title = $model->name;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a('Обновить', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Удалить', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -34,7 +34,9 @@ $this->title = $model->name;
             'name',
             'description',
             'capacity',
+            'price',
             'isdeleted',
+            'isvip',
         ],
     ]) ?>
 
