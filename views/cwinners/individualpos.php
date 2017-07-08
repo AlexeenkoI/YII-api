@@ -31,7 +31,7 @@ function appendText(viewport,pos,name,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://ds.citrus24.com/view/user",//заменить при переносе на сервер
+		url:"http://ds.citrus24.com/view/user<?php echo $ANEX; ?>",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             const viewport1 = "#t1Tbody";

@@ -10,7 +10,13 @@ class CwinnersController extends \yii\web\Controller
     }
 
     public function actionIndividual(){
-        return $this->render('individual');
+        return $this->render('individual', ["ANEX" => ""]);
+    }
+    public function actionIndividualm(){
+        return $this->render('individual', ["ANEX" => "m"]);
+    }
+    public function actionIndividualf(){
+        return $this->render('individual', ["ANEX" => "f"]);
     }
 
     public function actionRoutes(){
