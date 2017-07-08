@@ -93,7 +93,8 @@ body{
     /*background-position:bottom 10px;*/
 }
 .count{
-    background: rgba(255,255,255,.7);
+     color:white;
+    background:  rgba(0,84,95,.7);
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
