@@ -69,4 +69,17 @@ class ViewController  extends Controller {
                                                     order by (p1 + p2 + p3) desc")->queryAll());
     }
 
+    public function actionGetajaxroute() {
+        $this->asJson(Yii::$app->db->createCommand("select 
+                                                        t1.name as name,
+                                                        t1.capacity - IF(ISNULL(t2.cid), 0, t2.cid) as capacity
+                                                    from (
+                                                        select * from route ) as t1
+                                                    left join (
+                                                        select routeid, COUNT(id) as cid 
+                                                        from user 
+                                                        where user.batchid = (select currentbatch from currbatch limit 1) 
+                                                        group by routeid) as t2 on t1.id = t2.routeid")->queryAll());
+                                                        }
+
 }

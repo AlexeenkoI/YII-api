@@ -165,7 +165,7 @@ height:auto;
          <thead>
             <tr>
                 <th class="text-center">Место</th>
-                <th class="text-center">Команда</th>
+                <th class="text-center">Ф.И.О.</th>
                 <th class="text-center">Очки</th>
             </tr>
          </thead>
@@ -193,7 +193,7 @@ height:auto;
          <thead>
              <tr>
                 <th class="text-center">Место</th>
-                <th class="text-center">Команда</th>
+                <th class="text-center">Ф.И.О.</th>
                 <th class="text-center">Очки</th>
             </tr>
          </thead>
