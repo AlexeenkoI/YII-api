@@ -13,7 +13,6 @@ use kartik\date\DatePicker;
 <script src="/app/datetimepicker-master/jquery.js"></script>
 <script src="/app/datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
 
-<input type="text" id="datetimepicker"/>
 
 <div class="moneylog-form">
 
