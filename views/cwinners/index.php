@@ -77,7 +77,7 @@ function appendText(viewport,pos,team,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://yii.local/view/index",//заменить при переносе на сервер
+		url:"http://ds.citrus24.com/view/index",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             console.log(data);

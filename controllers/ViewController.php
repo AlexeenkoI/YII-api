@@ -16,6 +16,7 @@ class ViewController  extends Controller {
                                                         IF(ISNULL(t2.p1), 0, t2.p1 + t2.p2 + t2.p3)  as `score`
                                                     from (
                                                         select * from `group`
+                                                        where `group`.vip = 0
                                                     ) as t1 
                                                         left join (
                                                             select * from `grouppriority` 
@@ -67,6 +68,7 @@ class ViewController  extends Controller {
                                                     IF(ISNULL(p3), 0, p3) as p3
                                                     from `group`
                                                     left join (select * from grouppriority where batchid = (select currentbatch from currbatch limit 1)) as t on `group`.id = t.groupid
+                                                    where `group`.vip = 0
                                                     order by (p1 + p2 + p3) desc")->queryAll());
     }
 
@@ -75,7 +77,9 @@ class ViewController  extends Controller {
                                                         t1.name as name,
                                                         t1.capacity - IF(ISNULL(t2.cid), 0, t2.cid) as capacity
                                                     from (
-                                                        select * from route ) as t1
+                                                        select * from route 
+                                                        where route.isvip = 0
+                                                        ) as t1
                                                     left join (
                                                         select routeid, COUNT(id) as cid 
                                                         from user 
