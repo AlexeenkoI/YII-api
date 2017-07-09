@@ -111,7 +111,7 @@ h1,h3{
     /*color:#000066;*/
 }
 .row{
-    margin-top:2%;
+    margin-top:3%;
     margin-left:4%;
     
 }

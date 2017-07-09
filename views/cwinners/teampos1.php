@@ -147,7 +147,7 @@ td{
     border:0px !important;
 }
 .row{
-    margin-top:2%;
+    margin-top:3%;
     margin-left:5%;
     margin-right: 50px;
 }
