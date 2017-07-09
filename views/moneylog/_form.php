@@ -11,40 +11,10 @@ use kartik\date\DatePicker;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/app/datetimepicker-master/jquery.datetimepicker.css"/>
 <script src="/app/datetimepicker-master/jquery.js"></script>
-<script src="/app/datetimepicker-master/jquery.datetimepicker.js"></script>
-<!--<script>
-$(document).ready(function(){
-$('#datetimepicker').click(function(){
-    
-    alert("123")});
-$('#datetimepicker').datetimepicker({
-  format:'d.m.Y H:i',
-  inline:true,
-  lang:'ru',
-});
-})
+<script src="/app/datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
 
-</script>-->
-<!--<input type="text" id="datetimepicker"/>-->
 <input type="text" id="datetimepicker"/>
-<script>
 
-$('#datetimepicker').datetimepicker({
-    format:'d.m.Y H:i',
-    inline:true,
-    lang:'ru',
-
-});
-$.datetimepicker.setDateFormatter({
-    parseDate: function (date, format) {
-        var d = moment(date, format);
-        return d.isValid() ? d.toDate() : false;
-    },
-    formatDate: function (date, format) {
-        return moment(date).format(format);
-    },
-});
-</script>
 <div class="moneylog-form">
 
     <?php $form = ActiveForm::begin(); ?>
@@ -59,14 +29,12 @@ $.datetimepicker.setDateFormatter({
 
     <?= $form->field($model, 'isdeleted')->checkbox() ?>
 
-    <?= $form->field($model, 'date')->widget(DatePicker::classname(), [
-    'options' => ['placeholder' => 'Enterdate'],
-    'pluginOptions' => [
-        'autoclose'=>true,
-        'format' => 'mm/dd/yyyy, D'
-    ]
-]); ?>
+    <?= $form->field($model, 'date')->textInput(['value'=>'Выберите дату']) ?>
 
+<script>
+$('#moneylog-date').datetimepicker({
+});
+</script>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
         <?= Html::a('Назад', ['moneylog/index'], ['class' => 'btn btn-danger']) ?>
