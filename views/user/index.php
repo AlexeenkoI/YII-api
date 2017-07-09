@@ -32,6 +32,10 @@ $this->title = 'Пользователи';
             'firstname',
             'patronymic',
             'rfcid',
+            [
+                'attribute'=>'groupid',
+                'value'=>'group.totemname'
+            ],
             // 'groupid',
             // 'batchid',
             // 'routeid',

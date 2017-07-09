@@ -30,7 +30,10 @@ $this->title = 'Подписки на Спикеров';
             'id',
             [
                 'attribute' => 'userid',
-                'value' => 'user.firstname'
+                // 'value' => 'user.firstname',
+                'value' => function($model){
+                    return $model->user->lastname.' '.$model->user->firstname.' '.$model->user->patronymic;
+                }
             ],
             [
                 'attribute' => 'mordaid',

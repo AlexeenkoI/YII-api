@@ -58,14 +58,14 @@ function loadData(){
 }
 $(document).ready(function(){  
     loadData(); 
-$("body").click(function(){
-    $("#w0").fadeIn(2000);
-})
+// $("body").click(function(){
+//     $("#w0").fadeIn(2000);
+// })
  $("#w0").mouseleave(function(){
      $("#w0").fadeOut(2000);
  });
- $("#w0").fadeOut(2000);
- $(".footer").fadeOut(2000);
+ $("#w0").fadeOut(8000);
+ $(".footer").fadeOut(8000);
 })
 </script>
 <style>
@@ -109,11 +109,11 @@ h1,h3{
     
 }
 th{
-    font-size:20px;
+    font-size:28px;
     /*color:#000066;*/
 }
 td {
-    font-size:18px;
+    font-size:26px;
 }
 #logo{
     width:4%;
@@ -149,7 +149,7 @@ td {
             <tr>
                 <th class="text-center">Место</th>
                 <th class="text-center">Команда</th>
-                <th class="text-center">Очки</th>
+                <th class="text-center">Баллы</th>
             </tr>
             <tbody id="t1Tbody">
                <tr>

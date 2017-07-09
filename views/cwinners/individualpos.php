@@ -65,14 +65,14 @@ function loadData(){
 
 $(document).ready(function(){
     loadData();
-$("body").click(function(){
-    $("#w0").fadeIn(2000);
-})
+// $("body").click(function(){
+//     $("#w0").fadeIn(2000);
+// })
  $("#w0").mouseleave(function(){
      $("#w0").fadeOut(2000);
  });
- $("#w0").fadeOut(2000);
- $(".footer").fadeOut(2000);
+ $("#w0").fadeOut(8000);
+ $(".footer").fadeOut(8000);
 })
 </script>
 <style>
@@ -116,11 +116,11 @@ h1,h3{
     
 }
 th{
-    font-size:20px;
+    font-size:28px;
     /*color:#000066;*/
 }
 td {
-    font-size:18px;
+    font-size:26px;
 }
 
 #logo{

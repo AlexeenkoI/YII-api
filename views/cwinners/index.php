@@ -77,7 +77,7 @@ function appendText(viewport,pos,team,score){
 function loadData(){
     	$.ajax({
 		type:"POST",
-		url:"http://ds.citrus24.com/view/index",//заменить при переносе на сервер
+		url:"http://yii.local/view/index",//заменить при переносе на сервер
 		dataType:"json",
         success:function(data){
             console.log(data);
@@ -108,14 +108,14 @@ function loadData(){
 
 $(document).ready(function(){
     loadData();
-$("body").click(function(){
-    $("#w0").fadeIn(2000);
-})
+// $("body").click(function(){
+//     $("#w0").fadeIn(2000);
+// })
  $("#w0").mouseleave(function(){
      $("#w0").fadeOut(2000);
  });
- $("#w0").fadeOut(2000);
- $(".footer").fadeOut(2000);
+ $("#w0").fadeOut(8000);
+ $(".footer").fadeOut(8000);
 })
 </script>
 <style>
@@ -145,10 +145,10 @@ tr{
 
 }
 th{
-    font-size:25px;
+    font-size:28px;
 }
 td{
-    font-size:20px;
+    font-size:36px;
 }
 .row{
     margin-top:5%;
