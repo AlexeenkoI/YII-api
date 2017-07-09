@@ -21,14 +21,15 @@ $this->title = 'Пользователи';
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
+        'summary'=>'Пользователей {count} - Страница {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
             //['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'firstname',
             'lastname',
+            'firstname',
             'patronymic',
             'rfcid',
             // 'groupid',
