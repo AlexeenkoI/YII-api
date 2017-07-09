@@ -52,15 +52,15 @@ class Group extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'totemname' => 'Totemname',
-            'totemimage' => 'Totemimage',
-            'color' => 'Color',
-            'colorhex' => 'Colorhex',
-            'price' => 'Price',
+            'name' => 'Имя',
+            'description' => 'Описание',
+            'totemname' => 'Тотем',
+            'totemimage' => 'Картинка тотема',
+            'color' => 'Цвет',
+            'colorhex' => 'Цвет hexval',
+            'price' => 'Цена',
             'vip' => 'Vip',
-            'isdeleted' => 'Isdeleted',
+            'isdeleted' => 'Удален',
         ];
     }
 

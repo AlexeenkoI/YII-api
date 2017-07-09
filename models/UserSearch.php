@@ -19,7 +19,7 @@ class UserSearch extends User
     {
         return [
             [['id', 'groupid', 'batchid', 'routeid', 'iscap', 'isdeleted'], 'integer'],
-            [['firstname', 'lastname', 'patronymic', 'rfcid'], 'safe'],
+            [['firstname', 'lastname', 'patronymic', 'rfcid', 'sex'], 'safe'],
         ];
     }
 
@@ -70,26 +70,9 @@ class UserSearch extends User
         $query->andFilterWhere(['like', 'firstname', $this->firstname])
             ->andFilterWhere(['like', 'lastname', $this->lastname])
             ->andFilterWhere(['like', 'patronymic', $this->patronymic])
-            ->andFilterWhere(['like', 'rfcid', $this->rfcid]);
+            ->andFilterWhere(['like', 'rfcid', $this->rfcid])
+            ->andFilterWhere(['like', 'sex', $this->sex]);
 
         return $dataProvider;
     }
-	
-		public function userToJson()
-	{
-		$rows = (new \yii\db\Query())->select('*')->from('user')->all();
-		$content=[
-			"User" => []
-		];
-		foreach($rows as $value)
-		{
-			array_push($content['User'],$value);
-		}
-		$response = Yii::$app->response;
-		$response->format = \yii\web\Response::FORMAT_JSON;
-		$response->statusCode = 200;
-		$response->data = $content;
-		
-        return $response;
-	}
 }

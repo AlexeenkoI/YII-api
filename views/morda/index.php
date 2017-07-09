@@ -31,7 +31,7 @@ $this->title = 'Спикеры';
             'fio',
             'description',
             'pic',
-            'isdeleted',
+            // 'isdeleted',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

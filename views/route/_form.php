@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'price')->textInput() ?>
 
-    <?= $form->field($model, 'isdeleted')->textInput() ?>
+    <?= $form->field($model, 'isdeleted')->checkbox() ?>
 
     <?= $form->field($model, 'isvip')->checkbox() ?>
 

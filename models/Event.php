@@ -43,10 +43,10 @@ class Event extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'price' => 'Price',
-            'isdeleted' => 'Isdeleted',
+            'name' => 'Название',
+            'description' => 'Описание',
+            'price' => 'Цена',
+            'isdeleted' => 'Удален',
         ];
     }
 }

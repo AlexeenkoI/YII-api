@@ -51,7 +51,7 @@ class Route extends \yii\db\ActiveRecord
             'description' => 'Описание',
             'capacity' => 'Кол-во мест',
             'price' => 'Цена',
-            'isdeleted' => 'Isdeleted',
+            'isdeleted' => 'Удален',
             'isvip' => 'Вип-маршрут',
         ];
     }

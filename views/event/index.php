@@ -32,7 +32,7 @@ $this->title = 'События';
             'name',
             'description',
             'price',
-            'isdeleted',
+            // 'isdeleted',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

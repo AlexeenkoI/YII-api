@@ -17,6 +17,7 @@ use Yii;
  * @property integer $routeid
  * @property integer $iscap
  * @property integer $isdeleted
+ * @property string $sex
  *
  * @property Moneylog[] $moneylogs
  * @property Group $group
@@ -40,9 +41,10 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['firstname', 'lastname', 'patronymic'], 'required'],
+            [['firstname', 'lastname'], 'required'],
             [['groupid', 'batchid', 'routeid', 'iscap', 'isdeleted'], 'integer'],
             [['firstname', 'lastname', 'patronymic', 'rfcid'], 'string', 'max' => 50],
+            [['sex'], 'string', 'max' => 20],
             [['groupid'], 'exist', 'skipOnError' => true, 'targetClass' => Group::className(), 'targetAttribute' => ['groupid' => 'id']],
             [['batchid'], 'exist', 'skipOnError' => true, 'targetClass' => Batch::className(), 'targetAttribute' => ['batchid' => 'id']],
             [['routeid'], 'exist', 'skipOnError' => true, 'targetClass' => Route::className(), 'targetAttribute' => ['routeid' => 'id']],
@@ -65,6 +67,7 @@ class User extends \yii\db\ActiveRecord
             'routeid' => 'Маршрут',
             'iscap' => 'Капитан',
             'isdeleted' => 'Удален',
+            'sex' => 'Пол',
         ];
     }
 
@@ -76,13 +79,6 @@ class User extends \yii\db\ActiveRecord
         return $this->hasMany(Moneylog::className(), ['userid' => 'id']);
     }
 
-    public function deleteRecursive($relations = array()){
-        if($relations == []){
-            $relations = ["batch","route","group","moneylog"];
-        }
-        parent::deleteRecursive($relations);
-        
-    }
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -114,28 +110,4 @@ class User extends \yii\db\ActiveRecord
     {
         return $this->hasMany(UserMorda::className(), ['userid' => 'id']);
     }
-	
-	
-	public function updateUserFromJson($data)
-	{
-		$query = Yii::$app->db->createCommand('UPDATE user SET rfcid=:rfcid WHERE id=:id')
-		->bindValue(':rfcid',data['rfcid'])
-		->bindValue(':id',data['id']);
-		if($query){
-			return true;
-		}else{
-			return false;
-		}
-	}
-	
-	public function addUserFromJson($data)
-	{
-		$query = Yii::$app->db->createCommand('INSERT INTO `user`(`firstname`, `lastname`, `patronymic`, `rfcid`, `groupid`, `batchid`, `routeid`) VALUES (:firstname,:lastname,:patronymic,:rfcid,:groupid,:batchid,:routeid')
-		->bindValue(':firstname',data['firstname'])
-		->bindValue(':lastname',data['lastname'])
-		->bindValue(':patronymic',data['patronymic'])
-		->bindValue(':rfcid',data['rfcid'])
-		->bindValue(':batchid',data['batchid'])
-		->bindValue(':routeid',data['routeid']);
-	}
 }

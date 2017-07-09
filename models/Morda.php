@@ -48,11 +48,11 @@ class Morda extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'fio' => 'Fio',
-            'description' => 'Description',
-            'pic' => 'Pic',
+            'fio' => 'ФИО',
+            'description' => 'Описание',
+            'pic' => 'Картинка',
             'batchid' => 'Batchid',
-            'isdeleted' => 'Isdeleted',
+            'isdeleted' => 'Удален',
         ];
     }
 
