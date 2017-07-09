@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Спикеры';
-//$this->params['breadcrumbs'][] = $this->title;
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
 <div class="morda-index">
@@ -18,20 +18,21 @@ $this->title = 'Спикеры';
 
     <p>
         <?= Html::a('Создать спикера', ['create'], ['class' => 'btn btn-success']) ?>
-        <?= Html::a("Назад", ['site/index'], ['class'=>'btn btn-danger'])?>
+         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
     <?= GridView::widget([
-        'summary'=>'Пользователей {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            //['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'yii\grid\SerialColumn'],
 
             'id',
             'fio',
             'description',
             'pic',
+            'batchid',
             // 'isdeleted',
+             'capacity',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

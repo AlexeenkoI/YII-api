@@ -23,7 +23,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'pic') ?>
 
-    <?= $form->field($model, 'isdeleted') ?>
+    <?= $form->field($model, 'batchid') ?>
+
+    <?php // echo $form->field($model, 'isdeleted') ?>
+
+    <?php // echo $form->field($model, 'capacity') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

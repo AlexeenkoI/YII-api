@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Morda */
 
-$this->title = 'Создать Спикера';
-//$this->params['breadcrumbs'][] = ['label' => 'Mordas', 'url' => ['index']];
-//$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Создать спикера';
+// $this->params['breadcrumbs'][] = ['label' => 'Mordas', 'url' => ['index']];
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
 <div class="morda-create">

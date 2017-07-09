@@ -18,7 +18,7 @@ class MordaSearch extends Morda
     public function rules()
     {
         return [
-            [['id', 'isdeleted'], 'integer'],
+            [['id', 'batchid', 'isdeleted', 'capacity'], 'integer'],
             [['fio', 'description', 'pic'], 'safe'],
         ];
     }
@@ -60,7 +60,9 @@ class MordaSearch extends Morda
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'batchid' => $this->batchid,
             'isdeleted' => $this->isdeleted,
+            'capacity' => $this->capacity,
         ]);
 
         $query->andFilterWhere(['like', 'fio', $this->fio])

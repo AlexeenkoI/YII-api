@@ -13,6 +13,7 @@ use Yii;
  * @property string $pic
  * @property integer $batchid
  * @property integer $isdeleted
+ * @property integer $capacity
  *
  * @property Batch $batch
  * @property UserMorda[] $userMordas
@@ -34,7 +35,7 @@ class Morda extends \yii\db\ActiveRecord
     {
         return [
             [['fio', 'description', 'pic', 'batchid'], 'required'],
-            [['batchid', 'isdeleted'], 'integer'],
+            [['batchid', 'isdeleted', 'capacity'], 'integer'],
             [['fio'], 'string', 'max' => 100],
             [['description', 'pic'], 'string', 'max' => 255],
             [['batchid'], 'exist', 'skipOnError' => true, 'targetClass' => Batch::className(), 'targetAttribute' => ['batchid' => 'id']],
@@ -50,9 +51,10 @@ class Morda extends \yii\db\ActiveRecord
             'id' => 'ID',
             'fio' => 'ФИО',
             'description' => 'Описание',
-            'pic' => 'Картинка',
-            'batchid' => 'Batchid',
-            'isdeleted' => 'Удален',
+            'pic' => 'Фото',
+            'batchid' => 'ид заеда',
+            'isdeleted' => 'удален',
+            'capacity' => 'Мест',
         ];
     }
 

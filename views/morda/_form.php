@@ -18,11 +18,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'pic')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'batchid')->textInput() ?>
+
     <?= $form->field($model, 'isdeleted')->checkbox() ?>
+
+    <?= $form->field($model, 'capacity')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-        <?= Html::a("Назад", ['morda/index'], ['class'=>'btn btn-danger'])?>
+        <?= Html::a('Назад', ['morda/index'], ['class' => 'btn btn-danger']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
