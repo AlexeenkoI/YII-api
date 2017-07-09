@@ -24,7 +24,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'colorhex')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'price')->textInput() ?>
+
     <?= $form->field($model, 'isdeleted')->checkbox() ?>
+
+    <?= $form->field($model, 'vip')->checkbox() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
