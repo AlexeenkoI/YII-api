@@ -11,20 +11,39 @@ use yii\filters\VerbFilter;
 class ViewController  extends Controller {
 
     public function actionIndex() {
+        // $this->asJson(Yii::$app->db->createCommand("select 
+        //                                                 t1.name as `group`,
+        //                                                 IF(ISNULL(t2.p1), 0, t2.p1 + t2.p2 + t2.p3)  as `score`
+        //                                             from (
+        //                                                 select * from `group`
+        //                                                 where `group`.vip = 0
+        //                                             ) as t1 
+        //                                                 left join (
+        //                                                     select * from `grouppriority` 
+        //                                                     where grouppriority.batchid = (select currentbatch from currbatch limit 1)
+        //                                                     group by groupid) as t2
+        //                                                 on t1.id = t2.groupid
+        //                                             order by t2.p1 + t2.p2 + t2.p3 desc, t2.p4 desc
+        //                                             limit 20")->queryAll());
+
         $this->asJson(Yii::$app->db->createCommand("select 
                                                         t1.name as `group`,
-                                                        IF(ISNULL(t2.p1), 0, t2.p1 + t2.p2 + t2.p3)  as `score`
+                                                        IF(ISNULL(t2.money), 0 , t2.money) as `score`
                                                     from (
-                                                        select * from `group`
-                                                        where `group`.vip = 0
-                                                    ) as t1 
+                                                        SELECT * FROM `group` where vip = 0
+                                                    ) as t1
                                                         left join (
-                                                            select * from `grouppriority` 
-                                                            where grouppriority.batchid = (select currentbatch from currbatch limit 1)
-                                                            group by groupid) as t2
-                                                        on t1.id = t2.groupid
-                                                    order by t2.p1 + t2.p2 + t2.p3 desc, t2.p4 desc
-                                                    limit 20")->queryAll());
+                                                            select 
+                                                                `user`.groupid,
+                                                                sum(moneylog.money) as money
+                                                            from `user` 
+                                                            right join moneylog on moneylog.userid = `user`.id
+                                                            where moneylog.type = 'ADD_MONEY'
+                                                            and `user`.groupid is not null
+                                                            group by `user`.id
+                                                        ) as t2 on t1.id = t2.groupid
+                                                    order by t2.money desc
+                                                    limit 20;")->queryAll());                                                    
     }
 
 
