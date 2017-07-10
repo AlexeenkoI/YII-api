@@ -29,14 +29,14 @@ $this->title = 'Подписки на Спикеров';
 
             'id',
             [
-                'attribute' => 'userid',
+                'attribute' => 'userName',
                 // 'value' => 'user.firstname',
                 'value' => function($model){
                     return $model->user->lastname.' '.$model->user->firstname.' '.$model->user->patronymic;
                 }
             ],
             [
-                'attribute' => 'mordaid',
+                'attribute' => 'spikerName',
                 'value' => 'morda.fio'
             ],
 

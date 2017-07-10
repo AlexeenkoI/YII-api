@@ -19,6 +19,7 @@ class UserMordaSearch extends UserMorda
     {
         return [
             [['id', 'userid', 'mordaid'], 'integer'],
+            [['userName', 'spikerName'], 'safe']
         ];
     }
 
@@ -62,6 +63,18 @@ class UserMordaSearch extends UserMorda
             'userid' => $this->userid,
             'mordaid' => $this->mordaid,
         ]);
+
+        if ($this->userName != "")
+            $query->joinWith(["user" => function($q) {
+                $q->where('user.firstname like "%' . $this->userName . '%" OR '
+                          .'user.lastname like "%' . $this->userName . '%" OR '
+                          .'user.patronymic like "%' . $this->userName . '%"');
+            }]);
+
+        if ($this->spikerName != "")
+            $query->joinWith(["morda" => function($q) {
+                $q->where('morda.fio like "%' . $this->spikerName . '%"');
+            }]);
 
         return $dataProvider;
     }
