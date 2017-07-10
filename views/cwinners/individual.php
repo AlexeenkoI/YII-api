@@ -95,7 +95,7 @@ th{
     font-size:28px;
 }
 td{
-    font-size:36px;
+    font-size:30px;
 }
 .row{
     margin-top:5%;
@@ -159,6 +159,12 @@ td{
     position: absolute;
     top: 400px;
     left: 70px;
+}
+.row h1 {
+    font-size: 45px;
+}
+.row h2 {
+    font-size: 28px;
 }
 </style>
 <body>
