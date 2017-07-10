@@ -34,13 +34,18 @@ class ViewController  extends Controller {
                                                     ) as t1
                                                         left join (
                                                             select 
-                                                                `user`.groupid,
-                                                                sum(moneylog.money) as money
-                                                            from `user` 
-                                                            right join moneylog on moneylog.userid = `user`.id
-                                                            where moneylog.type = 'ADD_MONEY'
-                                                            and `user`.groupid is not null
-                                                            group by `user`.id
+                                                                groupid,
+                                                                sum(money) as money
+                                                            from (
+                                                                select 
+                                                                    `user`.groupid,
+                                                                    sum(moneylog.money) as money
+                                                                from `user` 
+                                                                right join moneylog on moneylog.userid = `user`.id
+                                                                where moneylog.type = 'ADD_MONEY'
+                                                                and `user`.groupid is not null
+                                                                group by `user`.id
+                                                            ) as b group by groupid
                                                         ) as t2 on t1.id = t2.groupid
                                                     order by t2.money desc
                                                     limit 20;")->queryAll());                                                    
