@@ -54,8 +54,13 @@ class ViewController  extends Controller {
 
 
     public function actionUser() {
-        $this->asJson(Yii::$app->db->createCommand("select CONCAT(lastname, ' ' ,SUBSTR(firstname, 1, 1), '.', SUBSTR(patronymic, 1, 1), '.') as name , 
-                                                            IF(ISNULL(money), 0, money) as score from user
+        $this->asJson(Yii::$app->db->createCommand("select 
+                                                        CASE iscap
+                                                            WHEN 1 THEN CONCAT('<span>K</span> ',lastname, ' ' ,SUBSTR(firstname, 1, 1), '.', SUBSTR(patronymic, 1, 1), '.')
+                                                            WHEN 0 THEN CONCAT(lastname, ' ' ,SUBSTR(firstname, 1, 1), '.', SUBSTR(patronymic, 1, 1), '.')
+                                                        END as name , 
+                                                        IF(ISNULL(money), 0, money) as score 
+                                                        from user
                                                     left join (
                                                         select userid as uid, sum(money) as money from moneylog where moneylog.type = 'ADD_MONEY' group by moneylog.userid
                                                         ) as t on user.id = t.uid
