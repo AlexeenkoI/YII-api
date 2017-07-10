@@ -194,7 +194,7 @@ td{
          <tr>
          <th class="text-center">Место</th>
          <th class="text-center">Имя</th>
-         <th class="text-center">Баллов</th>
+         <th class="text-center">Баллы</th>
          </tr>
          </thead>
             <tbody id="t1Tbody">

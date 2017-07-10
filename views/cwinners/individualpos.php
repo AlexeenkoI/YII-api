@@ -168,7 +168,7 @@ height:auto;
             <tr>
                 <th class="text-center">Место</th>
                 <th class="text-center">Ф.И.О.</th>
-                <th class="text-center">Баллов</th>
+                <th class="text-center">Баллы</th>
             </tr>
          </thead>
             <tbody id="t1Tbody">
