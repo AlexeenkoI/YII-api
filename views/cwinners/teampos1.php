@@ -45,12 +45,12 @@ function doScore(p1, p2, p3) {
 function doScoret(p1, p2, p3) {
     var lab = ""
 
-    if (p3 == "1") lab += "HС";
-    if (p3 == "2") lab += "ГЛ";
-    if (p3 == "3") lab += "УХ";
-    if (p3 == "4") lab += "КР";
-    if (p3 == "5") lab += "ЛП";
-    if (p3 == "6") lab += "ХВ";
+    if (p3 == "6") lab += "HС";
+    if (p3 == "5") lab += "ГЛ";
+    if (p3 == "4") lab += "УХ";
+    if (p3 == "3") lab += "КР";
+    if (p3 == "2") lab += "ЛП";
+    if (p3 == "1") lab += "ХВ";
 
     return lab;
 }
