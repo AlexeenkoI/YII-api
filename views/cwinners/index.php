@@ -220,6 +220,7 @@ td{
     text-align: center;
     width: 200px;
     font-size: 23px;
+    margin-top: -40px;
 }
 
 </style>
