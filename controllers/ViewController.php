@@ -109,6 +109,7 @@ class ViewController  extends Controller {
                                                             * 
                                                         from grouppriority 
                                                         where batchid = (select currentbatch from currbatch limit 1)
+                                                        group by grouppriority.groupid
                                                     ) as t2 on t1.id = t2.groupid
 
                                                     order by (t2.p1 + t2.p2 + t2.p3) desc, t2.p4 desc")->queryAll());                                                    
