@@ -80,15 +80,38 @@ class ViewController  extends Controller {
     }
 
     public function actionKubik() {
+        // $this->asJson(Yii::$app->db->createCommand("select 
+        //                                             `group`.name,
+        //                                             IF(ISNULL(p1), 0, p1) as p1,
+        //                                             IF(ISNULL(p2), 0, p2) as p2,
+        //                                             IF(ISNULL(p3), 0, p3) as p3
+        //                                             from `group`
+        //                                             left join (select * from grouppriority where batchid = (select currentbatch from currbatch limit 1)) as t on `group`.id = t.groupid
+        //                                             where `group`.vip = 0
+        //                                             order by (p1 + p2 + p3) desc")->queryAll());
+
         $this->asJson(Yii::$app->db->createCommand("select 
-                                                    `group`.name,
-                                                    IF(ISNULL(p1), 0, p1) as p1,
-                                                    IF(ISNULL(p2), 0, p2) as p2,
-                                                    IF(ISNULL(p3), 0, p3) as p3
-                                                    from `group`
-                                                    left join (select * from grouppriority where batchid = (select currentbatch from currbatch limit 1)) as t on `group`.id = t.groupid
-                                                    where `group`.vip = 0
-                                                    order by (p1 + p2 + p3) desc")->queryAll());
+
+                                                        t1.name,
+                                                        IF(ISNULL(t2.p1), 0, t2.p1) as p1,
+                                                        IF(ISNULL(t2.p2), 0, t2.p2) as p2,
+                                                        IF(ISNULL(t2.p3), 0, t2.p3) as p3
+
+                                                    from (
+                                                        select 
+                                                            *
+                                                        from `group`
+                                                        where `group`.vip = 0
+                                                    ) as t1
+
+                                                    left join (
+                                                        select 
+                                                            * 
+                                                        from grouppriority 
+                                                        where batchid = (select currentbatch from currbatch limit 1)
+                                                    ) as t2 on t1.id = t2.groupid
+
+                                                    order by (t2.p1 + t2.p2 + t2.p3) desc, t2.p4 desc")->queryAll());                                                    
     }
 
     public function actionGetajaxroute() {
