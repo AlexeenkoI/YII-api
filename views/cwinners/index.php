@@ -178,7 +178,7 @@ td{
 .imgsecond {
     position: absolute;
     left: 462px;
-    top: -109px;
+    top: -150px;
     font-size: 23px;
     text-align: center;
     width: 200px;
@@ -252,7 +252,7 @@ td{
     </div>
 
     <div class="imgsecond text-center">
-        <img src="" alt="Второе место" class="img-rounded is place ">
+        <img src="" alt="Второе место" class="img-rounded is place " style="margin-bottom: 10px;">
     </div>
 
     <div class="imgthird text-center">
