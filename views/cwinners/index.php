@@ -4,7 +4,7 @@ $this->title = 'Командный зачет';
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-function totems(pos,name){
+function totems(pos,name,score){
     var totem = [
         'http://ds.citrus24.com/app/images/antilopa.png',
         'http://ds.citrus24.com/app/images/bear.png',
@@ -44,10 +44,13 @@ function totems(pos,name){
     }
     if(pos==1){
         $(".if").attr('src',val);
+        $(".sif").html(score);
     }else if(pos==2){
         $(".is").attr('src',val);
+        $(".sis").html(score);
     }else if(pos==3){
         $(".ith").attr('src',val);
+        $(".sith").html(score);
     }
 }
 function appendText(viewport,pos,team,score){
@@ -86,9 +89,9 @@ function loadData(){
             var tableCounter = 13;
             $(viewport).empty();
             var pos = 4;
-            totems(1,data[0].group);
-            totems(2,data[1].group);
-            totems(3,data[2].group);
+            totems(1,data[0].group, data[0].score);
+            totems(2,data[1].group, data[1].score);
+            totems(3,data[2].group, data[2].score);
              //$(".if").attr('src','http://ds.citrus24.com/app/images/tiger.png');
             // $(".imgsecond").attr('src',src2);
             // $(".imgthird").attr('src',src3);
@@ -167,7 +170,7 @@ td{
 }
 .imgfirst {
     position: absolute;
-    top: -205px;
+    top: -245px;
     left: 242px;
     text-align: center;
     width: 200px;
@@ -178,7 +181,7 @@ td{
 .imgsecond {
     position: absolute;
     left: 462px;
-    top: -109px;
+    top: -149px;
     font-size: 23px;
     text-align: center;
     width: 200px;
@@ -188,7 +191,7 @@ td{
 .imgthird {
     position: absolute;
     width: 200px;
-    top: -47px;
+    top: -87px;
     left: 18px;
     font-size: 23px;
     text-align: center;
@@ -211,6 +214,12 @@ td{
     position: absolute;
     top: 400px;
     left: 70px;
+}
+
+.score {
+    text-align: center;
+    width: 200px;
+    font-size: 23px;
 }
 
 </style>
@@ -249,14 +258,17 @@ td{
 
     <div class="imgfirst text-center">
         <img src="" alt="Первое место" class="img-rounded place img-fluid if center-block">
+        <div class="score sif"></div>
     </div>
 
     <div class="imgsecond text-center">
         <img src="" alt="Второе место" class="img-rounded is place ">
+        <div class="score sis"></div>
     </div>
 
     <div class="imgthird text-center">
         <img src="" alt="Третье место" class="img-rounded ith place">
+        <div class="score sith"></div>
     </div>
 
 </div>
