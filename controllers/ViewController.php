@@ -122,7 +122,7 @@ class ViewController  extends Controller {
                                                         group by grouppriority.groupid
                                                     ) as t2 on t1.id = t2.groupid
 
-                                                    order by (t2.p1 + t2.p2 + t2.p3) desc, t2.p4 desc")->queryAll());                                                    
+                                                    order by (t2.p1 + t2.p2) desc, t2.p3 desc, t2.p4 desc")->queryAll());                                                    
     }
 
     public function actionGetajaxroute() {
