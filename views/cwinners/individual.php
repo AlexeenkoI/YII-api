@@ -12,19 +12,19 @@ function appendText(viewport,pos,name,score){
 
     $(insertPos).addClass("position");
     $(insertPos).addClass("text-center");
-    insertPos.innerText=pos;
+    $(insertPos).html(pos);
 
     $(insertName).addClass("name");
     $(insertName).addClass("text-center");
-    insertName.innerText=name;
+    $(insertName).html(name);
 
     $(insertScore).addClass("score");
     $(insertScore).addClass("text-center");
-    insertScore.innerText=score;
+    $(insertScore).html(score);
 
-    $(insertRow).html(insertPos);
-    $(insertRow).html(insertName);
-    $(insertRow).html(insertScore);
+    $(insertRow).append(insertPos);
+    $(insertRow).append(insertName);
+    $(insertRow).append(insertScore);
 
     $(viewport).append(insertRow);
 }
