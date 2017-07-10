@@ -22,6 +22,10 @@ function totems(pos,name,score){
         'http://ds.citrus24.com/app/images/parrot.png',
         'http://ds.citrus24.com/app/images/tiger.png',
         'http://ds.citrus24.com/app/images/wolf.png',
+        'http://ds.citrus24.com/app/images/frog.png',
+        'http://ds.citrus24.com/app/images/panter.png',
+        'http://ds.citrus24.com/app/images/zebra.png',
+        'http://ds.citrus24.com/app/images/diko.png',
     ];
     var val = 0;
     switch (name){
@@ -41,6 +45,10 @@ function totems(pos,name,score){
         case 'Попугаи' : val = totem[13]; break;
         case 'Тигры' : val = totem[14]; break;
         case 'Волки' : val = totem[15]; break;
+        case 'Лягушки' : val = totem[16]; break;
+        case 'Пантеры' : val = totem[17]; break;
+        case 'Зебры' : val = totem[18]; break;
+        case 'Дикобразы' : val = totem[19]; break;
     }
     if(pos==1){
         $(".if").attr('src',val);
