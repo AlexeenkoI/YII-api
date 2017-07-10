@@ -159,7 +159,7 @@ th{
     font-size:28px;
 }
 td{
-    font-size:36px;
+    font-size:32px;
 }
 .row{
     margin-top:5%;
@@ -227,8 +227,18 @@ td{
 .score {
     text-align: center;
     width: 200px;
-    font-size: 23px;
-    margin-top: -40px;
+    font-size: 32px;
+    margin-top: -45px;
+    font-weight: 700px;
+}
+
+.row h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.row h2 {
+    font-size: 32px;
 }
 
 </style>

@@ -103,7 +103,7 @@ body{
 }
 
 .row{
-    top:6%;
+    top:15%;
     left:10% !important;
     right:10% !important;
     position:absolute;
@@ -116,7 +116,8 @@ body{
 h1{
     /*left:5%;
     right:5%;*/
-    font-size:55px;
+    font-size:45px;
+    font-weight: 700;
     /*color:#000066;*/
 }
 #logo{

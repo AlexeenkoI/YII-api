@@ -104,7 +104,7 @@ h1,h3{
     /*color:#000066;*/
 }
 .row{
-    margin-top:3%;
+    margin-top:5%;
     margin-left:4%;
     
 }
@@ -113,7 +113,7 @@ th{
     /*color:#000066;*/
 }
 td {
-    font-size:26px;
+    font-size:28px;
 }
 #logo{
     width:4%;
@@ -135,6 +135,14 @@ td {
     padding-right:8%;
     padding-top:1.5vh;
 }*/
+
+.row h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+.row h3 {
+    font-size: 32px;
+}
 </style>
 <div class="container-fluid">
 <!--<div id="logo" class="">
