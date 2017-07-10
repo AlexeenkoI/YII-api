@@ -15,7 +15,7 @@ function appendText(viewport,pos,name,score){
     $(insertPos).html(pos);
 
     $(insertName).addClass("name");
-    $(insertName).addClass("text-center");
+    //$(insertName).addClass("text-center");
     $(insertName).html(name);
 
     $(insertScore).addClass("score");
@@ -99,6 +99,7 @@ th{
 }
 td{
     font-size:30px;
+    position: relative;
 }
 .row{
     margin-top:5%;
@@ -171,6 +172,14 @@ td{
 }
 .row h2 {
     font-size: 28px;
+}
+
+.iscap{
+    display: inline-block;
+    font-size: 80%;
+    position: absolute;
+    top: 0px;
+    left: -12px;
 }
 </style>
 <body>
