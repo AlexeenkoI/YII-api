@@ -183,7 +183,7 @@ td {
             <tr>
                 <th class="text-center">Место</th>
                 <th class="text-center">Команда</th>
-                <th class="text-center">Очки</th>
+                <th class="text-center">Баллы</th>
             </tr>
             <tbody id="t2Tbody">
                <tr>
