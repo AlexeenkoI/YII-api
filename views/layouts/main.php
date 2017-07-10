@@ -21,6 +21,7 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <?php $this->beginBody() ?>

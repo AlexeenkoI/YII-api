@@ -5,9 +5,14 @@ $this->title = 'Jumanji';
 
 ?>
 <style>
-/*body{
-background-image: url(http://img.zoneland.ru/images5/593067ww_5.jpg.jpg);
-}*/
+body {
+    /* background-image: url('http://ds.citrus24.com/app/images/individualpos.png'); */
+    background-image: url(http://ds.citrus24.com/app/images/background.png);
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    color: #095764;
+    font-weight: bold;
+}
 </style>
 <body>
 <!--<div class="site-index">
