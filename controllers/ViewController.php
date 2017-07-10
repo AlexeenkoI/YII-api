@@ -56,7 +56,7 @@ class ViewController  extends Controller {
     public function actionUser() {
         $this->asJson(Yii::$app->db->createCommand("select 
                                                         CASE iscap
-                                                            WHEN 1 THEN CONCAT('<span>K</span> ',lastname, ' ' ,SUBSTR(firstname, 1, 1), '.', SUBSTR(patronymic, 1, 1), '.')
+                                                            WHEN 1 THEN CONCAT('<span class=\"iscap\">K</span> ',lastname, ' ' ,SUBSTR(firstname, 1, 1), '.', SUBSTR(patronymic, 1, 1), '.')
                                                             WHEN 0 THEN CONCAT(lastname, ' ' ,SUBSTR(firstname, 1, 1), '.', SUBSTR(patronymic, 1, 1), '.')
                                                         END as name , 
                                                         IF(ISNULL(money), 0, money) as score 
