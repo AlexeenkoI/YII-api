@@ -40,6 +40,9 @@ function loadData(){
             $(firstpos).append(data[0].name);
             $(secondpos).append(data[1].name);
             $(thirdpos).append(data[2].name);
+            $(firstpos + ".score").append(data[0].score);
+            $(secondpos + ".score").append(data[1].score);
+            $(thirdpos + ".score").append(data[2].score);
             const viewport = "#t1Tbody";
             $(viewport).empty();
             var pos = 4;
@@ -160,6 +163,10 @@ td{
     top: 400px;
     left: 70px;
 }
+
+.score {
+    margin-top:40px;
+}
 </style>
 <body>
 <div class="container-fluid">
@@ -194,12 +201,15 @@ td{
 
     <div class="imgfirst text-center">
     </div>
+    <div class="imgfirst score sif"></div>
 
     <div class="imgsecond text-center">
     </div>
+    <div class="imgsecond score sis"></div>
 
     <div class="imgthird text-center">
     </div>
+    <div class="imgthird score sith"></div>
 
 </div>
 
