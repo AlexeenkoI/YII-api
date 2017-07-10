@@ -22,9 +22,9 @@ function appendText(viewport,pos,name,score){
     $(insertScore).addClass("text-center");
     insertScore.innerText=score;
 
-    $(insertRow).append(insertPos);
-    $(insertRow).append(insertName);
-    $(insertRow).append(insertScore);
+    $(insertRow).html(insertPos);
+    $(insertRow).html(insertName);
+    $(insertRow).html(insertScore);
 
     $(viewport).append(insertRow);
 }
