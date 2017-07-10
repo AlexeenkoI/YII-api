@@ -118,7 +118,7 @@ td{
     left: 242px;
     text-align: center;
     width: 200px;
-    font-size: 23px;
+    font-size: 30px;
 }
 
 
@@ -126,7 +126,7 @@ td{
     position: absolute;
     left: 462px;
     top: -9px;
-    font-size: 23px;
+    font-size: 30px;
     text-align: center;
     width: 200px;
 }
@@ -137,7 +137,7 @@ td{
     width: 200px;
     top: 43px;
     left: 18px;
-    font-size: 23px;
+    font-size: 30px;
     text-align: center;
 }
 
