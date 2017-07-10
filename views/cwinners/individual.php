@@ -37,12 +37,12 @@ function loadData(){
             const firstpos = ".imgfirst";
             const secondpos = ".imgsecond";
             const thirdpos = ".imgthird";
-            $(firstpos).append(data[0].name);
-            $(secondpos).append(data[1].name);
-            $(thirdpos).append(data[2].name);
-            $(firstpos + ".score").append(data[0].score);
-            $(secondpos + ".score").append(data[1].score);
-            $(thirdpos + ".score").append(data[2].score);
+            $(firstpos).html(data[0].name);
+            $(secondpos).html(data[1].name);
+            $(thirdpos).html(data[2].name);
+            $(firstpos + ".score").html(data[0].score);
+            $(secondpos + ".score").html(data[1].score);
+            $(thirdpos + ".score").html(data[2].score);
             const viewport = "#t1Tbody";
             $(viewport).empty();
             var pos = 4;
