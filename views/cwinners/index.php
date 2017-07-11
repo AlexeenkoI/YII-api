@@ -160,11 +160,12 @@ th{
 }
 td{
     font-size:32px;
+    font-weight: 300;
 }
 .row{
-    margin-top:5%;
-    margin-left:51%;
-    margin-right:6%;
+    margin-top: 5%;
+    margin-left: 52%;
+    margin-right: 4%;
 }
 .appendTexttbl{
     padding-left:5vh;

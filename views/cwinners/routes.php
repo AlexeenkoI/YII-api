@@ -102,15 +102,12 @@ body{
     /*color:#191970;*/
 }
 
-.row{
-    top:15%;
-    left:10% !important;
-    right:10% !important;
-    position:absolute;
-    /*width:90%;*/
-    /*margin-top:18%;
-    margin-left:14%;*/
-    
+.row {
+    top: 15%;
+    left: 6% !important;
+    right: 10% !important;
+    position: absolute;
+    width: 90%;
 }
 
 h1{

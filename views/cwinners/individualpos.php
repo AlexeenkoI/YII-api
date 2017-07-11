@@ -111,7 +111,7 @@ h1,h3{
     /*color:#000066;*/
 }
 .row{
-    margin-top:3%;
+    margin-top:4%;
     margin-left:4%;
     
 }
@@ -121,6 +121,7 @@ th{
 }
 td {
     font-size:26px;
+    font-weight: 300;
 }
 
 #logo{

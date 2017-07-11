@@ -26,7 +26,13 @@ $this->title = 'Денежные логи';
         'filterModel' => $searchModel,
         'columns' => [
             'id',
-            'userid',
+            [
+                'attribute' => 'userName',
+                // 'value' => 'user.firstname',
+                'value' => function($model){
+                    return $model->user->lastname.' '.$model->user->firstname.' '.$model->user->patronymic;
+                }
+            ],
             'money',
             'type',
             'description',

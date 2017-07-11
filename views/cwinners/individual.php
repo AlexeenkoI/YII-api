@@ -100,11 +100,12 @@ th{
 td{
     font-size:30px;
     position: relative;
+    font-weight: 300;
 }
 .row{
     margin-top:5%;
-    margin-left:51%;
-    margin-right:6%;
+    margin-left:52%;
+    margin-right:2%;
 }
 .appendTexttbl{
     padding-left:5vh;
@@ -121,7 +122,7 @@ td{
     top: -75px;
     left: 242px;
     text-align: center;
-    width: 200px;
+    width: 220px;
     font-size: 30px;
 }
 
@@ -132,13 +133,13 @@ td{
     top: -9px;
     font-size: 30px;
     text-align: center;
-    width: 200px;
+    width: 220px;
 }
 
 
 .imgthird {
     position: absolute;
-    width: 200px;
+    width: 220px;
     top: 43px;
     left: 18px;
     font-size: 30px;
@@ -165,7 +166,7 @@ td{
     left: 70px;
 }
 .score {
-    margin-top:40px;
+    margin-top:35px;
 }
 .row h1 {
     font-size: 45px;

@@ -114,6 +114,7 @@ th{
 }
 td {
     font-size:28px;
+    font-weight: 300;
 }
 #logo{
     width:4%;
