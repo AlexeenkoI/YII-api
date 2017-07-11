@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\RouteSearch */
@@ -20,7 +21,22 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Создать маршрут', ['create'], ['class' => 'btn btn-success']) ?>
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
-    <?= GridView::widget([
+        <?php 
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+            'id',
+            'name',
+            'description',
+            'capacity',
+            'price',
+            // 'isdeleted',
+             'isvip',
+
+    ]
+]);
+    ?>   
+    <?=  \kartik\grid\GridView::widget([
         'summary'=>'Маршрутов {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,

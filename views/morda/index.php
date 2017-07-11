@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\MordaSearch */
@@ -20,7 +21,22 @@ $this->title = 'Спикеры';
         <?= Html::a('Создать спикера', ['create'], ['class' => 'btn btn-success']) ?>
          <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
-    <?= GridView::widget([
+        <?php 
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+            'id',
+            'fio',
+            'description',
+            'pic',
+            'batchid',
+            // 'isdeleted',
+             'capacity',
+
+    ]
+]);
+    ?>       
+    <?= \kartik\grid\GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [

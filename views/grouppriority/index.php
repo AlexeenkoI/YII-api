@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
+
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\GroupprioritySearch */
@@ -20,7 +22,22 @@ $this->title = 'Приоритет групп';
         <?= Html::a('Создать приоритет', ['create'], ['class' => 'btn btn-success']) ?>
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
-    <?= GridView::widget([
+        <?php 
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+            'id',
+            'groupid',
+            'batchid',
+            'p1',
+            'p2',
+            'p3',
+            'p4',
+
+    ]
+]);
+    ?>       
+    <?= \kartik\grid\GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [

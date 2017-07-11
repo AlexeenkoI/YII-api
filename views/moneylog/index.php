@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\MoneylogSearch */
@@ -20,7 +21,28 @@ $this->title = 'Денежные логи';
         <?= Html::a('Создать лог', ['create'], ['class' => 'btn btn-success']) ?>
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
-    <?= GridView::widget([
+        <?php 
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+            'id',
+            [
+                'attribute' => 'userName',
+                // 'value' => 'user.firstname',
+                'value' => function($model){
+                    return $model->user->lastname.' '.$model->user->firstname.' '.$model->user->patronymic;
+                }
+            ],
+            'money',
+            'type',
+            'description',
+            // 'isdeleted',
+             'date',
+
+    ]
+]);
+    ?>       
+    <?= \kartik\grid\GridView::widget([
         'summary'=>'Логов {count} - Страница {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,

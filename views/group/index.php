@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\GroupSearch */
@@ -20,7 +21,23 @@ $this->title = 'Команды';
         <?= Html::a('Создать группу', ['create'], ['class' => 'btn btn-success']) ?>
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
-    <?= GridView::widget([
+        <?php 
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+            'id',
+            'name',
+            'description',
+            'totemname',
+            'totemimage',
+            // 'color',
+            // 'colorhex',
+            // 'isdeleted',
+
+    ]
+]);
+    ?>       
+    <?= \kartik\grid\GridView::widget([
         'summary'=>'Групп {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,

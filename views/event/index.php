@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\EventSearch */
@@ -21,7 +22,20 @@ $this->title = 'События';
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger'])?>
         
     </p>
-    <?= GridView::widget([
+        <?php 
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+            'id',
+            'name',
+            'description',
+            'price',
+            // 'isdeleted',
+
+    ]
+]);
+    ?>       
+    <?= \kartik\grid\GridView::widget([
         'summary'=>'Событий {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         //'filterModel' => $searchModel,

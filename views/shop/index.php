@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\ShopSearch */
@@ -20,7 +21,20 @@ $this->title = 'Магазин';
         <?= Html::a('Добавить товар', ['create'], ['class' => 'btn btn-success']) ?>
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
-    <?= GridView::widget([
+    <?php 
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+            'id',
+            'name',
+            'description',
+            'pic',
+            'price',
+            // 'isdeleted',
+    ]
+]);
+    ?>       
+    <?= \kartik\grid\GridView::widget([
          'summary'=>'Товаров {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
