@@ -42,7 +42,7 @@ echo ExportMenu::widget([
     ]
 ]);
     ?>
-    <?= GridView::widget([
+    <?= \kartik\grid\GridView::widget([
         'summary'=>'Пользователей {count} - Страница {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
