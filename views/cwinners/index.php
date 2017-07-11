@@ -190,7 +190,7 @@ td{
 .imgsecond {
     position: absolute;
     left: 462px;
-    top: -149px;
+    top: -179px;
     font-size: 23px;
     text-align: center;
     width: 200px;
