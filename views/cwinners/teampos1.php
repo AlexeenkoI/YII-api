@@ -127,7 +127,7 @@ body{
     font-weight: bold;
 }
 td{
-    font-size:20px;
+    font-size:18px;
 }
 /*.row{
     margin-top:26%;
