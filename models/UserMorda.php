@@ -46,6 +46,8 @@ class UserMorda extends \yii\db\ActiveRecord
             'id' => 'ID',
             'userid' => 'Пользователь',
             'mordaid' => 'Спикер',
+            'userName' => 'Пользователь',
+            'spikerName' => 'Спикер',
         ];
     }
 
@@ -63,5 +65,22 @@ class UserMorda extends \yii\db\ActiveRecord
     public function getMorda()
     {
         return $this->hasOne(Morda::className(), ['id' => 'mordaid']);
+    }
+
+
+    private $userName;
+    public function getUserName() {
+        return $this->userName;
+    }
+    public function setUserName($value) {
+        $this->userName = $value;
+    }
+
+    private $spikerName;
+    public function getSpikerName () {
+        return $this->spikerName;
+    }
+    public function setSpikerName ($value) {
+        $this->spikerName = $value;
     }
 }

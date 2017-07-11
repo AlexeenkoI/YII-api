@@ -55,6 +55,7 @@ class Moneylog extends \yii\db\ActiveRecord
             'description' => 'Описание',
             'isdeleted' => 'Удален',
             'date' => 'Дата',
+            'userName' => 'Имя пользователя',
         ];
     }
 
@@ -64,5 +65,13 @@ class Moneylog extends \yii\db\ActiveRecord
     public function getUser()
     {
         return $this->hasOne(User::className(), ['id' => 'userid']);
+    }
+
+    private $userName;
+    public function getUserName() {
+        return $this->userName;
+    }
+    public function setUserName($value) {
+        $this->userName = $value;
     }
 }

@@ -68,6 +68,8 @@ class User extends \yii\db\ActiveRecord
             'iscap' => 'Капитан',
             'isdeleted' => 'Удален',
             'sex' => 'Пол',
+            'groupTotem' => 'Тотем',
+            'routeName' => 'Маршрут'
         ];
     }
 
@@ -85,6 +87,27 @@ class User extends \yii\db\ActiveRecord
     public function getGroup()
     {
         return $this->hasOne(Group::className(), ['id' => 'groupid']);
+    }
+
+    private $groupTotem;
+
+    public function getGroupTotem()
+    {
+        return $this->groupTotem;
+    }
+
+    public function setGroupTotem($value)
+    {
+        $this->groupTotem = $value;
+    }
+
+    private $routeName;
+
+    public function getRouteName() {
+        return $this->routeName;
+    }
+    public function setRouteName($value) {
+        $this->routeName = $value;
     }
 
     /**

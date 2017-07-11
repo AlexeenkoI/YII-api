@@ -19,7 +19,7 @@ class MoneylogSearch extends Moneylog
     {
         return [
             [['id', 'userid', 'money', 'isdeleted'], 'integer'],
-            [['type', 'description', 'date'], 'safe'],
+            [['type', 'description', 'date', 'userName'], 'safe'],
         ];
     }
 
@@ -68,6 +68,13 @@ class MoneylogSearch extends Moneylog
         $query->andFilterWhere(['like', 'type', $this->type])
             ->andFilterWhere(['like', 'description', $this->description])
             ->andFilterWhere(['like', 'date', $this->date]);
+
+        if ($this->userName != "")
+        $query->joinWith(["user" => function($q) {
+            $q->where('user.firstname like "%' . $this->userName . '%" OR '
+                        .'user.lastname like "%' . $this->userName . '%" OR '
+                        .'user.patronymic like "%' . $this->userName . '%"');
+        }]);
 
         return $dataProvider;
     }

@@ -19,7 +19,7 @@ class UserSearch extends User
     {
         return [
             [['id', 'groupid', 'batchid', 'routeid', 'iscap', 'isdeleted'], 'integer'],
-            [['firstname', 'lastname', 'patronymic', 'rfcid', 'sex'], 'safe'],
+            [['firstname', 'lastname', 'patronymic', 'rfcid', 'sex', 'groupTotem', 'routeName'], 'safe'],
         ];
     }
 
@@ -72,6 +72,16 @@ class UserSearch extends User
             ->andFilterWhere(['like', 'patronymic', $this->patronymic])
             ->andFilterWhere(['like', 'rfcid', $this->rfcid])
             ->andFilterWhere(['like', 'sex', $this->sex]);
+
+        if ($this->groupTotem != "")
+            $query->joinWith(["group" => function($q) {
+                $q->where('group.totemname like "%' . $this->groupTotem . '%"');
+            }]);
+
+        if ($this->routeName != "")
+            $query->joinWith(["route" => function($q) {
+                $q->where('route.name like "%' . $this->routeName . '%"');
+            }]);            
 
         return $dataProvider;
     }
