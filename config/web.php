@@ -43,6 +43,7 @@ $config = [
                 ],
             ],
         ],
+        'gridview' => ['class' => 'kartik\grid\Module'],
         'db' => $db,
         
         'urlManager' => [
