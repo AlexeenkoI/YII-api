@@ -70,7 +70,7 @@ function loadData(){
             var pos = 1;
             tableCounter = 1;
             for (var i = 0; i < data.length; i++) { 
-                   if(tableCounter<=7){
+                   if(tableCounter<=6){
                        var score = doScore(data[i].p1, data[i].p2, data[i].p3);
                        var scoret = doScoret(data[i].p1, data[i].p2, data[i].p3);
                        appendText(viewport1,pos,data[i].name,score,scoret);
@@ -78,7 +78,7 @@ function loadData(){
                        pos++;
                        continue;
                    }
-                   if(tableCounter>7 && tableCounter<=14){
+                   if(tableCounter>6 && tableCounter<=12){
                        var score = doScore(data[i].p1, data[i].p2, data[i].p3);
                        var scoret = doScoret(data[i].p1, data[i].p2, data[i].p3);
                        appendText(viewport2,pos,data[i].name,score,scoret);
@@ -86,7 +86,7 @@ function loadData(){
                        pos++;
                        continue;
                    }
-                   if(tableCounter>14){
+                   if(tableCounter>12){
                        var score = doScore(data[i].p1, data[i].p2, data[i].p3);
                        var scoret = doScoret(data[i].p1, data[i].p2, data[i].p3);
                        appendText(viewport3,pos,data[i].name,score,scoret);
