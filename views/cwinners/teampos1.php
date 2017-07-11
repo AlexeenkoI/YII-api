@@ -148,8 +148,8 @@ td{
 }
 .row{
     margin-top:3%;
-    margin-left:5%;
-    margin-right: 50px;
+    margin-left:3%;
+    margin-right: 40px;
 }
 th{
     font-size:24px;
