@@ -119,7 +119,7 @@ td{
 }
 .imgfirst {
     position: absolute;
-    top: -75px;
+    top: -140px;
     left: 242px;
     text-align: center;
     width: 220px;
@@ -130,7 +130,7 @@ td{
 .imgsecond {
     position: absolute;
     left: 462px;
-    top: -9px;
+    top: -60px;
     font-size: 30px;
     text-align: center;
     width: 220px;
@@ -140,7 +140,7 @@ td{
 .imgthird {
     position: absolute;
     width: 220px;
-    top: 43px;
+    top: 2px;
     left: 18px;
     font-size: 30px;
     text-align: center;
@@ -166,7 +166,7 @@ td{
     left: 70px;
 }
 .score {
-    margin-top:35px;
+    margin-top:80px;
 }
 .row h1 {
     font-size: 45px;
