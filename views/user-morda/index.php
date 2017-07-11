@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\UserMordaSearch */
@@ -20,7 +21,26 @@ $this->title = 'Подписки на Спикеров';
         <?= Html::a('Подписать пользователя на спикера', ['create'], ['class' => 'btn btn-success']) ?>
         <?= Html::a('Назад', ['site/index'], ['class' => 'btn btn-danger']) ?>
     </p>
-    <?= GridView::widget([
+    <?php 
+echo ExportMenu::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+            'id',
+            [
+                'attribute' => 'userName',
+                // 'value' => 'user.firstname',
+                'value' => function($model){
+                    return $model->user->lastname.' '.$model->user->firstname.' '.$model->user->patronymic;
+                }
+            ],
+            [
+                'attribute' => 'spikerName',
+                'value' => 'morda.fio'
+            ],
+    ]
+]);
+    ?>    
+    <?= \kartik\grid\GridView::widget([
         'summary'=>'Подпиcанных {count} - Страниц {page}',
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
